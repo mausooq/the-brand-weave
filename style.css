@@ -1,0 +1,159 @@
+/* Custom Styles for The Brand Weave Landing Page */
+
+:root {
+  --primary: #6236ff;
+  --primary-gradient: linear-gradient(120deg, #6236ff 0%, #a084ff 100%);
+  --shadow: 0 4px 24px rgba(98, 54, 255, 0.1);
+}
+
+.btn-primary,
+.btn-primary:focus {
+  background: var(--primary-gradient);
+  border: none;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+.btn-primary:hover {
+  background: #4b28c7;
+  box-shadow: 0 8px 32px rgba(98, 54, 255, 0.18);
+  transform: translateY(-2px) scale(1.04);
+}
+
+.btn-outline-primary {
+  border-color: var(--primary);
+  color: var(--primary);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.btn-outline-primary:hover {
+  background: var(--primary);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(98, 54, 255, 0.12);
+}
+
+.service-card {
+  transition: box-shadow 0.2s, transform 0.2s;
+  box-shadow: var(--shadow);
+  border-radius: 1.25rem;
+  border: none;
+}
+.service-card:hover {
+  box-shadow: 0 12px 32px rgba(98, 54, 255, 0.18);
+  transform: translateY(-8px) scale(1.03);
+  background: #f3f0ff;
+}
+
+.portfolio-img {
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.portfolio-img:hover {
+  box-shadow: 0 8px 32px rgba(98, 54, 255, 0.15);
+  transform: scale(1.04);
+}
+
+.social-icon {
+  filter: drop-shadow(0 2px 8px rgba(98, 54, 255, 0.1));
+  transition: transform 0.2s, filter 0.2s;
+}
+.social-icon:hover {
+  transform: scale(1.15) rotate(-8deg);
+  filter: drop-shadow(0 4px 16px rgba(98, 54, 255, 0.18));
+}
+
+input,
+textarea {
+  border-radius: 0.75rem !important;
+}
+
+@media (max-width: 767.98px) {
+  .hero-section {
+    border-radius: 0 0 1rem 1rem;
+    padding-bottom: 2rem;
+  }
+  .about-img {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Use Outfit font everywhere */
+body {
+  font-family: "Outfit", sans-serif;
+  background: #f8f9fa;
+}
+
+/* Navbar link styles */
+.tbw-navbar .tbw-link {
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #181c24 !important;
+  position: relative;
+  transition: color 0.2s;
+  padding-bottom: 0.25rem;
+}
+
+/* Underline animation on hover */
+.tbw-navbar .tbw-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #ecba99;
+  border-radius: 2px;
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.tbw-navbar .tbw-link:hover,
+.tbw-navbar .tbw-link:focus {
+  color: #ecba99 !important;
+}
+
+.tbw-navbar .tbw-link:hover::after,
+.tbw-navbar .tbw-link:focus::after {
+  width: 100%;
+}
+
+/* Dropdown styles remain as before for smooth animation and modern look */
+.tbw-navbar .dropdown-menu {
+  min-width: 180px;
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px rgba(98, 54, 255, 0.1), 0 1.5px 8px rgba(0, 0, 0, 0.04);
+  background: #23272f;
+  padding: 0.5rem 0;
+  border: none;
+  opacity: 0;
+  transform: translateY(20px) scale(0.98);
+  transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+  pointer-events: none;
+  visibility: hidden;
+}
+.tbw-navbar .dropdown-menu.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+  visibility: visible;
+}
+.tbw-navbar .dropdown-item {
+  color: #fff;
+  font-family: "Outfit", sans-serif;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  margin: 0.15rem 0.5rem;
+  transition: background 0.2s, color 0.2s;
+}
+.tbw-navbar .dropdown-item:hover,
+.tbw-navbar .dropdown-item:focus {
+  background: #ecba99;
+  color: #232526;
+}
+.tbw-navbar .dropdown-toggle::after {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: 0.5em;
+  vertical-align: middle;
+}
+.tbw-navbar .show > .dropdown-toggle::after {
+  transform: rotate(180deg);
+}
