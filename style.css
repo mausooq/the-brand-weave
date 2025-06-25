@@ -1,7 +1,7 @@
 /* Custom Styles for The Brand Weave Landing Page */
 
 :root {
-  --primary: #6236ff;
+  --primary: #ecba99;
   --primary-gradient: linear-gradient(120deg, #6236ff 0%, #a084ff 100%);
   --shadow: 0 4px 24px rgba(98, 54, 255, 0.1);
 }
@@ -79,39 +79,23 @@ body {
   background: #f8f9fa;
 }
 
-/* Navbar link styles */
-.tbw-navbar .tbw-link {
+/* Navbar link styles with your requested underline animation (CORRECTED SELECTOR) */
+.tbw-navbar .nav-link {
   font-size: 1.15rem;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 0.5px;
   color: #181c24 !important;
   position: relative;
-  transition: color 0.2s;
-  padding-bottom: 0.25rem;
+  display: inline-block;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
 }
 
-/* Underline animation on hover */
-.tbw-navbar .tbw-link::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 3px;
-  background: #ecba99;
-  border-radius: 2px;
-  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
 
-.tbw-navbar .tbw-link:hover,
-.tbw-navbar .tbw-link:focus {
-  color: #ecba99 !important;
-}
-
-.tbw-navbar .tbw-link:hover::after,
-.tbw-navbar .tbw-link:focus::after {
-  width: 100%;
+.tbw-navbar .nav-link:hover::after,
+.tbw-navbar .nav-link:focus::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 /* Dropdown styles remain as before for smooth animation and modern look */
@@ -142,13 +126,36 @@ body {
   padding: 0.75rem 1.5rem;
   border-radius: 0.75rem;
   margin: 0.15rem 0.5rem;
-  transition: background 0.2s, color 0.2s;
+  transition: color 0.25s ease-out;
+  position: relative;
+  background-color: transparent !important;
 }
+
+.tbw-navbar .dropdown-item::after {
+  content: "";
+  position: absolute;
+  width: calc(100% - 3rem);
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0.5rem;
+  left: 1.5rem;
+  background-color: #ecba99;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
 .tbw-navbar .dropdown-item:hover,
 .tbw-navbar .dropdown-item:focus {
-  background: #ecba99;
-  color: #232526;
+  color: #ecba99;
+  background: transparent;
 }
+
+.tbw-navbar .dropdown-item:hover::after,
+.tbw-navbar .dropdown-item:focus::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 .tbw-navbar .dropdown-toggle::after {
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   margin-left: 0.5em;
