@@ -20,304 +20,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <style>
-      body {
-        font-family: "Figtree", sans-serif;
-        background: #f8f9fa;
-      }
-      .navbar {
-        box-shadow: 0 2px 16px rgba(98, 54, 255, 0.08);
-      }
-      .navbar-brand {
-        font-weight: 700;
-        letter-spacing: 1px;
-      }
-      .btn-primary,
-      .btn-primary:focus {
-        background: #6236ff;
-        border: none;
-      }
-      .btn-primary:hover {
-        background: #4b28c7;
-        box-shadow: 0 4px 16px rgba(98, 54, 255, 0.15);
-        transform: translateY(-2px);
-      }
-      .hero-img {
-        max-width: 100%;
-        border-radius: 1.5rem;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-      }
-      .service-card {
-        border: none;
-        border-radius: 1.25rem;
-        box-shadow: 0 2px 16px rgba(98, 54, 255, 0.08);
-        transition: transform 0.2s, box-shadow 0.2s;
-      }
-      .service-card:hover {
-        transform: translateY(-8px) scale(1.03);
-        box-shadow: 0 8px 32px rgba(98, 54, 255, 0.15);
-      }
-      .service-icon {
-        width: 56px;
-        height: 56px;
-        margin-bottom: 1rem;
-      }
-      .about-img {
-        border-radius: 1.5rem;
-        box-shadow: 0 8px 32px rgba(98, 54, 255, 0.1);
-      }
-      .portfolio-img {
-        border-radius: 1rem;
-        box-shadow: 0 4px 16px rgba(98, 54, 255, 0.08);
-        transition: transform 0.2s;
-      }
-      .portfolio-img:hover {
-        transform: scale(1.04);
-        box-shadow: 0 8px 32px rgba(98, 54, 255, 0.15);
-      }
-      .testimonial-card {
-        border-radius: 1.25rem;
-        box-shadow: 0 2px 16px rgba(98, 54, 255, 0.08);
-      }
-      .contact-section {
-        background: #fff;
-        border-radius: 2rem;
-        box-shadow: 0 4px 32px rgba(98, 54, 255, 0.1);
-      }
-      .form-control:focus {
-        border-color: #6236ff;
-        box-shadow: 0 0 0 0.2rem rgba(98, 54, 255, 0.1);
-      }
-      .footer {
-        background: #1a1336;
-        color: #fff;
-        border-radius: 2rem 2rem 0 0;
-      }
-      .footer a {
-        color: #fff;
-        opacity: 0.8;
-        transition: opacity 0.2s;
-      }
-      .footer a:hover {
-        opacity: 1;
-        color: #a084ff;
-      }
-      .social-icon {
-        width: 36px;
-        height: 36px;
-        margin-right: 0.5rem;
-        transition: transform 0.2s;
-      }
-      .social-icon:hover {
-        transform: scale(1.15);
-      }
-      @media (max-width: 767.98px) {
-        .hero-section {
-          border-radius: 0 0 1rem 1rem;
-        }
-        .about-img {
-          margin-bottom: 2rem;
-        }
-      }
-      .tbw-navbar {
-        background: #fff;
-        box-shadow: 0 4px 24px rgba(98, 54, 255, 0.1);
-        transition: background 0.3s, box-shadow 0.3s, border-radius 0.3s,
-          margin-top 0.3s;
-        font-family: "Bebas Neue", sans-serif !important;
-      }
-      .tbw-navbar .nav-link,
-      .tbw-navbar .navbar-brand {
-        font-family: "Bebas Neue", sans-serif !important;
-        font-size: 1.3rem;
-        letter-spacing: 1px;
-      }
-      .hero-section h1.display-1 {
-        font-family: "Bebas Neue", sans-serif !important;
-        font-size: 90px !important;
-        letter-spacing: 2px;
-      }
-      .hero-section p.lead {
-        font-family: "Roboto", sans-serif !important;
-        font-size: 18px !important;
-        font-weight: 400;
-        letter-spacing: 0.2px;
-        color: #cfcfcf !important;
-      }
-
-      /* When scrolled: change background, shadow, border-radius, and margin-top */
-      .tbw-navbar.scrolled {
-        position: sticky;
-        left: 9.5%;
-        top: 2%;
-        background: rgba(77, 75, 75, 0.75); /* semi-transparent white */
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
-        box-shadow: 0 8px 32px rgba(98, 54, 255, 0.18);
-        border-radius: 2em;
-        width: 80%;
-        margin: 1.5em auto 0 auto; /* margin-top for smooth drop-down effect */
-        padding: 0.5em 1em;
-      }
-
-      .tbw-navbar.scrolled .nav-link,
-      .tbw-navbar.scrolled .navbar-brand,
-      .tbw-navbar.scrolled .tbw-search-icon {
-        color: #fff !important;
-      }
-
-      .tbw-navbar.scrolled .btn-tbw-green {
-        color: #fff !important;
-        margin-left: 2em;
-        transition: background 0.3s, color 0.3s, margin 0.3s;
-      }
-    </style>
+    <link rel="stylesheet" href="navbar.css" />
   </head>
   <body>
-    <!-- TBW Modern Navbar Start -->
-    <nav class="navbar navbar-expand-lg sticky-top tbw-navbar py-3 shadow">
-      <div class="container">
-        <!-- Left: Logo and Brand -->
-        <a
-          class="navbar-brand d-flex align-items-center text-dark fw-bold"
-          href="#"
-        >
-          <img src="./assets/logo.png" alt="TBW Logo" width="60" class="me-2" />
-        </a>
-
-        <!-- Hamburger for mobile -->
-        <button
-          class="navbar-toggler text-dark border-0"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#tbwNavbar"
-          aria-controls="tbwNavbar"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="tbwNavbar">
-          <!-- Center: Menu Items with Dropdowns -->
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-3">
-            <!-- Home Dropdown -->
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle text-dark"
-                href="#"
-                id="homeDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Home
-              </a>
-              <ul
-                class="dropdown-menu dropdown-menu-dark dropdown-fade"
-                aria-labelledby="homeDropdown"
-              >
-                <li><a class="dropdown-item" href="#">Home 1</a></li>
-                <li><a class="dropdown-item" href="#">Home 2</a></li>
-              </ul>
-            </li>
-            <!-- Portfolio Dropdown -->
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle text-dark"
-                href="#"
-                id="portfolioDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Portfolio
-              </a>
-              <ul
-                class="dropdown-menu dropdown-menu-dark dropdown-fade"
-                aria-labelledby="portfolioDropdown"
-              >
-                <li><a class="dropdown-item" href="#">Portfolio 1</a></li>
-                <li><a class="dropdown-item" href="#">Portfolio 2</a></li>
-              </ul>
-            </li>
-            <!-- Service Dropdown -->
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle text-dark"
-                href="#"
-                id="serviceDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Service
-              </a>
-              <ul
-                class="dropdown-menu dropdown-menu-dark dropdown-fade"
-                aria-labelledby="serviceDropdown"
-              >
-                <li><a class="dropdown-item" href="#">SEO</a></li>
-                <li><a class="dropdown-item" href="#">PPC</a></li>
-              </ul>
-            </li>
-            <!-- Pages Dropdown -->
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle text-dark"
-                href="#"
-                id="pagesDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Pages
-              </a>
-              <ul
-                class="dropdown-menu dropdown-menu-dark dropdown-fade"
-                aria-labelledby="pagesDropdown"
-              >
-                <li><a class="dropdown-item" href="#">About</a></li>
-                <li><a class="dropdown-item" href="#">Team</a></li>
-              </ul>
-            </li>
-            <!-- Blogs Dropdown -->
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle text-dark"
-                href="#"
-                id="blogsDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Blogs
-              </a>
-              <ul
-                class="dropdown-menu dropdown-menu-dark dropdown-fade"
-                aria-labelledby="blogsDropdown"
-              >
-                <li><a class="dropdown-item" href="#">Blog List</a></li>
-                <li><a class="dropdown-item" href="#">Blog Single</a></li>
-              </ul>
-            </li>
-          </ul>
-          <!-- Right: Search Icon & Contact Button -->
-          <div class="d-flex align-items-center ms-lg-3 mt-3 mt-lg-0 gap-2">
-            <a
-              href="#"
-              class="text-dark fs-5 me-2 tbw-search-icon d-inline-flex align-items-center justify-content-center"
-            >
-              <i class="bi bi-search"></i>
-            </a>
-            <a href="#contact" class="btn btn-tbw-green fw-bold px-4 py-2">
-              Contact Us
-            </a>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!-- TBW Modern Navbar End -->
+    <?php include 'navbar.php'; ?>
 
     <!-- Hero Section with Carousel -->
     <section
@@ -504,93 +210,115 @@
         >
           Trusted Clients
         </h6>
-        <div
-          class="d-flex flex-wrap justify-content-center align-items-center gap-5 client-logos"
-        >
-          <img
-            src="./assets/logo.png"
-            alt="Client Logo 1"
-            class="client-logo"
-            style="max-width: 130px"
-          />
-          <img
-            src="./assets/logo.png"
-            alt="Client Logo 2"
-            class="client-logo"
-            style="max-width: 130px"
-          />
-          <img
-            src="./assets/logo.png"
-            alt="Client Logo 3"
-            class="client-logo"
-            style="max-width: 130px"
-          />
-          <img
-            src="./assets/logo.png"
-            alt="Client Logo 4"
-            class="client-logo"
-            style="max-width: 130px"
-          />
-          <img
-            src="./assets/logo.png"
-            alt="Client Logo 5"
-            class="client-logo"
-            style="max-width: 130px"
-          />
+        <div class="client-logos-wrapper">
+          <div class="d-flex align-items-center client-logos">
+            <img
+              src="./assets/logo.png"
+              alt="Client Logo 1"
+              class="client-logo"
+            />
+            <img
+              src="./assets/logo.png"
+              alt="Client Logo 2"
+              class="client-logo"
+            />
+            <img
+              src="./assets/logo.png"
+              alt="Client Logo 3"
+              class="client-logo"
+            />
+            <img
+              src="./assets/logo.png"
+              alt="Client Logo 4"
+              class="client-logo"
+            />
+            <img
+              src="./assets/logo.png"
+              alt="Client Logo 5"
+              class="client-logo"
+            />
+          </div>
         </div>
       </div>
     </div>
 
     <!-- Services Section -->
-    <section id="services" class="py-5">
+    <section id="services" class="py-5 bg-light">
       <div class="container">
-        < div class="text-center mb-5">
-          <h2 class="fw-bold">Our Services</h2>
-          <p class="text-muted">
-            Comprehensive solutions to elevate your brand online.
-          </p>
+        <div class="mb-5">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <h2 class="text-uppercase fw-bold mb-0" style="letter-spacing: 2px; font-size: 60px; line-height: 1; color: #122c24;">Service<br>Expertise</h2>
+            </div>
+            <div class="col-lg-6 d-flex justify-content-lg-end align-items-center mt-3 mt-lg-0">
+              <p class="text-muted mb-0" style="font-size: 1.2rem; max-width: 450px;">We offer a complete suite of digital marketing services to grow your brand online.</p>
+            </div>
+          </div>
         </div>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="card service-card h-100 text-center p-4">
-              <img
-                src="https://img.icons8.com/color/96/000000/seo.png"
-                alt="SEO"
-                class="service-icon mx-auto"
-              />
-              <h5 class="fw-bold mb-2">SEO Optimization</h5>
-              <p class="text-muted">
-                Improve your website ranking and visibility on search engines
-                with proven SEO strategies.
-              </p>
+        
+        <div class="row-2 ">
+          <div class="col-12">
+            <div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;">
+              <div class="service-card-content flex-grow-1 position-relative z-2">
+                <div class="service-icon-circle mb-3">
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <h3 class="fw-bold mb-2 service-title">SEO MARKETING</h3>
+                <p class="text-muted mb-0 service-subtitle">Identifying and targeting the right keywords<br>that are relevant to your business.</p>
+              </div>
+              <span class="service-card-arrow ms-auto"><i class="bi bi-arrow-right"></i></span>
+              <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
+                <img src="./assets/SEO_marketing.jpg" alt="Service" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
+                <span class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></span>
+              </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card service-card h-100 text-center p-4">
-              <img
-                src="https://img.icons8.com/color/96/000000/google-adwords.png"
-                alt="PPC"
-                class="service-icon mx-auto"
-              />
-              <h5 class="fw-bold mb-2">PPC Advertising</h5>
-              <p class="text-muted">
-                Maximize ROI with targeted pay-per-click campaigns managed by
-                certified experts.
-              </p>
+          <div class="col-12">
+            <div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;">
+              <div class="service-card-content flex-grow-1 position-relative z-2">
+                <div class="service-icon-circle mb-3">
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <h3 class="fw-bold mb-2 service-title">MEDIA MARKETING</h3>
+                <p class="text-muted mb-0 service-subtitle">Social media marketing is about building<br>relationships through engagement.</p>
+              </div>
+              <span class="service-card-arrow ms-auto"><i class="bi bi-arrow-right"></i></span>
+              <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
+                <img src="./assets/media_marketing.png" alt="Service" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
+                <span class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></span>
+              </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card service-card h-100 text-center p-4">
-              <img
-                src="https://img.icons8.com/color/96/000000/social-media-marketing.png"
-                alt="Social Media"
-                class="service-icon mx-auto"
-              />
-              <h5 class="fw-bold mb-2">Social Media Marketing</h5>
-              <p class="text-muted">
-                Engage your audience and build your brand with creative social
-                media strategies.
-              </p>
+          <div class="col-12">
+            <div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;">
+              <div class="service-card-content flex-grow-1 position-relative z-2">
+                <div class="service-icon-circle mb-3">
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <h3 class="fw-bold mb-2 service-title">CONTENT MARKETING</h3>
+                <p class="text-muted mb-0 service-subtitle">Engage your audience and drive conversions<br>with high-quality, targeted content campaigns.</p>
+              </div>
+              <span class="service-card-arrow ms-auto"><i class="bi bi-arrow-right"></i></span>
+              <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
+                <img src="./assets/content_marketing.jpg" alt="Service" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
+                <span class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;">
+              <div class="service-card-content flex-grow-1 position-relative z-2">
+                <div class="service-icon-circle mb-3">
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <h3 class="fw-bold mb-2 service-title">BRANDING & DESIGN</h3>
+                <p class="text-muted mb-0 service-subtitle">Build a memorable brand identity<br>with our creative design and branding solutions.</p>
+              </div>
+              <span class="service-card-arrow ms-auto"><i class="bi bi-arrow-right"></i></span>
+              <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
+                <img src="./assets/Brand_desgining.png" alt="Service" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
+                <span class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></span>
+              </div>
             </div>
           </div>
         </div>
@@ -757,51 +485,27 @@
       </div>
     </section>
     <!-- Contact Section -->
-    <section
-      id="contact"
-      class="contact-section py-5 my-5 mx-auto"
-      style="max-width: 700px"
-    >
-      <div class="container">
-        <div class="text-center mb-4">
-          <h2 class="fw-bold">Contact Us</h2>
-          <p class="text-muted">
-            Let's talk about your project or marketing goals.
-          </p>
-        </div>
-        <form>
-          <div class="mb-3">
-            <input
-              type="text"
-              class="form-control form-control-lg"
-              placeholder="Your Name"
-              required
-            />
-          </div>
-          <div class="mb-3">
-            <input
-              type="email"
-              class="form-control form-control-lg"
-              placeholder="Your Email"
-              required
-            />
-          </div>
-          <div class="mb-3">
-            <textarea
-              class="form-control form-control-lg"
-              rows="4"
-              placeholder="Your Message"
-              required
-            ></textarea>
-          </div>
-          <div class="d-grid">
-            <button type="submit" class="btn btn-primary btn-lg">
-              Send Message
-            </button>
-          </div>
-        </form>
+  <section class="work-together-section d-flex align-items-center">
+  <div class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-md-7">
+        <span class="badge rounded-pill border border-white text-white px-4 py-2 mb-3 fw-semibold">
+          DISCOVER A PLACE YOU’LL LOVE TO LIVE
+        </span>
+        <h1 class="display-3 fw-bold text-white">LET’S WORK<br/>TOGETHER</h1>
       </div>
-    </section>
+      <div class="col-md-5 mt-4 mt-md-0">
+        <p class="text-white mb-4">
+          Creating a cohesive and memorable identity. Ipsum dolor sit consectetur.<br/>
+          Ut suspendisse nulla fringilla.
+        </p>
+        <a href="#" class="btn btn-light text-dark d-inline-flex align-items-center px-4 py-2 rounded-pill">
+          <i class="bi bi-telephone-fill me-2"></i> BOOK A CALL
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- Footer -->
     <footer class="footer py-4 mt-5">
@@ -875,7 +579,46 @@
             targetImage.classList.add("active");
           }
         });
+
+        // Duplicate logos for infinite marquee
+        const logosContainer = document.querySelector(".client-logos");
+        if (logosContainer) {
+          const logos = logosContainer.querySelectorAll(".client-logo");
+          logos.forEach((logo) => {
+            const clone = logo.cloneNode(true);
+            logosContainer.appendChild(clone);
+          });
+        }
+      });
+
+      let isScrolling = false;
+      let scrollTimeout;
+      let lastHoveredCard = null;
+      window.addEventListener('scroll', function () {
+        isScrolling = true;
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(() => {
+          isScrolling = false;
+          // After scrolling stops, if mouse is over a card, show effect
+          if (lastHoveredCard) {
+            lastHoveredCard.classList.add('active');
+          }
+        }, 200);
+      });
+      document.querySelectorAll('.service-card').forEach(card => {
+        card.addEventListener('mouseenter', () => {
+          lastHoveredCard = card;
+          if (!isScrolling) {
+            card.classList.add('active');
+          }
+        });
+        card.addEventListener('mouseleave', () => {
+          card.classList.remove('active');
+          if (lastHoveredCard === card) lastHoveredCard = null;
+        });
       });
     </script>
   </body>
 </html>
+
+

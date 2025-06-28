@@ -1,36 +1,26 @@
+<?php
+$blogs = json_decode(file_get_contents(__DIR__ . '/blogs.json'), true);
+$categories = array_unique(array_map(function($b) { return $b['category']; }, $blogs));
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog | The Brand Weave</title>
+  <!-- Add Bootstrap CSS and Bootstrap Icons for navbar -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../navbar.css" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
   <style>
-    body {
-      font-family: 'Figtree', 'Segoe UI', Arial, sans-serif;
-      background: #fff;
-      margin: 0;
-      color: #122c24;
-    }
+    /* Only blog-specific styles retained. Removed duplicate styles for navbar, .tbw-navbar, and general layout that are already in style.css or navbar.css. */
     .page-wrapper {
       max-width: 1320px;
       margin: 0 auto;
       padding: 0 2rem;
-    }
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1.5rem 0;
-      background: #fff;
-      border-bottom: 1px solid #e8e8e8;
-    }
-    .navbar .logo {
-      font-weight: 800;
-      font-size: 1.5rem;
-      letter-spacing: 0.5px;
-      color: #122c24;
-      text-decoration: none;
     }
     .nav-menu {
       display: flex;
@@ -84,6 +74,7 @@
       border-radius: 2rem;
       font-weight: 500;
       transition: background-color 0.2s, color 0.2s;
+      cursor: pointer;
     }
     .filter-nav a.active, .filter-nav a:hover {
       background: #122c24;
@@ -97,7 +88,7 @@
       margin: 0 auto 5rem auto;
     }
     .blog-card {
-      background: #fff;
+      background: #F8F9FA;
       border: none;
       box-shadow: none;
     }
@@ -208,6 +199,7 @@
   </style>
 </head>
 <body>
+    <?php include '../navbar.php'; ?>
 
 <div class="page-wrapper">
   <main>
@@ -217,57 +209,63 @@
     </div>
 
     <div class="filter-nav">
-      <a href="#" class="active">All Articles</a>
-      <a href="#">SEO</a>
-      <a href="#">Email</a>
-      <a href="#">Business</a>
-      <a href="#">Lifestyle</a>
-      <a href="#">Advertisement</a>
+      <a href="#" class="active" data-category="all">All Articles</a>
+      <?php foreach ($categories as $cat): ?>
+        <a href="#" data-category="<?= htmlspecialchars($cat) ?>"><?= htmlspecialchars($cat) ?></a>
+      <?php endforeach; ?>
     </div>
 
     <div class="blog-grid" id="blogGrid">
-      <div class="blog-card">
-        <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=600&q=80" alt="Teamwork" class="blog-img">
+      <?php foreach ($blogs as $blog): ?>
+      <div class="blog-card" data-category="<?= htmlspecialchars($blog['category']) ?>">
+        <img src="<?= htmlspecialchars($blog['image']) ?>" alt="<?= htmlspecialchars($blog['title']) ?>" class="blog-img">
         <div class="blog-content">
           <div class="blog-row">
-            <span class="blog-category">SEO</span>
+            <span class="blog-category"><?= htmlspecialchars($blog['category']) ?></span>
             <div class="blog-meta-row">
-              <span>Sep 29, 2024</span> <span class="blog-meta-dot"></span> <span>16 min read</span>
+              <span><?= htmlspecialchars($blog['date']) ?></span> <span class="blog-meta-dot"></span> <span><?= htmlspecialchars($blog['read_time']) ?></span>
             </div>
           </div>
-          <h2 class="blog-title">NikZe: Just Do It - Building a Global Brand"</h2>
-          <a href="view.html?post=nikze" class="read-more-btn">Read Now</a>
+          <h2 class="blog-title"><?= htmlspecialchars($blog['title']) ?></h2>
+          <a href="view.php?post=<?= urlencode($blog['slug']) ?>" class="read-more-btn">Read Now</a>
         </div>
       </div>
-      <div class="blog-card">
-        <img src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&w=600&q=80" alt="Branding" class="blog-img">
-        <div class="blog-content">
-          <div class="blog-row">
-            <span class="blog-category">Business</span>
-            <div class="blog-meta-row">
-              <span>Sep 29, 2024</span> <span class="blog-meta-dot"></span> <span>12 min read</span>
-            </div>
-          </div>
-          <h2 class="blog-title">MANIV DOE: Building Branding AND LOGO"</h2>
-          <a href="view.html?post=maniv" class="read-more-btn">Read Now</a>
-        </div>
-      </div>
-       <div class="blog-card">
-        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80" alt="Creative" class="blog-img">
-        <div class="blog-content">
-          <div class="blog-row">
-            <span class="blog-category">Design</span>
-            <div class="blog-meta-row">
-              <span>Sep 28, 2024</span> <span class="blog-meta-dot"></span> <span>10 min read</span>
-            </div>
-          </div>
-          <h2 class="blog-title">THE POWER OF MINIMALISM IN BRANDING</h2>
-          <a href="view.html?post=minimalism" class="read-more-btn">Read Now</a>
-        </div>
-      </div>
+      <?php endforeach; ?>
     </div>
   </main>
 </div>
 
+<script>
+  // Navbar scroll animation
+  window.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".tbw-navbar");
+    if (navbar) {
+      if (window.scrollY > 80) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    }
+  });
+
+  // Blog filter system
+  document.querySelectorAll('.filter-nav a').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelectorAll('.filter-nav a').forEach(function(b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      var cat = btn.getAttribute('data-category');
+      document.querySelectorAll('.blog-card').forEach(function(card) {
+        if (cat === 'all' || card.getAttribute('data-category') === cat) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+
 </body>
 </html>
+

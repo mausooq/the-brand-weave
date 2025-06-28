@@ -1,10 +1,30 @@
+<?php
+$blogs = json_decode(file_get_contents(__DIR__ . '/blogs.json'), true);
+$slug = $_GET['post'] ?? '';
+$blog = null;
+foreach ($blogs as $b) {
+  if ($b['slug'] === $slug) {
+    $blog = $b;
+    break;
+  }
+}
+if (!$blog) {
+  echo '<h1>404 - Blog Post Not Found</h1>';
+  exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MANIV DOE: Building Branding AND LOGO | The Brand Weave</title>
+  <title><?= htmlspecialchars($blog['title']) ?> | The Brand Weave</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../navbar.css" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
   <style>
     body {
       background: #fff;
@@ -164,28 +184,30 @@
   </style>
 </head>
 <body>
+    <?php include '../navbar.php'; ?>
   <div class="main-wrapper">
-    <h1 class="post-title">MANIV DOE: Building Branding AND LOGO</h1>
+    <h1 class="post-title"><?= htmlspecialchars($blog['title']) ?></h1>
     <div class="author-block">
       <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=100&q=80" alt="Author Avatar" class="author-avatar">
-      <div class="author-name">CRISH PAUL</div>
-      <div class="author-role">HRO lead OF COPPER</div>
+      <div class="author-name"><?= htmlspecialchars($blog['author']) ?></div>
+      <div class="author-role">Author</div>
     </div>
-    <img src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&w=800&q=80" alt="Cover Image" class="cover-image">
+    <img src="<?= htmlspecialchars($blog['image']) ?>" alt="Cover Image" class="cover-image">
     <div class="post-content">
-      <h3>Brand as Experience</h3>
-      <p>The future of branding focuses on creating seamless, immersive experiences. It's not just about what a company sells, but how it makes people feel. Brands are now curating customer journeys that engage multiple senses across physical and digital touchpoints. Whether through interactive websites, augmented reality (AR), or personalized services, successful brands of the future will design every aspect of their interaction with users to be memorable and meaningful.</p>
-      
-      <h3>Storytelling Through Design</h3>
-      <p>In the future, design will continue to evolve to be more human-centric and dynamic, allowing brands to tell stories that resonate personally with their audience. Design will increasingly reflect not only the company's identity but also cultural and social movements.</p>
-      
-      <blockquote>Strong branding tells a story, and design plays a crucial role in that narrative. From the choice of colors and typography to packaging and user interface (UI) design, every element communicates the brand's values and vision.</blockquote>
-      
-      <h3>Embracing Minimalism and Flexibility</h3>
-      <p>The future of branding will see an even greater embrace of minimalism. Simplicity, clean design, and minimalistic logos will dominate, as they are easier to adapt across a variety of platforms and devices. Additionally, brands will design with flexibility in mind, allowing their identity to evolve over time without losing recognition. Brands like Google, Nike, and Apple have already adopted this approach by simplifying their logos and visual identities to remain adaptable in a fast-changing digital world.</p>
-      
-      <p>Human-centered branding puts people at the core of every decision. As users seek authenticity and connection, brands must understand the emotional and social needs of their audience. This means incorporating user feedback, focusing on inclusivity, and ensuring accessibility in every aspect of the brand's design. The future will see more companies adopting inclusive branding practices that cater to diverse audiences and reflect a broader range of identities.</p>
+      <?= $blog['content'] ?>
     </div>
   </div>
+  <script>
+    window.addEventListener("scroll", function () {
+      const navbar = document.querySelector(".tbw-navbar");
+      if (navbar) {
+        if (window.scrollY > 80) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      }
+    });
+  </script>
 </body>
 </html>

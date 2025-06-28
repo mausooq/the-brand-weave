@@ -1,0 +1,46 @@
+[
+  {
+    "slug": "nikze",
+    "title": "NikZe: Just Do It - Building a Global Brand",
+    "category": "SEO",
+    "date": "Sep 29, 2024",
+    "read_time": "16 min read",
+    "image": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=600&q=80",
+    "excerpt": "We offer a comprehensive range of plumbing services to meet all of your needs.",
+    "author": "CRISH PAUL",
+    "content": "<h3>Brand as Experience</h3><p>The future of branding focuses on creating seamless, immersive experiences...</p>"
+  },
+  {
+    "slug": "maniv",
+    "title": "MANIV DOE: Building Branding AND LOGO",
+    "category": "Business",
+    "date": "Sep 29, 2024",
+    "read_time": "12 min read",
+    "image": "https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&w=600&q=80",
+    "excerpt": "Branding and logo design for modern businesses.",
+    "author": "MANIV DOE",
+    "content": "<h3>Storytelling Through Design</h3><p>In the future, design will continue to evolve...</p>"
+  },
+  {
+    "slug": "minimalism",
+    "title": "THE POWER OF MINIMALISM IN BRANDING",
+    "category": "Design",
+    "date": "Sep 28, 2024",
+    "read_time": "10 min read",
+    "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80",
+    "excerpt": "Minimalism is the future of branding.",
+    "author": "JANE DOE",
+    "content": "<h3>Embracing Minimalism and Flexibility</h3><p>The future of branding will see an even greater embrace of minimalism...</p>"
+  },
+  {
+    "slug": "future-branding",
+    "title": "The Future of Branding: Human-Centered and Inclusive",
+    "category": "Lifestyle",
+    "date": "Sep 30, 2024",
+    "read_time": "8 min read",
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80",
+    "excerpt": "Human-centered branding puts people at the core of every decision.",
+    "author": "ALEX SMITH",
+    "content": "<h3>Human-Centered Branding</h3><p>As users seek authenticity and connection, brands must understand the emotional and social needs of their audience...</p>"
+  }
+]

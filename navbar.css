@@ -1,0 +1,105 @@
+/* Navbar Styles for The Brand Weave */
+
+.tbw-navbar {
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(98, 54, 255, 0.1);
+  transition: background 0.3s, box-shadow 0.3s, border-radius 0.3s;
+  font-family: "Outfit", sans-serif;
+}
+
+.tbw-navbar .nav-link {
+  font-size: 1.15rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: #181c24 !important;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+}
+
+.tbw-navbar .nav-link:hover::after,
+.tbw-navbar .nav-link:focus::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.tbw-navbar .dropdown-menu {
+  min-width: 180px;
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px rgba(98, 54, 255, 0.1), 0 1.5px 8px rgba(0, 0, 0, 0.04);
+  background: #23272f;
+  padding: 0.5rem 0;
+  border: none;
+  opacity: 0;
+  transform: translateY(20px) scale(0.98);
+  transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+  pointer-events: none;
+  visibility: hidden;
+}
+.tbw-navbar .dropdown-menu.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+  visibility: visible;
+}
+.tbw-navbar .dropdown-item {
+  color: #fff;
+  font-family: "Outfit", sans-serif;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  margin: 0.15rem 0.5rem;
+  transition: color 0.25s ease-out;
+  position: relative;
+  background-color: transparent !important;
+}
+
+.tbw-navbar .dropdown-item::after {
+  content: "";
+  position: absolute;
+  width: calc(100% - 3rem);
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0.5rem;
+  left: 1.5rem;
+  background-color: #ecba99;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.tbw-navbar .dropdown-item:hover,
+.tbw-navbar .dropdown-item:focus {
+  color: #ecba99;
+  background: transparent;
+}
+
+.tbw-navbar .dropdown-item:hover::after,
+.tbw-navbar .dropdown-item:focus::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.tbw-navbar .dropdown-toggle::after {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: 0.5em;
+  vertical-align: middle;
+}
+.tbw-navbar .show > .dropdown-toggle::after {
+  transform: rotate(180deg);
+}
+
+.tbw-navbar.scrolled {
+  background: #fff;
+  box-shadow: 0 8px 32px rgba(98, 54, 255, 0.18);
+  border-radius: 10em;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0.5em 1em;
+}
+.tbw-navbar.scrolled .nav-link,
+.tbw-navbar.scrolled .navbar-brand,
+.tbw-navbar.scrolled .tbw-search-icon {
+  color: #000000 !important;
+}
