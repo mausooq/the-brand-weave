@@ -23,7 +23,150 @@
     <link rel="stylesheet" href="navbar.css" />
   </head>
   <body>
-    <?php include 'navbar.php'; ?>
+    <!-- TBW Modern Navbar Start -->
+<nav class="navbar navbar-expand-lg sticky-top tbw-navbar py-3 shadow">
+  <div class="container">
+    <!-- Left: Logo and Brand -->
+    <a
+      class="navbar-brand d-flex align-items-center text-dark fw-bold"
+      href="#"
+    >
+      <img src="./assets/logo.png" alt="TBW Logo" width="60" class="me-2" />
+    </a>
+
+    <!-- Hamburger for mobile -->
+    <button
+      class="navbar-toggler text-dark border-0"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#tbwNavbar"
+      aria-controls="tbwNavbar"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="tbwNavbar">
+      <!-- Center: Menu Items with Dropdowns -->
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-3">
+        <!-- Home Dropdown -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle text-dark"
+            href="#"
+            id="homeDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Home
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-dark dropdown-fade"
+            aria-labelledby="homeDropdown"
+          >
+            <li><a class="dropdown-item" href="#">Home 1</a></li>
+            <li><a class="dropdown-item" href="#">Home 2</a></li>
+          </ul>
+        </li>
+        <!-- Portfolio Dropdown -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle text-dark"
+            href="#"
+            id="portfolioDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Portfolio
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-dark dropdown-fade"
+            aria-labelledby="portfolioDropdown"
+          >
+            <li><a class="dropdown-item" href="#">Portfolio 1</a></li>
+            <li><a class="dropdown-item" href="#">Portfolio 2</a></li>
+          </ul>
+        </li>
+        <!-- Service Dropdown -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle text-dark"
+            href="#"
+            id="serviceDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Service
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-dark dropdown-fade"
+            aria-labelledby="serviceDropdown"
+          >
+            <li><a class="dropdown-item" href="#">SEO</a></li>
+            <li><a class="dropdown-item" href="#">PPC</a></li>
+          </ul>
+        </li>
+        <!-- Pages Dropdown -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle text-dark"
+            href="#"
+            id="pagesDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Pages
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-dark dropdown-fade"
+            aria-labelledby="pagesDropdown"
+          >
+            <li><a class="dropdown-item" href="#">About</a></li>
+            <li><a class="dropdown-item" href="#">Team</a></li>
+          </ul>
+        </li>
+        <!-- Blogs Dropdown -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle text-dark"
+            href="#"
+            id="blogsDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Blogs
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-dark dropdown-fade"
+            aria-labelledby="blogsDropdown"
+          >
+            <li><a class="dropdown-item" href="#">Blog List</a></li>
+            <li><a class="dropdown-item" href="#">Blog Single</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- Right: Search Icon & Contact Button -->
+      <div class="d-flex align-items-center ms-lg-3 mt-3 mt-lg-0 gap-2">
+        <a
+          href="#"
+          class="text-dark fs-5 me-2 tbw-search-icon d-inline-flex align-items-center justify-content-center"
+        >
+          <i class="bi bi-search"></i>
+        </a>
+        <a href="#contact" class="btn btn-tbw-green fw-bold px-4 py-2">
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- TBW Modern Navbar End --> 
 
     <!-- Hero Section with Carousel -->
     <section
@@ -401,6 +544,57 @@
       </div>
     </section>
 
+    <!-- WHY US -->
+    <section class="py-5 bg-white">
+      <div class="container">
+        <div class="row align-items-start " style="min-height: 600px;">
+          <!-- Left: Text Content -->
+          <div class="col-lg-6 mt-5">
+            <h2 class="fw-bold" style="color: #122c24; font-size: 66px; line-height: 1.1; margin-bottom: 2rem;">
+              WHY WE ARE<br>YOUR BEST CHOICE
+            </h2>
+            <p class="text-muted mb-5" style="font-size: 1.15rem;">
+              We work in such a way that the dashboards provide easy-to-read charts, graphs, and summaries for executives or stakeholders. Through storytelling and value propositions, marketing can sway consumer choices.
+            </p>
+            <div class="mb-4 d-flex align-items-start">
+              <span class="me-3" style="font-size: 2rem; color: #122c24;">
+                <i class="bi bi-globe2"></i>
+              </span>
+              <div>
+                <div class="fw-bold" style="color: #122c24; font-size: 1.25rem;">RESEARCH</div>
+                <div class="text-muted mt-3" style="font-size: 1.1rem;">Up-to-date performance data so decisions <br> can be made quickly.</div>
+              </div>
+            </div>
+            <div class="mb-4 d-flex align-items-start">
+              <span class="me-3" style="font-size: 2rem; color: #122c24;">
+                <i class="bi bi-lightbulb"></i>
+              </span>
+              <div>
+                <div class="fw-bold" style="color: #122c24; font-size: 1.25rem;">GENERATE IDEA</div>
+                <div class="text-muted mt-3" style="font-size: 1.1rem;">A strong brand can differentiate a company <br> from its competitors and build loyalty.</div>
+              </div>
+            </div>
+            <div class="mb-4 d-flex align-items-start">
+              <span class="me-3" style="font-size: 2rem; color: #122c24;">
+                <i class="bi bi-stars"></i>
+              </span>
+              <div>
+                <div class="fw-bold" style="color: #122c24; font-size: 1.25rem;">ENGAGEMENT</div>
+                <div class="text-muted mt-3" style="font-size: 1.1rem;">Communication with consumers, building <br> trust and relationships through engagement.</div>
+              </div>
+            </div>
+          </div>
+          <!-- Right: Image -->
+          <div class="col-lg-6">
+            <img src="./assets/team_image.jpg"
+                 alt="Team Collaboration"
+                 class="img-fluid rounded-4 shadow"
+                 style="width: 100%; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Testimonials Section (Optional) -->
     <section id="testimonials" class="py-5">
       <div class="container">
@@ -491,53 +685,94 @@
     <p class="text-muted mb-5">
       We offer a complete range of digital marketing services to help your brand grow online.
     </p>
-
     <div class="row g-4">
       <!-- Blog Card 1 -->
       <div class="col-md-6">
-        <div class="border rounded h-100 d-flex align-items-center">
-          <div class="flex-grow-1">
-            <span class="badge bg-light text-dark mb-2">SEO</span>
-            <p class="text-muted small mb-1">• SEP 29, 2024 — 16MIN READ</p>
-            <h5 class="fw-bold">NIKZE: JUST DO IT - BUILDING A GLOBAL BRAND</h5>
-            <a href="#" class="text-dark fw-semibold mt-3 d-inline-block">READ NOW →</a>
+        <div class="blog-modern-card d-flex align-items-stretch h-100" style="background: #fff; box-shadow: 0 4px 24px rgba(18,44,36,0.07); border-radius: 1.5rem; overflow: hidden; min-height: 250px; transition: box-shadow 0.2s, transform 0.2s;">
+          <div style="flex: 0 0 60%; max-width: 60%;" class="p-4 d-flex flex-column justify-content-between">
+            <div>
+              <span class="badge bg-light text-dark mb-2" style="font-size: 0.95rem; font-weight: 600; letter-spacing: 0.05em;">SEO</span>
+              <p class="text-muted small mb-3" style="font-size: 0.95rem;">• SEP 29, 2024 — 16MIN READ</p>
+              <h5 class="fw-bold mb-3" style="font-size: 24px; color: #122c24; line-height: 1.33; letter-spacing: -.03rem; word-break: break-word; text-transform: uppercase;">
+                NIKZE: JUST DO IT - BUILDING A GLOBAL BRAND
+              </h5>
+            </div>
+            <a href="#" class="text-dark fw-semibold d-inline-flex align-items-center gap-2" style="font-size: 1.05rem; text-decoration: none; transition: color 0.2s;">
+              READ NOW <span style="font-size: 1.3em;">→</span>
+            </a>
           </div>
-          <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="Blog 1" class="rounded ms-4" style="width: 320px; height: 220px; object-fit: cover;">
+          <div style="flex: 0 0 40%; max-width: 40%; display: flex;">
+            <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80"
+                 alt="Blog 1"
+                 style="width: 100%; height: 100%; object-fit: cover; border-radius: 0 1.5rem 1.5rem 0;">
+          </div>
         </div>
       </div>
+      <!-- Blog Card 2 -->
       <div class="col-md-6">
-        <div class="border rounded h-100 d-flex align-items-center">
-          <div class="flex-grow-1">
-            <span class="badge bg-light text-dark mb-2">SEO</span>
-            <p class="text-muted small mb-1">• SEP 29, 2024 — 16MIN READ</p>
-            <h5 class="fw-bold">NIKZE: JUST DO IT - BUILDING A GLOBAL BRAND</h5>
-            <a href="#" class="text-dark fw-semibold mt-3 d-inline-block">READ NOW →</a>
+        <div class="blog-modern-card d-flex align-items-stretch h-100" style="background: #fff; box-shadow: 0 4px 24px rgba(18,44,36,0.07); border-radius: 1.5rem; overflow: hidden; min-height: 250px; transition: box-shadow 0.2s, transform 0.2s;">
+          <div style="flex: 0 0 60%; max-width: 60%;" class="p-4 d-flex flex-column justify-content-between">
+            <div>
+              <span class="badge bg-light text-dark mb-2" style="font-size: 0.95rem; font-weight: 600; letter-spacing: 0.05em;">BUSINESS</span>
+              <p class="text-muted small mb-3" style="font-size: 0.95rem;">• SEP 29, 2024 — 12MIN READ</p>
+              <h5 class="fw-bold mb-3" style="font-size: 24px; color: #122c24; line-height: 1.33; letter-spacing: -.03rem; word-break: break-word; text-transform: uppercase;">
+                MANIV DOE: BUILDING BRANDING AND LOGO
+              </h5>
+            </div>
+            <a href="#" class="text-dark fw-semibold d-inline-flex align-items-center gap-2" style="font-size: 1.05rem; text-decoration: none; transition: color 0.2s;">
+              READ NOW <span style="font-size: 1.3em;">→</span>
+            </a>
           </div>
-          <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="Blog 1" class="rounded ms-4" style="width: 320px; height: 220px; object-fit: cover;">
+          <div style="flex: 0 0 40%; max-width: 40%; display: flex;">
+            <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80"
+                 alt="Blog 2"
+                 style="width: 100%; height: 100%; object-fit: cover; border-radius: 0 1.5rem 1.5rem 0;">
+          </div>
         </div>
       </div>
+      <!-- Blog Card 3 -->
       <div class="col-md-6">
-        <div class="border rounded h-100 d-flex align-items-center">
-          <div class="flex-grow-1">
-            <span class="badge bg-light text-dark mb-2">SEO</span>
-            <p class="text-muted small mb-1">• SEP 29, 2024 — 16MIN READ</p>
-            <h5 class="fw-bold">NIKZE: JUST DO IT - BUILDING A GLOBAL BRAND</h5>
-            <a href="#" class="text-dark fw-semibold mt-3 d-inline-block">READ NOW →</a>
+        <div class="blog-modern-card d-flex align-items-stretch h-100" style="background: #fff; box-shadow: 0 4px 24px rgba(18,44,36,0.07); border-radius: 1.5rem; overflow: hidden; min-height: 250px; transition: box-shadow 0.2s, transform 0.2s;">
+          <div style="flex: 0 0 60%; max-width: 60%;" class="p-4 d-flex flex-column justify-content-between">
+            <div>
+              <span class="badge bg-light text-dark mb-2" style="font-size: 0.95rem; font-weight: 600; letter-spacing: 0.05em;">CONTENT</span>
+              <p class="text-muted small mb-3" style="font-size: 0.95rem;">• SEP 28, 2024 — 10MIN READ</p>
+              <h5 class="fw-bold mb-3" style="font-size: 24px; color: #122c24; line-height: 1.33; letter-spacing: -.03rem; word-break: break-word; text-transform: uppercase;">
+                THE POWER OF CONTENT MARKETING IN 2024
+              </h5>
+            </div>
+            <a href="#" class="text-dark fw-semibold d-inline-flex align-items-center gap-2" style="font-size: 1.05rem; text-decoration: none; transition: color 0.2s;">
+              READ NOW <span style="font-size: 1.3em;">→</span>
+            </a>
           </div>
-          <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="Blog 1" class="rounded ms-4" style="width: 320px; height: 220px; object-fit: cover;">
+          <div style="flex: 0 0 40%; max-width: 40%; display: flex;">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
+                 alt="Blog 3"
+                 style="width: 100%; height: 100%; object-fit: cover; border-radius: 0 1.5rem 1.5rem 0;">
+          </div>
         </div>
       </div>
+      <!-- Blog Card 4 -->
       <div class="col-md-6">
-        <div class="border rounded h-100 d-flex align-items-center">
-          <div class="flex-grow-1">
-            <span class="badge bg-light text-dark mb-2">SEO</span>
-            <p class="text-muted small mb-1">• SEP 29, 2024 — 16MIN READ</p>
-            <h5 class="fw-bold">NIKZE: JUST DO IT - BUILDING A GLOBAL BRAND</h5>
-            <a href="#" class="text-dark fw-semibold mt-3 d-inline-block">READ NOW →</a>
+        <div class="blog-modern-card d-flex align-items-stretch h-100" style="background: #fff; box-shadow: 0 4px 24px rgba(18,44,36,0.07); border-radius: 1.5rem; overflow: hidden; min-height: 250px; transition: box-shadow 0.2s, transform 0.2s;">
+          <div style="flex: 0 0 60%; max-width: 60%;" class="p-4 d-flex flex-column justify-content-between">
+            <div>
+              <span class="badge bg-light text-dark mb-2" style="font-size: 0.95rem; font-weight: 600; letter-spacing: 0.05em;">MEDIA</span>
+              <p class="text-muted small mb-3" style="font-size: 0.95rem;">• SEP 27, 2024 — 8MIN READ</p>
+              <h5 class="fw-bold mb-3" style="font-size: 24px; color: #122c24; line-height: 1.33; letter-spacing: -.03rem; word-break: break-word; text-transform: uppercase;">
+                SOCIAL MEDIA STRATEGIES FOR BRANDS
+              </h5>
+            </div>
+            <a href="#" class="text-dark fw-semibold d-inline-flex align-items-center gap-2" style="font-size: 1.05rem; text-decoration: none; transition: color 0.2s;">
+              READ NOW <span style="font-size: 1.3em;">→</span>
+            </a>
           </div>
-          <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="Blog 1" class="rounded ms-4" style="width: 320px; height: 220px; object-fit: cover;">
+          <div style="flex: 0 0 40%; max-width: 40%; display: flex;">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80"
+                 alt="Blog 4"
+                 style="width: 100%; height: 100%; object-fit: cover; border-radius: 0 1.5rem 1.5rem 0;">
+          </div>
         </div>
-      </div>
       </div>
     </div>
   </div>

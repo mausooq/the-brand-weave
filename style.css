@@ -863,3 +863,33 @@ body {
   min-height: 60vh;
   max-width: 90%;
 }
+
+.blog-modern-card {
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(18, 44, 36, 0.07);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  min-height: 250px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.blog-modern-card:hover {
+  box-shadow: 0 8px 32px rgba(18, 44, 36, 0.13);
+  transform: translateY(-4px) scale(1.02);
+}
+.blog-modern-card img {
+  border-radius: 0 1.5rem 1.5rem 0;
+  transition: transform 0.2s;
+}
+.blog-modern-card:hover img {
+  transform: scale(1.04);
+}
+
+/* Team image grayscale effect */
+.team-image {
+  filter: grayscale(100%);
+  transition: filter 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-image:hover {
+  filter: grayscale(0%);
+}

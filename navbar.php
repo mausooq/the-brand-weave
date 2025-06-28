@@ -6,7 +6,7 @@
       class="navbar-brand d-flex align-items-center text-dark fw-bold"
       href="#"
     >
-      <img src="/thebrandweave/assets/logo.png" alt="TBW Logo" width="60" class="me-2" />
+      <img src="../assets/logo.png" alt="TBW Logo" width="60" class="me-2" />
     </a>
 
     <!-- Hamburger for mobile -->
