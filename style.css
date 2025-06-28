@@ -891,5 +891,5 @@ body {
 }
 
 .team-image:hover {
-  filter: grayscale(0%);
+  filter: none;
 }
