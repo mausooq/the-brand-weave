@@ -1,0 +1,23 @@
+[
+    {
+      "icon": "bi-search",
+      "title": "Research",
+      "description": "Next, we conduct market research to analyze your competitors and trends."
+    },
+    {
+      "icon": "bi-lightbulb",
+      "title": "Generate Idea",
+      "description": "Based on our findings, we develop initial branding concepts We present"
+    },
+    {
+      "icon": "bi-globe2",
+      "title": "Discover",
+      "description": "We create a comprehensive brand guide that outlines consistency."
+    },
+    {
+      "icon": "bi-mouse",
+      "title": "Test Product",
+      "description": "We test all branding assets, including logos, graphics, and guidelines, ready for use."
+    }
+  ]
+  
