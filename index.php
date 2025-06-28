@@ -484,65 +484,73 @@
         </div>
       </div>
     </section>
-    <!-- Contact Section -->
-  <section class="work-together-section d-flex align-items-center">
-  <div class="container py-5">
-    <div class="row align-items-center">
-      <div class="col-md-7">
-        <span class="badge rounded-pill border border-white text-white px-4 py-2 mb-3 fw-semibold">
-          DISCOVER A PLACE YOU’LL LOVE TO LIVE
-        </span>
-        <h1 class="display-3 fw-bold text-white">LET’S WORK<br/>TOGETHER</h1>
+      <!-- Recent Blogs  -->
+<section class="py-5 bg-white">
+  <div class="container text-center">
+    <h2 class="fw-bold display-5" style="color: #122c24; font-size: 64px;">RECENT BLOG UPDATES</h2>
+    <p class="text-muted mb-5">
+      We offer a complete range of digital marketing services to help your brand grow online.
+    </p>
+
+    <div class="row g-4">
+      <!-- Blog Card 1 -->
+      <div class="col-md-6">
+        <div class="border rounded h-100 d-flex align-items-center">
+          <div class="flex-grow-1">
+            <span class="badge bg-light text-dark mb-2">SEO</span>
+            <p class="text-muted small mb-1">• SEP 29, 2024 — 16MIN READ</p>
+            <h5 class="fw-bold">NIKZE: JUST DO IT - BUILDING A GLOBAL BRAND</h5>
+            <a href="#" class="text-dark fw-semibold mt-3 d-inline-block">READ NOW →</a>
+          </div>
+          <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="Blog 1" class="rounded ms-4" style="width: 320px; height: 220px; object-fit: cover;">
+        </div>
       </div>
-      <div class="col-md-5 mt-4 mt-md-0">
-        <p class="text-white mb-4">
-          Creating a cohesive and memorable identity. Ipsum dolor sit consectetur.<br/>
-          Ut suspendisse nulla fringilla.
-        </p>
-        <a href="#" class="btn btn-light text-dark d-inline-flex align-items-center px-4 py-2 rounded-pill">
-          <i class="bi bi-telephone-fill me-2"></i> BOOK A CALL
-        </a>
+      <div class="col-md-6">
+        <div class="border rounded h-100 d-flex align-items-center">
+          <div class="flex-grow-1">
+            <span class="badge bg-light text-dark mb-2">SEO</span>
+            <p class="text-muted small mb-1">• SEP 29, 2024 — 16MIN READ</p>
+            <h5 class="fw-bold">NIKZE: JUST DO IT - BUILDING A GLOBAL BRAND</h5>
+            <a href="#" class="text-dark fw-semibold mt-3 d-inline-block">READ NOW →</a>
+          </div>
+          <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="Blog 1" class="rounded ms-4" style="width: 320px; height: 220px; object-fit: cover;">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="border rounded h-100 d-flex align-items-center">
+          <div class="flex-grow-1">
+            <span class="badge bg-light text-dark mb-2">SEO</span>
+            <p class="text-muted small mb-1">• SEP 29, 2024 — 16MIN READ</p>
+            <h5 class="fw-bold">NIKZE: JUST DO IT - BUILDING A GLOBAL BRAND</h5>
+            <a href="#" class="text-dark fw-semibold mt-3 d-inline-block">READ NOW →</a>
+          </div>
+          <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="Blog 1" class="rounded ms-4" style="width: 320px; height: 220px; object-fit: cover;">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="border rounded h-100 d-flex align-items-center">
+          <div class="flex-grow-1">
+            <span class="badge bg-light text-dark mb-2">SEO</span>
+            <p class="text-muted small mb-1">• SEP 29, 2024 — 16MIN READ</p>
+            <h5 class="fw-bold">NIKZE: JUST DO IT - BUILDING A GLOBAL BRAND</h5>
+            <a href="#" class="text-dark fw-semibold mt-3 d-inline-block">READ NOW →</a>
+          </div>
+          <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="Blog 1" class="rounded ms-4" style="width: 320px; height: 220px; object-fit: cover;">
+        </div>
+      </div>
       </div>
     </div>
   </div>
 </section>
 
+
+    <!-- Contact Section -->
+     
+
+    <?php include 'letsConnect.php'; ?>
+
     <!-- Footer -->
-    <footer class="footer py-4 mt-5">
-      <div
-        class="container d-flex flex-column flex-md-row justify-content-between align-items-center"
-      >
-        <div class="mb-3 mb-md-0">
-          &copy; 2024 The Brand Weave. All rights reserved.
-        </div>
-        <div>
-          <a href="#" class="me-2"
-            ><img
-              src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png"
-              alt="Facebook"
-              class="social-icon"
-          /></a>
-          <a href="#" class="me-2"
-            ><img
-              src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png"
-              alt="Twitter"
-              class="social-icon"
-          /></a>
-          <a href="#" class="me-2"
-            ><img
-              src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png"
-              alt="LinkedIn"
-              class="social-icon"
-          /></a>
-          <a href="#"
-            ><img
-              src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png"
-              alt="Instagram"
-              class="social-icon"
-          /></a>
-        </div>
-      </div>
-    </footer>
+    <?php include 'footer.php'; ?>
 
     <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
