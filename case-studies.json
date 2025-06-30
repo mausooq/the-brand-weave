@@ -1,0 +1,32 @@
+{
+  "caseStudies": [
+    {
+      "id": 1,
+      "title": "Elevation",
+      "description": "Revamped a real estate agency's digital presence with a clean, dynamic, and responsive website built for conversions.",
+      "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80",
+      "link": "#"
+    },
+    {
+      "id": 2,
+      "title": "Momentum",
+      "description": "Designed a modern, user-friendly platform for a creative agency to showcase their portfolio and attract new clients.",
+      "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80",
+      "link": "#"
+    },
+    {
+      "id": 3,
+      "title": "Visionary",
+      "description": "Crafted a sleek and professional site for a marketing agency to highlight their services and success stories.",
+      "image": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80",
+      "link": "#"
+    },
+    {
+      "id": 4,
+      "title": "Catalyst",
+      "description": "Developed a robust, SEO-optimized website for a consultancy agency to drive leads and establish authority in their niche.",
+      "image": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=600&q=80",
+      "link": "#"
+    }
+  ]
+}

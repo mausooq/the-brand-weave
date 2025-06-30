@@ -356,28 +356,28 @@
         <div class="client-logos-wrapper">
           <div class="d-flex align-items-center client-logos">
             <img
-              src="./assets/logo.png"
-              alt="Client Logo 1"
+              src="./assets/clients_logo/GD logo.jpg"
+              alt="GD Logo"
               class="client-logo"
             />
             <img
-              src="./assets/logo.png"
-              alt="Client Logo 2"
+              src="./assets/clients_logo/intlex_solutions.jpg"
+              alt="Intlex Solutions"
               class="client-logo"
             />
             <img
-              src="./assets/logo.png"
-              alt="Client Logo 3"
+              src="./assets/clients_logo/LEX JURIS LAW CHEMBER LOGO.png"
+              alt="Lex Juris Law Chamber Logo"
               class="client-logo"
             />
             <img
-              src="./assets/logo.png"
-              alt="Client Logo 4"
+              src="./assets/clients_logo/liyas.jpeg"
+              alt="Liyas Logo"
               class="client-logo"
             />
             <img
-              src="./assets/logo.png"
-              alt="Client Logo 5"
+              src="./assets/clients_logo/GD.jpg"
+              alt="GD"
               class="client-logo"
             />
           </div>
@@ -469,77 +469,62 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-5">
+    <section id="about" class="about-modern-section">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-6 mb-4 mb-lg-0">
-            <img
-              src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&w=600&q=80"
-              alt="About Us"
-              class="about-img w-100"
-            />
+          <!-- Left: Image with Modern Shape -->
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <div class="about-modern-img-wrap">
+              <img src="./assets/about_us.jpg" alt="About Us" class="about-modern-img" />
+              <div class="about-modern-img-bg-shape"></div>
+            </div>
           </div>
+          <!-- Right: Content -->
           <div class="col-lg-6">
-            <h2 class="fw-bold mb-3">About Our Agency</h2>
-            <p class="mb-3">
-              We are a passionate team of digital marketers, designers, and
-              strategists dedicated to helping businesses grow online. With
-              years of experience and a data-driven approach, we deliver
-              measurable results for our clients.
-            </p>
-            <ul class="list-unstyled mb-4">
-              <li class="mb-2">
-                <i class="bi bi-check-circle-fill text-primary me-2"></i>
-                Certified SEO & Marketing Experts
-              </li>
-              <li class="mb-2">
-                <i class="bi bi-check-circle-fill text-primary me-2"></i>
-                Transparent Reporting
-              </li>
-              <li class="mb-2">
-                <i class="bi bi-check-circle-fill text-primary me-2"></i> Proven
-                Track Record
-              </li>
-            </ul>
-            <a href="#portfolio" class="btn btn-outline-primary px-4"
-              >View Portfolio</a
-            >
+            <div class="about-modern-content">
+              <h2 class="about-modern-title mb-3">A Forward-Thinking Digital Agency Specializing in <span class="about-modern-highlight">Creative Solutions.</span></h2>
+              <p class="about-modern-desc mb-4">
+                We are a passionate team of digital marketers, designers, and strategists dedicated to helping businesses grow online. With years of experience and a data-driven approach, we deliver measurable results that elevate your brand.
+              </p>
+              <ul class="about-modern-values list-unstyled mb-4">
+                <li class="d-flex align-items-center mb-2">
+                  <span class="about-modern-icon"><i class="bi bi-patch-check-fill"></i></span>
+                  <span>Certified SEO & Marketing Experts</span>
+                </li>
+                <li class="d-flex align-items-center mb-2">
+                  <span class="about-modern-icon"><i class="bi bi-bar-chart-line-fill"></i></span>
+                  <span>Transparent & Actionable Reporting</span>
+                </li>
+                <li class="d-flex align-items-center">
+                  <span class="about-modern-icon"><i class="bi bi-trophy-fill"></i></span>
+                  <span>A Proven Track Record of Success</span>
+                </li>
+              </ul>
+              <a href="#portfolio" class="btn btn-tbw-green-modern">
+                View Portfolio
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="py-5 bg-light">
+    <!-- Case Studies Section -->
+    <section id="case-studies" class="py-5 case-studies-section">
       <div class="container">
-        <div class="text-center mb-5">
-          <h2 class="fw-bold">Our Projects</h2>
-          <p class="text-muted">
-            A showcase of our recent work and success stories.
+        <div class="mb-5">
+          <h2 class="fw-bold display-5 mt-5" style="color: #fff; font-size: 5rem; text-align: center;">WHAT WE BUILD</h2>
+          <p style="max-width: 600px; font-size: 0.8rem; text-align: center; color: #fff; margin: 0 auto;">
+            We create real results by capturing the essence of your brand.
           </p>
         </div>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <img
-              src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80"
-              alt="Project 1"
-              class="portfolio-img w-100"
-            />
-          </div>
-          <div class="col-md-4">
-            <img
-              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
-              alt="Project 2"
-              class="portfolio-img w-100"
-            />
-          </div>
-          <div class="col-md-4">
-            <img
-              src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80"
-              alt="Project 3"
-              class="portfolio-img w-100"
-            />
-          </div>
+        <div class="row g-4" id="caseStudiesGrid">
+          <!-- Case study cards will be loaded here dynamically -->
+        </div>
+        <div class="text-center mt-4">
+          <a href="#" class="btn btn-primary btn-lg px-5 py-3 all-case-study-btn" style="font-size: 1.15rem; border-radius: 2em; font-weight: 600; letter-spacing: 1px; background: #fff; color: #483aa0; border: none; box-shadow: 0 2px 8px rgba(72,58,160,0.10); transition: background 0.2s, color 0.2s;">
+            ALL CASE STUDY
+          </a>
         </div>
       </div>
     </section>
@@ -547,7 +532,7 @@
     <!-- WHY US -->
     <section class="py-5 bg-white">
       <div class="container">
-        <div class="row align-items-start " style="min-height: 600px;">
+        <div class="row align-items-start" style="min-height: 600px;">
           <!-- Left: Text Content -->
           <div class="col-lg-6 mt-5">
             <h2 class="fw-bold" style="color: #122c24; font-size: 66px; line-height: 1.1; margin-bottom: 2rem;">
@@ -582,7 +567,7 @@
                 <div class="fw-bold" style="color: #122c24; font-size: 1.25rem;">ENGAGEMENT</div>
                 <div class="text-muted mt-3" style="font-size: 1.1rem;">Communication with consumers, building <br> trust and relationships through engagement.</div>
               </div>
-            </div>
+          </div>
           </div>
           <!-- Right: Image -->
           <div class="col-lg-6">
@@ -595,88 +580,22 @@
       </div>
     </section>
 
-    <!-- Testimonials Section (Optional) -->
+    <!-- Testimonials Section -->
     <section id="testimonials" class="py-5">
       <div class="container">
         <div class="text-center mb-5">
-          <h2 class="fw-bold">What Our Clients Say</h2>
+          <h2 class="fw-bold display-1" style="text-transform: uppercase; letter-spacing: 2px; color: #22332e; font-size: 4rem;">WORDS OF OUR CLIENTS</h2>
+          <p class="lead text-muted mt-3" style="max-width: 800px; margin: 0 auto; font-size: 1rem;">
+            Effective marketing strategies attract and nurture potential customers,
+            moving them <br> through the sales funnel and converting them into buyers.
+          </p>
         </div>
-        <div
-          id="testimonialCarousel"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div
-                class="testimonial-card p-4 mx-auto"
-                style="max-width: 600px; background: #fff"
-              >
-                <p class="mb-3">
-                  "The Brand Weave helped us double our website traffic in just
-                  3 months. Highly recommended!"
-                </p>
-                <div class="d-flex align-items-center">
-                  <img
-                    src="https://randomuser.me/api/portraits/men/32.jpg"
-                    alt="Client 1"
-                    class="rounded-circle me-3"
-                    width="48"
-                  />
-                  <div>
-                    <strong>John D.</strong><br /><span class="text-muted small"
-                      >E-commerce Owner</span
-                    >
+        <div class="testimonials-container">
+          <div class="testimonials-track" id="testimonialsTrack">
+            <!-- Testimonials will be loaded here dynamically -->
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="carousel-item">
-              <div
-                class="testimonial-card p-4 mx-auto"
-                style="max-width: 600px; background: #fff"
-              >
-                <p class="mb-3">
-                  "Professional, creative, and results-driven. Our go-to agency
-                  for all things digital."
-                </p>
-                <div class="d-flex align-items-center">
-                  <img
-                    src="https://randomuser.me/api/portraits/women/44.jpg"
-                    alt="Client 2"
-                    class="rounded-circle me-3"
-                    width="48"
-                  />
-                  <div>
-                    <strong>Sarah K.</strong><br /><span
-                      class="text-muted small"
-                      >Startup Founder</span
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#testimonialCarousel"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#testimonialCarousel"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
     </section>
       <!-- Recent Blogs  -->
 <section class="py-5 bg-white">
@@ -705,9 +624,9 @@
             <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80"
                  alt="Blog 1"
                  style="width: 100%; height: 100%; object-fit: cover; border-radius: 0 1.5rem 1.5rem 0;">
-          </div>
-        </div>
-      </div>
+                  </div>
+                </div>
+              </div>
       <!-- Blog Card 2 -->
       <div class="col-md-6">
         <div class="blog-modern-card d-flex align-items-stretch h-100" style="background: #fff; box-shadow: 0 4px 24px rgba(18,44,36,0.07); border-radius: 1.5rem; overflow: hidden; min-height: 250px; transition: box-shadow 0.2s, transform 0.2s;">
@@ -740,7 +659,7 @@
               <h5 class="fw-bold mb-3" style="font-size: 24px; color: #122c24; line-height: 1.33; letter-spacing: -.03rem; word-break: break-word; text-transform: uppercase;">
                 THE POWER OF CONTENT MARKETING IN 2024
               </h5>
-            </div>
+        </div>
             <a href="#" class="text-dark fw-semibold d-inline-flex align-items-center gap-2" style="font-size: 1.05rem; text-decoration: none; transition: color 0.2s;">
               READ NOW <span style="font-size: 1.3em;">→</span>
             </a>
@@ -775,8 +694,8 @@
         </div>
       </div>
     </div>
-  </div>
-</section>
+      </div>
+    </section>
 
 
     <!-- Contact Section -->
@@ -840,9 +759,9 @@
     <!-- Copyright -->
     <div class=" text-muted small py-3">
       © 2025 – All rights reserved, Developed by <strong>Abdul Mausooq</strong> – Powered by <a href="#" class="text-decoration-none text-muted fw-semibold">THE BRAND WEAVE</a>
-    </div>
-  </div>
-</footer>
+        </div>
+      </div>
+    </footer>
 
 
     <!-- Bootstrap 5 JS -->
@@ -917,6 +836,110 @@
           card.classList.remove('active');
           if (lastHoveredCard === card) lastHoveredCard = null;
         });
+      });
+
+      document.addEventListener('DOMContentLoaded', function() {
+        // Load testimonials from JSON
+        fetch('./testimonials.json')
+          .then(response => response.json())
+          .then(data => {
+            const track = document.getElementById('testimonialsTrack');
+            const testimonials = data.testimonials;
+            
+            // Create duplicate testimonials for seamless loop
+            const allTestimonials = [...testimonials, ...testimonials];
+            
+            // Group testimonials into rows of 3
+            const rows = [];
+            for (let i = 0; i < allTestimonials.length; i += 3) {
+              const row = allTestimonials.slice(i, i + 3);
+              rows.push(row);
+            }
+            
+            // Create rows of testimonials
+            rows.forEach(row => {
+              const rowDiv = document.createElement('div');
+              rowDiv.className = 'testimonials-row';
+              
+              row.forEach(testimonial => {
+                const card = document.createElement('div');
+                card.className = 'testimonial-card';
+                card.innerHTML = `
+                  <img src="${testimonial.avatar}" alt="${testimonial.name}" class="rounded-circle" />
+                  <p>"${testimonial.quote}"</p>
+                  <div>
+                    <strong>${testimonial.name}</strong>
+                    <span class="text-muted small">${testimonial.role}</span>
+                  </div>
+                `;
+                rowDiv.appendChild(card);
+              });
+              
+              track.appendChild(rowDiv);
+            });
+            
+            // Adjust animation duration based on number of rows
+            const totalRows = rows.length;
+            const animationDuration = totalRows * 4; // 4 seconds per row
+            track.style.animationDuration = `${animationDuration}s`;
+          })
+          .catch(error => {
+            console.error('Error loading testimonials:', error);
+            // Fallback to static testimonials if JSON fails
+            const track = document.getElementById('testimonialsTrack');
+            track.innerHTML = `
+              <div class="testimonials-row">
+                <div class="testimonial-card">
+                  <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client 1" class="rounded-circle" />
+                  <p>"The Brand Weave helped us double our website traffic in just 3 months. Highly recommended!"</p>
+                  <div>
+                    <strong>John D.</strong>
+                    <span class="text-muted small">E-commerce Owner</span>
+                  </div>
+                </div>
+                <div class="testimonial-card">
+                  <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client 2" class="rounded-circle" />
+                  <p>"Professional, creative, and results-driven. Our go-to agency for all things digital."</p>
+                  <div>
+                    <strong>Sarah K.</strong>
+                    <span class="text-muted small">Startup Founder</span>
+                  </div>
+                </div>
+                <div class="testimonial-card">
+                  <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="Client 3" class="rounded-circle" />
+                  <p>"Their team is responsive, innovative, and always delivers on time. We love working with The Brand Weave!"</p>
+                  <div>
+                    <strong>Michael B.</strong>
+                    <span class="text-muted small">Marketing Director</span>
+                  </div>
+                </div>
+              </div>
+            `;
+          });
+      });
+
+      document.addEventListener('DOMContentLoaded', function() {
+        // Load case studies from JSON
+        fetch('./case-studies.json')
+          .then(response => response.json())
+          .then(data => {
+            const grid = document.getElementById('caseStudiesGrid');
+            data.caseStudies.forEach(cs => {
+              const col = document.createElement('div');
+              col.className = 'col';
+              col.innerHTML = `
+                <div class="case-study-card">
+                  <img src="${cs.image}" alt="${cs.title}" class="case-study-image" />
+                  <div class="case-study-content">
+                    <div class="case-study-title">${cs.title}</div>
+                    <div class="case-study-desc">${cs.description}</div>
+                    <a href="${cs.link}" class="case-study-btn">FULL CASE STUDY <i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              `;
+              grid.appendChild(col);
+            });
+          });
       });
     </script>
   </body>

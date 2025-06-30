@@ -1,0 +1,67 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "quote": "The Brand Weave helped us double our website traffic in just 3 months. Highly recommended!",
+      "name": "John D.",
+      "role": "E-commerce Owner",
+      "avatar": "https://randomuser.me/api/portraits/men/32.jpg"
+    },
+    {
+      "id": 2,
+      "quote": "Professional, creative, and results-driven. Our go-to agency for all things digital.",
+      "name": "Sarah K.",
+      "role": "Startup Founder",
+      "avatar": "https://randomuser.me/api/portraits/women/44.jpg"
+    },
+    {
+      "id": 3,
+      "quote": "Their team is responsive, innovative, and always delivers on time. We love working with The Brand Weave!",
+      "name": "Michael B.",
+      "role": "Marketing Director",
+      "avatar": "https://randomuser.me/api/portraits/men/85.jpg"
+    },
+    {
+      "id": 4,
+      "quote": "Outstanding results! Our conversion rates increased by 150% within the first quarter.",
+      "name": "Emily R.",
+      "role": "CEO",
+      "avatar": "https://randomuser.me/api/portraits/women/22.jpg"
+    },
+    {
+      "id": 5,
+      "quote": "The best digital marketing agency we've worked with. They truly understand our business needs.",
+      "name": "David L.",
+      "role": "Business Owner",
+      "avatar": "https://randomuser.me/api/portraits/men/67.jpg"
+    },
+    {
+      "id": 6,
+      "quote": "Exceptional service and amazing ROI. They transformed our online presence completely.",
+      "name": "Lisa M.",
+      "role": "Marketing Manager",
+      "avatar": "https://randomuser.me/api/portraits/women/89.jpg"
+    },
+    {
+      "id": 7,
+      "quote": "Strategic thinking and flawless execution. The Brand Weave exceeded all our expectations.",
+      "name": "Robert T.",
+      "role": "Operations Director",
+      "avatar": "https://randomuser.me/api/portraits/men/45.jpg"
+    },
+    {
+      "id": 8,
+      "quote": "They don't just deliver results, they build lasting partnerships. Highly professional team.",
+      "name": "Jennifer W.",
+      "role": "Brand Manager",
+      "avatar": "https://randomuser.me/api/portraits/women/33.jpg"
+    },
+    {
+      "id": 9,
+      "quote": "Incredible attention to detail and creative solutions. Our brand has never looked better.",
+      "name": "Thomas H.",
+      "role": "Creative Director",
+      "avatar": "https://randomuser.me/api/portraits/men/78.jpg"
+    }
+  ]
+}
