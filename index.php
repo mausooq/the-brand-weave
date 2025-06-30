@@ -19,11 +19,13 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="style.css" />
+ 
   </head>
   <body>
     <!-- TBW Modern Navbar Start -->
+   
 <nav class="navbar navbar-expand-lg sticky-top tbw-navbar py-3 shadow">
   <div class="container">
     <!-- Left: Logo and Brand -->
@@ -490,16 +492,16 @@
                 <li class="d-flex align-items-center mb-2">
                   <span class="about-modern-icon"><i class="bi bi-patch-check-fill"></i></span>
                   <span>Certified SEO & Marketing Experts</span>
-                </li>
+              </li>
                 <li class="d-flex align-items-center mb-2">
                   <span class="about-modern-icon"><i class="bi bi-bar-chart-line-fill"></i></span>
                   <span>Transparent & Actionable Reporting</span>
-                </li>
+              </li>
                 <li class="d-flex align-items-center">
                   <span class="about-modern-icon"><i class="bi bi-trophy-fill"></i></span>
                   <span>A Proven Track Record of Success</span>
-                </li>
-              </ul>
+              </li>
+            </ul>
               <a href="#portfolio" class="btn btn-tbw-green-modern">
                 View Portfolio
               </a>
@@ -939,7 +941,7 @@
               `;
               grid.appendChild(col);
             });
-          });
+        });
       });
     </script>
   </body>
