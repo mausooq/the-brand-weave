@@ -103,3 +103,77 @@
 .tbw-navbar.scrolled .tbw-search-icon {
   color: #000000 !important;
 }
+
+/* Overlay for mobile menu */
+.tbw-mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 9999;
+  display: none;
+  flex-direction: column;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  animation: fadeInMenu 0.25s;
+}
+.tbw-mobile-menu.active {
+  display: flex;
+}
+@keyframes fadeInMenu {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.tbw-mobile-menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+.tbw-mobile-logo {
+  height: 32px;
+}
+.tbw-mobile-close {
+  font-size: 2rem;
+  color: #222;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+.tbw-mobile-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.tbw-mobile-nav li {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #222;
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.tbw-mobile-nav li:last-child {
+  margin-bottom: 0;
+}
+.tbw-mobile-nav li .arrow {
+  font-size: 1.2em;
+  color: #888;
+  margin-left: 0.5em;
+}
+.tbw-mobile-nav li:hover {
+  color: #483aa0;
+}

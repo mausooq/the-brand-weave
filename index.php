@@ -50,107 +50,22 @@
     </button>
 
     <div class="collapse navbar-collapse" id="tbwNavbar">
-      <!-- Center: Menu Items with Dropdowns -->
+      <!-- Center: Menu Items (No Dropdowns) -->
       <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-3">
-        <!-- Home Dropdown -->
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle text-dark"
-            href="#"
-            id="homeDropdown"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Home
-          </a>
-          <ul
-            class="dropdown-menu dropdown-menu-dark dropdown-fade"
-            aria-labelledby="homeDropdown"
-          >
-            <li><a class="dropdown-item" href="#">Home 1</a></li>
-            <li><a class="dropdown-item" href="#">Home 2</a></li>
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#">Home</a>
         </li>
-        <!-- Portfolio Dropdown -->
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle text-dark"
-            href="#"
-            id="portfolioDropdown"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Portfolio
-          </a>
-          <ul
-            class="dropdown-menu dropdown-menu-dark dropdown-fade"
-            aria-labelledby="portfolioDropdown"
-          >
-            <li><a class="dropdown-item" href="#">Portfolio 1</a></li>
-            <li><a class="dropdown-item" href="#">Portfolio 2</a></li>
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#portfolio">Portfolio</a>
         </li>
-        <!-- Service Dropdown -->
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle text-dark"
-            href="#"
-            id="serviceDropdown"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Service
-          </a>
-          <ul
-            class="dropdown-menu dropdown-menu-dark dropdown-fade"
-            aria-labelledby="serviceDropdown"
-          >
-            <li><a class="dropdown-item" href="#">SEO</a></li>
-            <li><a class="dropdown-item" href="#">PPC</a></li>
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#services">Service</a>
         </li>
-        <!-- Pages Dropdown -->
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle text-dark"
-            href="#"
-            id="pagesDropdown"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Pages
-          </a>
-          <ul
-            class="dropdown-menu dropdown-menu-dark dropdown-fade"
-            aria-labelledby="pagesDropdown"
-          >
-            <li><a class="dropdown-item" href="#">About</a></li>
-            <li><a class="dropdown-item" href="#">Team</a></li>
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#about">Pages</a>
         </li>
-        <!-- Blogs Dropdown -->
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle text-dark"
-            href="#"
-            id="blogsDropdown"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Blogs
-          </a>
-          <ul
-            class="dropdown-menu dropdown-menu-dark dropdown-fade"
-            aria-labelledby="blogsDropdown"
-          >
-            <li><a class="dropdown-item" href="#">Blog List</a></li>
-            <li><a class="dropdown-item" href="#">Blog Single</a></li>
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#blogs">Blogs</a>
         </li>
       </ul>
       <!-- Right: Search Icon & Contact Button -->
@@ -496,11 +411,11 @@
                 <li class="d-flex align-items-center mb-2">
                   <span class="about-modern-icon"><i class="bi bi-bar-chart-line-fill"></i></span>
                   <span>Transparent & Actionable Reporting</span>
-              </li>
+                </li>
                 <li class="d-flex align-items-center">
                   <span class="about-modern-icon"><i class="bi bi-trophy-fill"></i></span>
                   <span>A Proven Track Record of Success</span>
-              </li>
+                </li>
             </ul>
               <a href="#portfolio" class="btn btn-tbw-green-modern">
                 View Portfolio
