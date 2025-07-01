@@ -235,6 +235,56 @@ textarea {
   .about-img {
     margin-bottom: 2rem;
   }
+  /* Modern mobile layout for service cards */
+  .service-card {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    padding: 1.2rem 0.7rem !important;
+    min-height: unset;
+    border-radius: 1.2rem !important;
+    box-shadow: 0 4px 16px rgba(98, 54, 255, 0.1);
+    margin-bottom: 1.5rem;
+  }
+  .service-card-image {
+    position: static !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    height: 180px !important;
+    margin-bottom: 1rem;
+    border-radius: 1.2rem 1.2rem 0 0 !important;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .service-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.2rem 1.2rem 0 0 !important;
+  }
+  .service-card-content {
+    margin-left: 0 !important;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem 0.2rem;
+  }
+  .service-title,
+  .service-subtitle {
+    text-align: center !important;
+    margin-left: 0 !important;
+  }
+  .service-card-arrow {
+    display: none !important;
+  }
+  .service-card-arrow-overlay {
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+  }
+  .row-2 .col-12 {
+    margin-bottom: 1.5rem !important;
+  }
 }
 
 /* Use Outfit font everywhere */
@@ -477,6 +527,24 @@ body {
   }
   .hero-img-wrapper img {
     max-width: 90vw;
+  }
+  /* Responsive hero buttons */
+  .hero-section .mt-auto.pt-4 {
+    display: flex !important;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+  }
+  .hero-section .mt-auto.pt-4 a {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 1rem 0;
+  }
+  .hero-fixed-buttons {
+    display: none !important;
   }
 }
 
@@ -1305,5 +1373,111 @@ body {
   }
   .about-modern-title {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* Modern mobile layout for case studies */
+  .case-studies-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-radius: 0;
+    margin-bottom: 2rem;
+  }
+  .case-studies-section h2 {
+    font-size: 2.2rem !important;
+    padding-top: 1.2rem;
+    padding-bottom: 0.7rem;
+    text-align: center;
+  }
+  .case-studies-section p {
+    font-size: 1rem !important;
+    padding-bottom: 1.2rem;
+    text-align: center;
+  }
+  #caseStudiesGrid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1.2rem !important;
+    margin-bottom: 1.2rem;
+  }
+  #caseStudiesGrid .col {
+    width: 100% !important;
+    padding: 0 !important;
+    margin-bottom: 1.2rem !important;
+    display: flex;
+    justify-content: center;
+  }
+  .case-study-card {
+    flex-direction: column !important;
+    max-width: 100% !important;
+    min-height: 0;
+    height: auto;
+    border-radius: 1.2rem !important;
+    box-shadow: 0 4px 16px rgba(18, 44, 36, 0.13);
+    margin: 0 auto;
+    overflow: visible;
+    position: relative;
+    padding-top: 2.5rem;
+  }
+  .case-study-image {
+    position: absolute;
+    top: -40px;
+    left: 24px;
+    width: 80px !important;
+    height: 80px !important;
+    border-radius: 50% !important;
+    object-fit: cover;
+    box-shadow: 0 2px 12px rgba(18, 44, 36, 0.1);
+    border: 4px solid #fff;
+    background: #fff;
+    z-index: 2;
+  }
+  .case-study-content {
+    padding: 1.5rem 0.7rem 0.7rem 0.7rem !important;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .case-study-title {
+    font-size: 1.3rem !important;
+    margin-bottom: 0.4rem;
+    margin-top: 0.5rem;
+  }
+  .case-study-desc {
+    font-size: 1rem !important;
+    margin-bottom: 1.2rem;
+  }
+  .case-study-btn {
+    align-self: center !important;
+    font-size: 1rem !important;
+    padding: 0.5em 1.5em !important;
+    border-radius: 2em !important;
+    margin-top: 0.5rem;
+  }
+  .all-case-study-btn {
+    width: 100%;
+    font-size: 1.1rem !important;
+    padding: 1rem 0 !important;
+    border-radius: 2em !important;
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+}
+
+@media (max-width: 399.98px) {
+  .work-together-section .badge {
+    font-size: 0.82rem !important;
+    padding: 0.5rem 0.5rem !important;
+    white-space: normal !important;
+    text-align: center !important;
+    display: inline-block;
+    line-height: 1.2;
+    width: 100%;
+    max-width: 220px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

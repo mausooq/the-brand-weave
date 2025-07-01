@@ -326,7 +326,6 @@
                 <h3 class="fw-bold mb-2 service-title">SEO MARKETING</h3>
                 <p class="text-muted mb-0 service-subtitle">Identifying and targeting the right keywords<br>that are relevant to your business.</p>
               </div>
-              <span class="service-card-arrow ms-auto"><i class="bi bi-arrow-right"></i></span>
               <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
                 <img src="./assets/SEO_marketing.jpg" alt="Service" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
                 <span class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></span>
@@ -342,7 +341,6 @@
                 <h3 class="fw-bold mb-2 service-title">MEDIA MARKETING</h3>
                 <p class="text-muted mb-0 service-subtitle">Social media marketing is about building<br>relationships through engagement.</p>
               </div>
-              <span class="service-card-arrow ms-auto"><i class="bi bi-arrow-right"></i></span>
               <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
                 <img src="./assets/media_marketing.png" alt="Service" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
                 <span class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></span>
@@ -358,7 +356,6 @@
                 <h3 class="fw-bold mb-2 service-title">CONTENT MARKETING</h3>
                 <p class="text-muted mb-0 service-subtitle">Engage your audience and drive conversions<br>with high-quality, targeted content campaigns.</p>
               </div>
-              <span class="service-card-arrow ms-auto"><i class="bi bi-arrow-right"></i></span>
               <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
                 <img src="./assets/content_marketing.jpg" alt="Service" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
                 <span class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></span>
@@ -374,7 +371,6 @@
                 <h3 class="fw-bold mb-2 service-title">BRANDING & DESIGN</h3>
                 <p class="text-muted mb-0 service-subtitle">Build a memorable brand identity<br>with our creative design and branding solutions.</p>
               </div>
-              <span class="service-card-arrow ms-auto"><i class="bi bi-arrow-right"></i></span>
               <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
                 <img src="./assets/Brand_desgining.png" alt="Service" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
                 <span class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></span>
