@@ -1,460 +1,538 @@
 <?php
-$blogs = json_decode(file_get_contents(__DIR__ . '/blogs.json'), true);
-$slug = $_GET['post'] ?? '';
-$blog = null;
-foreach ($blogs as $b) {
-  if ($b['slug'] === $slug) {
-    $blog = $b;
-    break;
-  }
-}
-if (!$blog) {
-  echo '<h1>404 - Blog Post Not Found</h1>';
-  exit;
+// Load content from JSON file
+$contentFile = 'content.json';
+if (file_exists($contentFile)) {
+    $content = json_decode(file_get_contents($contentFile), true);
+} else {
+    // Fallback content if JSON file doesn't exist
+    $content = [
+        "page_title" => "Media Marketing Services",
+        "hero" => [
+            "title" => "Media Marketing",
+            "subtitle" => "Amplify Your Brand's Voice Across Digital Platforms",
+            "description" => "Strategic media marketing solutions that build brand awareness, foster relationships, and drive business growth through comprehensive digital engagement."
+        ],
+        "stats" => [
+            ["number" => "50+", "label" => "Regular Clients"],
+            ["number" => "127", "label" => "Projects Completed"],
+            ["number" => "98%", "label" => "Success Rate"],
+            ["number" => "24/7", "label" => "Support"]
+        ],
+        "services" => [
+            [
+                "title" => "Social Media Management",
+                "description" => "Each social platform, from Instagram and Facebook to TikTok and LinkedIn, caters to different demographics. Effective media marketing tailors content to the strengths of each platform and its audience.",
+                "features" => ["Platform-specific content", "Audience engagement", "Community building", "Performance analytics"]
+            ],
+            [
+                "title" => "Content Creation & Distribution",
+                "description" => "Blogs, videos, infographics, and podcasts are crafted to inform, entertain, and inspire the audience. The content is distributed through various media channels to establish authority.",
+                "features" => ["Blog writing", "Video production", "Infographic design", "Podcast creation"]
+            ],
+            [
+                "title" => "SEO & Keywords Optimization",
+                "description" => "Optimizing content for search engines ensures it ranks higher on Google and other platforms, driving organic traffic to your brand's website or social profiles.",
+                "features" => ["Keyword research", "On-page SEO", "Content optimization", "Ranking improvement"]
+            ],
+            [
+                "title" => "Influencer Partnerships",
+                "description" => "Media marketing includes collaborating with influencers who can authentically promote your brand to their audience, adding credibility and expanding reach.",
+                "features" => ["Micro-influencers", "Macro-influencers", "Campaign management", "ROI tracking"]
+            ]
+        ],
+        "benefits" => [
+            "Reach wider and more diverse audiences across multiple channels",
+            "Higher ROI compared to traditional media with tailored approaches", 
+            "Immediate audience interaction and real-time feedback",
+            "Advanced targeting ensures precise audience reach"
+        ],
+        "cta" => [
+            "title" => "Ready to Amplify Your Brand?",
+            "description" => "In a world dominated by digital engagement, media marketing is essential for building brand awareness, fostering relationships, and driving business growth.",
+            "button_text" => "Get Started Today"
+        ]
+    ];
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?= htmlspecialchars($blog['title']) ?> | The Brand Weave</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Figtree:wght@700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../navbar.css" />
-  <link rel="stylesheet" href="../style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
-  <style>
-    body {
-      background: #ffffff;
-      color: #1a1a1a;
-      font-family: 'Manrope', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
-    
-    .main-wrapper {
-      max-width: 1008px;
-      margin: 0 auto;
-      padding: 40px 0 0 0;
-      background: #fff;
-    }
-    
-    .cover-image {
-      display: block;
-      width: 1008px;
-      height: 460px;
-      object-fit: cover;
-      border-radius: 18px;
-      margin: 12px auto 32px auto;
-    }
-    
-    .meta-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 12px;
-      padding: 0 4px;
-    }
-    
-    .category-badge {
-      display: inline-block;
-      background: #f5f7fa;
-      color: #3a4a5b;
-      padding: 8px 24px;
-      border-radius: 24px;
-      font-size: 1.1rem;
-      font-weight: 500;
-      letter-spacing: 0.04em;
-      border: 1px solid #e0e6ed;
-      text-transform: uppercase;
-    }
-    
-    .post-meta {
-      color: #6b7a89;
-      font-size: 1.1rem;
-      font-weight: 500;
-      letter-spacing: 0.04em;
-    }
-    
-    .post-content {
-      max-width: 1008px;
-      margin: 0 auto;
-      font-size: 1.18rem;
-      color: #2a2a2a;
-      line-height: 1.7;
-      padding: 0 4px 60px 4px;
-    }
-    
-    .post-content h2, .post-content h3, .post-content h5 {
-      font-family: 'Figtree', sans-serif;
-      font-size: 24px;
-      color: #122C24;
-      margin: 0 0 10px 0;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.01em;
-    }
-    
-    .post-content h3 {
-      font-size: 1.5rem;
-      margin: 40px 0 16px 0;
-    }
-    
-    .post-content p {
-      font-family: 'Manrope', sans-serif;
-      font-size: 16px;
-      color: #6F7B80;
-      font-weight: 500;
-      margin: 0 0 40px 0;
-      line-height: 1.5;
-    }
-    
-    .post-content blockquote {
-      font-family: 'Manrope', sans-serif;
-      font-size: 18px;
-      color: #6F7B80;
-      font-style: italic;
-      font-weight: 500;
-      margin: 40px 0;
-      border-left: 4px solid #06BCC1;
-      padding: 1.5rem 2rem;
-      background: linear-gradient(135deg, #F4F8FC 0%, #E8F4F8 100%);
-      border-radius: 0 8px 8px 0;
-      box-shadow: 0 4px 16px rgba(6, 188, 193, 0.1);
-      text-align: left;
-      position: relative;
-    }
-    
-    .post-content blockquote::before {
-      content: '"';
-      font-size: 4rem;
-      color: #06BCC1;
-      position: absolute;
-      top: -10px;
-      left: 10px;
-      font-family: Georgia, serif;
-      opacity: 0.3;
-    }
-    
-    @media (max-width: 1100px) {
-      .main-wrapper, .cover-image, .post-content {
-        max-width: 100vw;
-        width: 100vw;
-      }
-      .cover-image {
-        width: 100vw;
-        min-width: 0;
-      }
-    }
-    @media (max-width: 1024px) {
-      .main-wrapper, .cover-image, .post-content {
-        max-width: 100vw;
-        width: 100vw;
-      }
-      .cover-image {
-        width: 100vw;
-        min-width: 0;
-      }
-    }
-    
-    @media (max-width: 1050px) {
-      .main-wrapper, .cover-image, .post-content {
-        max-width: 100vw;
-        width: 100vw;
-      }
-      .cover-image {
-        width: 100vw;
-        min-width: 0;
-      }
-    }
-    
-    @media (max-width: 1020px) {
-      .main-wrapper, .cover-image, .post-content {
-        max-width: 100vw;
-        width: 100vw;
-      }
-      .cover-image {
-        width: 100vw;
-        min-width: 0;
-        height: 40vw;
-        max-height: 460px;
-      }
-    }
-    
-    @media (max-width: 700px) {
-      .main-wrapper, .cover-image, .post-content {
-        max-width: 100vw;
-        width: 100vw;
-      }
-      .cover-image {
-        width: 100vw;
-        min-width: 0;
-        height: 40vw;
-        max-height: 320px;
-      }
-      .meta-row {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-      }
-      .post-content h2, .post-content h3 {
-        font-size: 1.3rem;
-        margin: 32px 0 12px 0;
-      }
-      .post-content p {
-        font-size: 1rem;
-      }
-    }
-    
-    .blog-title {
-      text-align: center;
-      font-family: 'Figtree', sans-serif;
-      font-size: 2rem;
-      font-weight: 800;
-      color: #122C24;
-      text-transform: uppercase;
-      margin: 0 0 40px 0;
-      letter-spacing: 0.01em;
-    }
-    .author-block {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 20px;
-      margin-bottom: 48px;
-    }
-    .author-avatar {
-      width: 64px;
-      height: 64px;
-      border-radius: 50%;
-      object-fit: cover;
-      background: #f5f7fa;
-      border: 2px solid #e0e6ed;
-    }
-    .author-info {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    .author-name {
-      font-family: 'Figtree', sans-serif;
-      font-size: 20px;
-      font-weight: 700;
-      color: #122C24;
-      margin-bottom: 2px;
-      text-transform: uppercase;
-    }
-    .author-role {
-      font-family: 'Manrope', sans-serif;
-      font-size: 16px;
-      color: #6F7B80;
-      font-weight: 500;
-      text-transform: uppercase;
-      letter-spacing: 0.01em;
-    }
-    @media (max-width: 700px) {
-      .blog-title {
-        font-size: 1.2rem;
-        margin-bottom: 24px;
-      }
-      .author-block {
-        gap: 10px;
-        margin-bottom: 24px;
-      }
-      .author-avatar {
-        width: 40px;
-        height: 40px;
-      }
-      .author-name {
-        font-size: 1rem;
-      }
-      .author-role {
-        font-size: 0.85rem;
-      }
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php echo htmlspecialchars($content['page_title']); ?></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    .more-blogs-section {
-      max-width: 1008px;
-      margin: 0 auto 60px auto;
-      padding: 0 4px;
-    }
-    .more-blogs-title {
-      font-family: 'Figtree', sans-serif;
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: #122C24;
-      text-transform: uppercase;
-      margin: 0 0 32px 0;
-      letter-spacing: 0.01em;
-      text-align: left;
-    }
-    .more-blogs-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2rem;
-    }
-    .more-blog-card {
-      background: #F8F9FA;
-      border-radius: 16px;
-      box-shadow: 0 2px 8px rgba(18,44,36,0.04);
-      padding: 20px 18px 24px 18px;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      transition: box-shadow 0.2s;
-      min-height: 420px;
-    }
-    .more-blog-card:hover {
-      box-shadow: 0 8px 32px rgba(18,44,36,0.10);
-    }
-    .more-blog-img {
-      width: 100%;
-      height: 160px;
-      object-fit: cover;
-      border-radius: 12px;
-      margin-bottom: 18px;
-    }
-    .more-blog-meta-row {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 10px;
-    }
-    .more-blog-date {
-      color: #6F7B80;
-      font-size: 0.95rem;
-      font-family: 'Manrope', sans-serif;
-      font-weight: 500;
-    }
-    .more-blog-title-link {
-      text-decoration: none;
-    }
-    .more-blog-title {
-      font-family: 'Figtree', sans-serif;
-      font-size: 1.1rem;
-      font-weight: 800;
-      color: #122C24;
-      margin-bottom: 10px;
-      text-transform: uppercase;
-      line-height: 1.2;
-    }
-    .more-blog-excerpt {
-      font-family: 'Manrope', sans-serif;
-      font-size: 15px;
-      color: #6F7B80;
-      margin-bottom: 18px;
-      line-height: 1.5;
-    }
-    .more-blog-read-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      color: #122C24;
-      font-family: 'Figtree', sans-serif;
-      font-size: 1rem;
-      font-weight: 700;
-      text-decoration: none;
-      text-transform: uppercase;
-      margin-top: auto;
-      transition: color 0.2s;
-    }
-    .more-blog-read-btn:hover {
-      color: #06BCC1;
-    }
-    .arrow {
-      font-size: 1.1em;
-      margin-left: 2px;
-    }
-    @media (max-width: 900px) {
-      .more-blogs-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-      }
-      .more-blog-card {
-        min-height: unset;
-      }
-    }
-  </style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #6366f1;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #6366f1;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20"><defs><radialGradient id="a" cx="50%" cy="0%"><stop offset="0%" stop-color="rgba(255,255,255,0.1)"/><stop offset="100%" stop-color="rgba(255,255,255,0)"/></radialGradient></defs><rect width="100%" height="100%" fill="url(%23a)"/></svg>');
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            animation: slideInUp 0.8s ease-out;
+        }
+
+        .hero .subtitle {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 1.5rem;
+            animation: slideInUp 0.8s ease-out 0.2s both;
+        }
+
+        .hero .description {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+            animation: slideInUp 0.8s ease-out 0.4s both;
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Stats Section */
+        .stats {
+            background: white;
+            padding: 60px 0;
+            box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .stat-item {
+            padding: 2rem;
+            border-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .stat-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #6366f1;
+            margin-bottom: 0.5rem;
+            animation: countUp 2s ease-out;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            color: #666;
+            font-weight: 500;
+        }
+
+        @keyframes countUp {
+            from { opacity: 0; transform: scale(0.5); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        /* Services Section */
+        .services {
+            padding: 100px 0;
+            background: #f8fafc;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 3rem;
+            color: #1e293b;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #6366f1, #8b5cf6);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #1e293b;
+        }
+
+        .service-card p {
+            color: #64748b;
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .service-features {
+            list-style: none;
+        }
+
+        .service-features li {
+            padding: 0.5rem 0;
+            color: #475569;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .service-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #10b981;
+            font-weight: bold;
+        }
+
+        /* Benefits Section */
+        .benefits {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+            color: white;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .benefit-item {
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .benefit-item:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-5px);
+        }
+
+        /* CTA Section */
+        .cta {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .cta p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: white;
+            color: #6366f1;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero .subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .services-grid,
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Scroll animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <?php include '../navbar.php'; ?>
-    <div class="main-wrapper">
-      <h1 class="blog-title"><?= htmlspecialchars($blog['title']) ?></h1>
-      <div class="author-block">
-        <img src="<?= htmlspecialchars($blog['author_avatar'] ?? 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=120&q=80') ?>" alt="Author Avatar" class="author-avatar">
-        <div class="author-info">
-          <div class="author-name"><?= htmlspecialchars($blog['author']) ?></div>
-          <div class="author-role"><?= htmlspecialchars($blog['author_role']) ?></div>
-        </div>
-      </div>
-      <img src="<?= htmlspecialchars($blog['image']) ?>" alt="Cover Image" class="cover-image">
-      <div class="meta-row">
-        <span class="category-badge"><?= htmlspecialchars($blog['category']) ?></span>
-        <span class="post-meta">
-          <span><?= htmlspecialchars($blog['date']) ?> &mdash; <?= htmlspecialchars($blog['read_time']) ?></span>
-        </span>
-      </div>
-      <div class="post-content">
-        <?= $blog['content'] ?>
-      </div>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="logo">Greeko</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-      <!-- More Blog Updates Section -->
-      <div style="max-width: 1200px; margin: 0 auto 60px auto;">
-        <h1 style="text-align: center; font-family: 'Figtree', sans-serif; font-size: 4rem; font-weight: 800; color: #122C24; text-transform: uppercase; margin: 0 0 18px 0; letter-spacing: 0.01em;">
-          MORE BLOG UPDATES
-        </h1>
-        <div style="text-align: center; color: #6F7B80; font-size: 1.5rem; font-family: 'Manrope', sans-serif; margin-bottom: 60px;">
-          We offer a comprehensive range of plumbing services to meet.
-        </div>
-        <?php
-        $count = 0;
-        foreach ($blogs as $b) {
-          // Don't show the current blog
-          if ($b['slug'] === $blog['slug']) continue;
-          if ($count >= 3) break;
-        ?>
-        <div style="
-          display: flex;
-          align-items: center;
-          background: #fff;
-          border-radius: 28px;
-          box-shadow: none;
-          border: 1.5px solid #e6ecef;
-          padding: 48px 36px;
-          max-width: 100%;
-          min-height: 260px;
-          margin: 0 auto 40px auto;
-          gap: 36px;
-        ">
-          <!-- Left: Blog Info -->
-          <div style="flex: 1; min-width: 0;">
-            <span class="category-badge" style="margin-bottom: 18px; display: inline-block;"><?= htmlspecialchars($b['category']) ?></span>
-            <div class="post-meta" style="margin-bottom: 18px; display: flex; align-items: center; gap: 8px;">
-              <span style="font-size: 1.2rem;">•</span>
-              <span><?= htmlspecialchars($b['date']) ?> &mdash; <?= htmlspecialchars($b['read_time']) ?></span>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1><?php echo htmlspecialchars($content['hero']['title']); ?></h1>
+                <p class="subtitle"><?php echo htmlspecialchars($content['hero']['subtitle']); ?></p>
+                <p class="description"><?php echo htmlspecialchars($content['hero']['description']); ?></p>
             </div>
-            <div style="font-family: 'Figtree', sans-serif; font-size: 2.2rem; font-weight: 800; color: #122C24; text-transform: uppercase; margin-bottom: 18px; letter-spacing: 0.01em; line-height: 1.1;">
-              <?= htmlspecialchars($b['title']) ?>
-            </div>
-            <a href="view.php?post=<?= htmlspecialchars($b['slug']) ?>" style="font-family: 'Figtree', sans-serif; font-size: 1.3rem; font-weight: 700; color: #122C24; text-decoration: none; text-transform: uppercase; display: inline-flex; align-items: center; gap: 10px; margin-top: 18px;">
-              READ NOW <span style="font-size: 1.5em;">→</span>
-            </a>
-          </div>
-          <!-- Right: Blog Image -->
-          <div style="flex: 0 0 420px; display: flex; align-items: center; justify-content: center;">
-            <a href="view.php?post=<?= htmlspecialchars($b['slug']) ?>">
-              <img src="<?= htmlspecialchars($b['image']) ?>" alt="<?= htmlspecialchars($b['title']) ?>" style="width: 420px; height: 260px; object-fit: cover; border-radius: 16px; border: 1.5px solid #e6ecef;">
-            </a>
-          </div>
         </div>
-        <?php $count++; } ?>
-      </div>
-      <!-- End More Blog Updates Section -->
-    </div>
-    <?php include '../letsConnect.php'; ?>
-    <?php include '../footer.php'; ?>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <?php foreach ($content['stats'] as $stat): ?>
+                <div class="stat-item fade-in">
+                    <div class="stat-number"><?php echo htmlspecialchars($stat['number']); ?></div>
+                    <div class="stat-label"><?php echo htmlspecialchars($stat['label']); ?></div>
+                </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title fade-in">Our Services</h2>
+            <div class="services-grid">
+                <?php foreach ($content['services'] as $service): ?>
+                <div class="service-card fade-in">
+                    <h3><?php echo htmlspecialchars($service['title']); ?></h3>
+                    <p><?php echo htmlspecialchars($service['description']); ?></p>
+                    <ul class="service-features">
+                        <?php foreach ($service['features'] as $feature): ?>
+                        <li><?php echo htmlspecialchars($feature); ?></li>
+                        <?php endforeach; ?>
+                    </ul>
+                </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <h2 class="section-title fade-in">Why Choose Our Media Marketing?</h2>
+            <div class="benefits-grid">
+                <?php foreach ($content['benefits'] as $benefit): ?>
+                <div class="benefit-item fade-in">
+                    <p><?php echo htmlspecialchars($benefit); ?></p>
+                </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2><?php echo htmlspecialchars($content['cta']['title']); ?></h2>
+            <p><?php echo htmlspecialchars($content['cta']['description']); ?></p>
+            <a href="#contact" class="cta-button"><?php echo htmlspecialchars($content['cta']['button_text']); ?></a>
+        </div>
+    </section>
+
+    <script>
+        // Scroll animations
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.fade-in');
+            
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('visible');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', animateOnScroll);
+        animateOnScroll(); // Run once on load
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add parallax effect to hero
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero');
+            hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+        });
+    </script>
 </body>
 </html>

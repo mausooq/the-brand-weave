@@ -1,23 +1,162 @@
 [
-    {
-      "icon": "bi-search",
-      "title": "Research",
-      "description": "Next, we conduct market research to analyze your competitors and trends."
-    },
-    {
-      "icon": "bi-lightbulb",
-      "title": "Generate Idea",
-      "description": "Based on our findings, we develop initial branding concepts We present"
-    },
-    {
-      "icon": "bi-globe2",
-      "title": "Discover",
-      "description": "We create a comprehensive brand guide that outlines consistency."
-    },
-    {
-      "icon": "bi-mouse",
-      "title": "Test Product",
-      "description": "We test all branding assets, including logos, graphics, and guidelines, ready for use."
+  {
+    "slug": "seo-marketing",
+    "title": "SEO MARKETING",
+    "icon": "bi-search",
+    "excerpt": "Identifying and targeting the right keywords that are relevant to your business.",
+    "image": "../assets/SEO_marketing.jpg",
+    "details": {
+      "hero_description": "We help you rank higher in search results, drive organic traffic, and convert visitors into loyal customers with our data-driven SEO strategies.",
+      "main_image": "../assets/meeting.png",
+      "statistics": [
+        { "value": "50+", "label": "Regular Clients" },
+        { "value": "6.2%", "label": "Yearly Growth Rate" },
+        { "value": "4.5★", "label": "Rated By Clients" }
+      ],
+      "content_blocks": [
+        {
+          "title": "Social Media Marketing",
+          "text": "Each social platform, from Instagram and Facebook to TikTok and LinkedIn, caters to different demographics. Effective media marketing tailors content to the strengths of each platform and its audience. Social media marketing is about building relationships through consistent engagement, replying to comments, and creating interactive content like polls, stories, and live sessions."
+        },
+        {
+          "title": "Content Marketing",
+          "text": "Content Creation and Distribution: Blogs, videos, infographics, and podcasts are crafted to inform, entertain, and inspire the audience. The content is distributed through various media channels to establish authority and engage users. SEO and Keywords: Optimizing content for search engines ensures it ranks higher on Google and other platforms, driving organic traffic to your brand's website or social profiles."
+        },
+        {
+          "title": "Influencer Marketing",
+          "text": "Leveraging Influencers: Media marketing often includes collaborating with influencers who can authentically promote your brand to their audience. Their endorsement adds credibility and expands reach to new audiences. Micro and Macro Influencers: Depending on your goals, you may partner with micro-influencers (smaller, niche followings) or macro-influencers (large, broad audiences)."
+        }
+      ],
+      "benefits_section": {
+        "title": "Benefits",
+        "image": "../assets/hero4.jpg",
+        "items": [
+          { "title": "Broader Reach", "text": "By leveraging multiple channels, brands can reach a wider and more diverse audience." },
+          { "title": "Cost-Effective", "text": "Compared to traditional media, digital marketing offers a higher ROI and can be tailored." },
+          { "title": "On-Time Feedback", "text": "Digital media platforms allow for immediate audience interaction and feedback." },
+          { "title": "Advertising", "text": "With advanced targeting options, media marketing ensures." }
+        ]
+      }
     }
-  ]
-  
+  },
+  {
+    "slug": "media-marketing",
+    "title": "MEDIA MARKETING",
+    "icon": "bi-lightbulb",
+    "excerpt": "Social media marketing is about building relationships through engagement.",
+    "image": "../assets/media_marketing.png",
+    "details": {
+      "hero_description": "We build and manage powerful social media campaigns that foster engagement, build community, and drive measurable results for your brand.",
+      "main_image": "../assets/hero1.jpg",
+      "statistics": [
+        { "value": "50+", "label": "Regular Clients" },
+        { "value": "6.2%", "label": "Yearly Growth Rate" },
+        { "value": "4.5★", "label": "Rated By Clients" }
+      ],
+      "content_blocks": [
+        {
+          "title": "Social Media Marketing",
+          "text": "Each social platform, from Instagram and Facebook to TikTok and LinkedIn, caters to different demographics. Effective media marketing tailors content to the strengths of each platform and its audience. Social media marketing is about building relationships through consistent engagement, replying to comments, and creating interactive content like polls, stories, and live sessions."
+        },
+        {
+          "title": "Content Marketing",
+          "text": "Content Creation and Distribution: Blogs, videos, infographics, and podcasts are crafted to inform, entertain, and inspire the audience. The content is distributed through various media channels to establish authority and engage users. SEO and Keywords: Optimizing content for search engines ensures it ranks higher on Google and other platforms, driving organic traffic to your brand's website or social profiles."
+        },
+        {
+          "title": "Influencer Marketing",
+          "text": "Leveraging Influencers: Media marketing often includes collaborating with influencers who can authentically promote your brand to their audience. Their endorsement adds credibility and expands reach to new audiences. Micro and Macro Influencers: Depending on your goals, you may partner with micro-influencers (smaller, niche followings) or macro-influencers (large, broad audiences)."
+        }
+      ],
+      "benefits_section": {
+        "title": "Benefits",
+        "image": "../assets/hero4.jpg",
+        "items": [
+          { "title": "Broader Reach", "text": "By leveraging multiple channels, brands can reach a wider and more diverse audience." },
+          { "title": "Cost-Effective", "text": "Compared to traditional media, digital marketing offers a higher ROI and can be tailored." },
+          { "title": "On-Time Feedback", "text": "Digital media platforms allow for immediate audience interaction and feedback." },
+          { "title": "Advertising", "text": "With advanced targeting options, media marketing ensures." }
+        ]
+      }
+    }
+  },
+  {
+    "slug": "content-marketing",
+    "title": "CONTENT MARKETING",
+    "icon": "bi-globe2",
+    "excerpt": "Engage your audience with high-quality, targeted content campaigns.",
+    "image": "../assets/content_marketing.jpg",
+    "details": {
+      "hero_description": "We create valuable, relevant, and consistent content to attract and retain a clearly defined audience — and, ultimately, to drive profitable customer action.",
+      "main_image": "../assets/hero2.jpg",
+      "statistics": [
+        { "value": "50+", "label": "Regular Clients" },
+        { "value": "6.2%", "label": "Yearly Growth Rate" },
+        { "value": "4.5★", "label": "Rated By Clients" }
+      ],
+      "content_blocks": [
+        {
+          "title": "Social Media Marketing",
+          "text": "Each social platform, from Instagram and Facebook to TikTok and LinkedIn, caters to different demographics. Effective media marketing tailors content to the strengths of each platform and its audience. Social media marketing is about building relationships through consistent engagement, replying to comments, and creating interactive content like polls, stories, and live sessions."
+        },
+        {
+          "title": "Content Marketing",
+          "text": "Content Creation and Distribution: Blogs, videos, infographics, and podcasts are crafted to inform, entertain, and inspire the audience. The content is distributed through various media channels to establish authority and engage users. SEO and Keywords: Optimizing content for search engines ensures it ranks higher on Google and other platforms, driving organic traffic to your brand's website or social profiles."
+        },
+        {
+          "title": "Influencer Marketing",
+          "text": "Leveraging Influencers: Media marketing often includes collaborating with influencers who can authentically promote your brand to their audience. Their endorsement adds credibility and expands reach to new audiences. Micro and Macro Influencers: Depending on your goals, you may partner with micro-influencers (smaller, niche followings) or macro-influencers (large, broad audiences)."
+        }
+      ],
+      "benefits_section": {
+        "title": "Benefits",
+        "image": "../assets/hero4.jpg",
+        "items": [
+          { "title": "Broader Reach", "text": "By leveraging multiple channels, brands can reach a wider and more diverse audience." },
+          { "title": "Cost-Effective", "text": "Compared to traditional media, digital marketing offers a higher ROI and can be tailored." },
+          { "title": "On-Time Feedback", "text": "Digital media platforms allow for immediate audience interaction and feedback." },
+          { "title": "Advertising", "text": "With advanced targeting options, media marketing ensures." }
+        ]
+      }
+    }
+  },
+  {
+    "slug": "branding-design",
+    "title": "BRANDING & DESIGN",
+    "icon": "bi-mouse",
+    "excerpt": "Build a memorable brand identity with our creative design and branding solutions.",
+    "image": "../assets/Brand_desgining.png",
+    "details": {
+      "hero_description": "We shape a powerful and cohesive brand identity that tells your story, captivates your audience, and sets you apart from the competition.",
+      "main_image": "../assets/hero3.jpg",
+      "statistics": [
+        { "value": "50+", "label": "Regular Clients" },
+        { "value": "6.2%", "label": "Yearly Growth Rate" },
+        { "value": "4.5★", "label": "Rated By Clients" }
+      ],
+      "content_blocks": [
+        {
+          "title": "Social Media Marketing",
+          "text": "Each social platform, from Instagram and Facebook to TikTok and LinkedIn, caters to different demographics. Effective media marketing tailors content to the strengths of each platform and its audience. Social media marketing is about building relationships through consistent engagement, replying to comments, and creating interactive content like polls, stories, and live sessions."
+        },
+        {
+          "title": "Content Marketing",
+          "text": "Content Creation and Distribution: Blogs, videos, infographics, and podcasts are crafted to inform, entertain, and inspire the audience. The content is distributed through various media channels to establish authority and engage users. SEO and Keywords: Optimizing content for search engines ensures it ranks higher on Google and other platforms, driving organic traffic to your brand's website or social profiles."
+        },
+        {
+          "title": "Influencer Marketing",
+          "text": "Leveraging Influencers: Media marketing often includes collaborating with influencers who can authentically promote your brand to their audience. Their endorsement adds credibility and expands reach to new audiences. Micro and Macro Influencers: Depending on your goals, you may partner with micro-influencers (smaller, niche followings) or macro-influencers (large, broad audiences)."
+        }
+      ],
+      "benefits_section": {
+        "title": "Benefits",
+        "image": "../assets/hero4.jpg",
+        "items": [
+          { "title": "Broader Reach", "text": "By leveraging multiple channels, brands can reach a wider and more diverse audience." },
+          { "title": "Cost-Effective", "text": "Compared to traditional media, digital marketing offers a higher ROI and can be tailored." },
+          { "title": "On-Time Feedback", "text": "Digital media platforms allow for immediate audience interaction and feedback." },
+          { "title": "Advertising", "text": "With advanced targeting options, media marketing ensures." }
+        ]
+      }
+    }
+  }
+]
