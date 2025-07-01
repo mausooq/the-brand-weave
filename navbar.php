@@ -56,4 +56,15 @@
     </div>
   </div>
 </nav>
-<!-- TBW Modern Navbar End --> 
+<!-- TBW Modern Navbar End -->
+
+<script>
+  window.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".tbw-navbar");
+    if (window.scrollY > 80) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  });
+</script> 

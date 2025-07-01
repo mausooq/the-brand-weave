@@ -50,7 +50,7 @@
     </button>
 
     <div class="collapse navbar-collapse" id="tbwNavbar">
-      <!-- Center: Menu Items (No Dropdowns) -->
+
       <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-3">
         <li class="nav-item">
           <a class="nav-link text-dark" href="#">Home</a>
@@ -59,13 +59,13 @@
           <a class="nav-link text-dark" href="#portfolio">Portfolio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="#services">Service</a>
+          <a class="nav-link text-dark" href="./services/">Service</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-dark" href="#about">Pages</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="#blogs">Blogs</a>
+          <a class="nav-link text-dark" href="./blogs/">Blogs</a>
         </li>
       </ul>
       <!-- Right: Search Icon & Contact Button -->
@@ -76,7 +76,7 @@
         >
           <i class="bi bi-search"></i>
         </a>
-        <a href="#contact" class="btn btn-tbw-green fw-bold px-4 py-2">
+        <a href="./contact/" class="btn btn-tbw-green fw-bold px-4 py-2">
           Contact Us
         </a>
       </div>
