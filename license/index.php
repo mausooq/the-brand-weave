@@ -1,0 +1,3 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head><meta charset='UTF-8'><title>Coming Soon</title><style>body{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;background:#f8f9fa;font-family:sans-serif;}h1{color:#483aa0;}img{max-width:320px;margin:2rem 0;}p{font-size:1.2rem;color:#555;}</style></head><body><h1>Coming Soon</h1><img src='https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif' alt='Coming Soon'><p>This page is under construction. Please check back soon!</p></body></html>

@@ -175,6 +175,35 @@
         margin-bottom: 2rem;
       }
     }
+
+    /* Why Us Section: Make image match content height */
+    .why-us-row {
+      align-items: stretch !important;
+      display: flex;
+    }
+
+    .why-us-image-col {
+      display: flex;
+      align-items: stretch;
+    }
+
+    .why-us-image-col img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 1.5rem;
+      box-shadow: 0 8px 32px rgba(18,44,36,0.08);
+    }
+    @media (max-width: 991.98px) {
+      .why-us-row {
+        flex-direction: column;
+      }
+      .why-us-image-col img {
+        height: 280px;
+        min-height: 180px;
+        max-height: 350px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -327,28 +356,28 @@
       <div class="row g-4">
         <div class="col-lg-3 col-md-6">
           <div class="stats-card">
-            <div class="stats-number">500+</div>
+            <div class="stats-number" data-target="500">0</div>
             <div class="stats-label">Happy Clients</div>
           </div>
         </div>
         
         <div class="col-lg-3 col-md-6">
           <div class="stats-card">
-            <div class="stats-number">1000+</div>
+            <div class="stats-number" data-target="1000">0</div>
             <div class="stats-label">Projects Delivered</div>
           </div>
         </div>
         
         <div class="col-lg-3 col-md-6">
           <div class="stats-card">
-            <div class="stats-number">15+</div>
+            <div class="stats-number" data-target="15">0</div>
             <div class="stats-label">Team Members</div>
           </div>
         </div>
         
         <div class="col-lg-3 col-md-6">
           <div class="stats-card">
-            <div class="stats-number">98%</div>
+            <div class="stats-number" data-target="98" data-suffix="%">0</div>
             <div class="stats-label">Success Rate</div>
           </div>
         </div>
@@ -356,67 +385,6 @@
     </div>
   </section>
 
-  <!-- Our Journey Section -->
-  <section class="py-5 bg-white">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <div class="text-center mb-5">
-            <h2 class="fw-bold mb-3" style="color: #122c24; font-size: 3rem;">
-              Our Journey
-            </h2>
-            <p class="text-muted" style="font-size: 1.2rem;">
-              From humble beginnings to becoming a trusted digital marketing partner.
-            </p>
-          </div>
-          
-          <div class="timeline">
-            <div class="timeline-item">
-              <h4 class="fw-bold mb-2" style="color: #122c24;">2019 - The Beginning</h4>
-              <p class="text-muted mb-0">
-                Founded with a vision to help small businesses establish their digital presence. Started with just 3 team members and a handful of local clients.
-              </p>
-            </div>
-            
-            <div class="timeline-item">
-              <h4 class="fw-bold mb-2" style="color: #122c24;">2020 - Growth & Expansion</h4>
-              <p class="text-muted mb-0">
-                Expanded our service offerings to include SEO, content marketing, and social media management. Reached 50+ clients across different industries.
-              </p>
-            </div>
-            
-            <div class="timeline-item">
-              <h4 class="fw-bold mb-2" style="color: #122c24;">2021 - Digital Transformation</h4>
-              <p class="text-muted mb-0">
-                Launched our branding and design services. Helped 100+ businesses transform their digital presence and achieve measurable growth.
-              </p>
-            </div>
-            
-            <div class="timeline-item">
-              <h4 class="fw-bold mb-2" style="color: #122c24;">2022 - Innovation & Technology</h4>
-              <p class="text-muted mb-0">
-                Integrated AI-powered analytics and automation tools into our services. Expanded team to 12 members and served 200+ clients.
-              </p>
-            </div>
-            
-            <div class="timeline-item">
-              <h4 class="fw-bold mb-2" style="color: #122c24;">2023 - Market Leadership</h4>
-              <p class="text-muted mb-0">
-                Recognized as a leading digital marketing agency in the region. Achieved 98% client satisfaction rate and 500+ successful projects.
-              </p>
-            </div>
-            
-            <div class="timeline-item">
-              <h4 class="fw-bold mb-2" style="color: #122c24;">2024 - Future Forward</h4>
-              <p class="text-muted mb-0">
-                Continuing to innovate and expand our services. Focused on emerging technologies and helping businesses thrive in the digital age.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- Team Section -->
   <!-- <section class="py-5 bg-light">
@@ -514,7 +482,7 @@
  <!-- why us -->
   <section class="py-5 bg-white">
       <div class="container">
-        <div class="row align-items-start" style="min-height: 600px;">
+        <div class="row why-us-row" style="min-height: 600px;">
           <!-- Left: Text Content -->
           <div class="col-lg-6 mt-5">
             <h2 class="fw-bold" style="color: #122c24; font-size: 66px; line-height: 1.1; margin-bottom: 2rem;">
@@ -552,10 +520,10 @@
           </div>
           </div>
           <!-- Right: Image -->
-          <div class="col-lg-6">
+          <div class="col-lg-6 why-us-image-col">
             <img src="../assets/team_image.jpg"
                  alt="Team Collaboration"
-                 class="img-fluid rounded-4 shadow team-image"
+                 class="img-fluid"
                  style="width: 100%; object-fit: cover;">
           </div>
         </div>
@@ -571,5 +539,45 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    function animateCountUp(el, target, suffix = '', duration = 1800) {
+      let start = 0;
+      let startTime = null;
+      target = +target;
+      function step(timestamp) {
+        if (!startTime) startTime = timestamp;
+        let progress = Math.min((timestamp - startTime) / duration, 1);
+        let value = Math.floor(progress * (target - start) + start);
+        el.textContent = value + suffix;
+        if (progress < 1) {
+          requestAnimationFrame(step);
+        } else {
+          el.textContent = target + suffix;
+        }
+      }
+      requestAnimationFrame(step);
+    }
+
+    // Intersection Observer to trigger animation when in view
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          if (!el.classList.contains('counted')) {
+            el.classList.add('counted');
+            const target = el.getAttribute('data-target');
+            const suffix = el.getAttribute('data-suffix') || '';
+            animateCountUp(el, target, suffix);
+          }
+        }
+      });
+    }, { threshold: 0.6 });
+
+    document.querySelectorAll('.stats-number').forEach(el => {
+      observer.observe(el);
+    });
+  });
+  </script>
 </body>
 </html>

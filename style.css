@@ -1676,3 +1676,32 @@ body {
     font-size: 1.4rem !important;
   }
 }
+
+/* Why Us Section: Make image match content height */
+.why-us-row {
+  align-items: stretch !important;
+  display: flex;
+}
+
+.why-us-image-col {
+  display: flex;
+  align-items: stretch;
+}
+
+.why-us-image-col img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px rgba(18, 44, 36, 0.08);
+}
+@media (max-width: 991.98px) {
+  .why-us-row {
+    flex-direction: column;
+  }
+  .why-us-image-col img {
+    height: 280px;
+    min-height: 180px;
+    max-height: 350px;
+  }
+}
