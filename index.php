@@ -53,17 +53,17 @@
 
       <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-3">
         <li class="nav-item">
-          <a class="nav-link text-dark" href="#">Home</a>
+          <a class="nav-link text-dark" href="./">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="#portfolio">Portfolio</a>
+          <a class="nav-link text-dark" href="./about/">About us</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-dark" href="./services/">Service</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link text-dark" href="#about">Pages</a>
-        </li>
+        </li> -->
         <li class="nav-item">
           <a class="nav-link text-dark" href="./blogs/">Blogs</a>
         </li>
@@ -74,7 +74,7 @@
           href="#"
           class="text-dark fs-5 me-2 tbw-search-icon d-inline-flex align-items-center justify-content-center"
         >
-          <i class="bi bi-search"></i>
+          <!-- <i class="bi bi-search"></i> -->
         </a>
         <a href="./contact/" class="btn btn-tbw-green fw-bold px-4 py-2">
           Contact Us
