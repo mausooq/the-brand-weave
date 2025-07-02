@@ -8,27 +8,27 @@ if (file_exists($json_path)) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Working Process | The Brand Weave</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services | The Brand Weave</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../navbar.css" />
   <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
   <style>
     body {
       font-family: 'Manrope', sans-serif;
-      margin: 0;
       background: #fff;
       color: #122C24;
+      margin: 0;
+      padding: 0;
     }
-    /* No alignment styles for responsiveness. Let Bootstrap handle stacking and spacing. */
   </style>
 </head>
 <body>
 <?php include '../navbar.php'; ?>
-
 
     <!-- Services Section -->
     <section id="services" class="py-5 bg-light">
@@ -110,28 +110,27 @@ if (file_exists($json_path)) {
     </section>
 
 <script>
-// Service card animation: grayscale to color and shadow effect
-document.addEventListener('DOMContentLoaded', function() {
-  document.querySelectorAll('.service-card').forEach(card => {
-    card.addEventListener('mouseenter', () => {
-      card.classList.add('active');
-      const img = card.querySelector('.service-card-image img');
-      if(img) img.style.filter = 'none';
-    });
-    card.addEventListener('mouseleave', () => {
-      card.classList.remove('active');
-      const img = card.querySelector('.service-card-image img');
-      if(img) img.style.filter = 'grayscale(100%)';
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.service-card').forEach(card => {
+      card.addEventListener('mouseenter', () => {
+        card.classList.add('active');
+        const img = card.querySelector('.service-card-image img');
+        if (img) img.style.filter = 'none';
+      });
+      card.addEventListener('mouseleave', () => {
+        card.classList.remove('active');
+        const img = card.querySelector('.service-card-image img');
+        if (img) img.style.filter = 'grayscale(100%)';
+      });
     });
   });
-});
 </script>
 
 <!-- Working Process Section -->
 <section class="working-process-section py-5">
   <div class="container">
-    <div class="working-process-title h2 fw-bold">Working Process</div>
-    <div class="working-process-subtitle mb-5">
+    <div class="working-process-title h2 fw-bold text-center">Working Process</div>
+    <div class="working-process-subtitle text-center mb-5">
       Foster a positive and inclusive team culture aligned with your company's values and mission.
     </div>
 
