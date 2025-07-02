@@ -15,6 +15,8 @@ $categories = array_unique(array_map(function($b) { return $b['category']; }, $b
   <link rel="stylesheet" href="../navbar.css" />
   <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
   <style>
     /* Only blog-specific styles retained. Removed duplicate styles for navbar, .tbw-navbar, and general layout that are already in style.css or navbar.css. */
     .page-wrapper {
