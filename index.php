@@ -21,6 +21,12 @@
     />
     <link rel="stylesheet" href="navbar.css" />
     <link rel="stylesheet" href="style.css" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon.png">
+    <link rel="shortcut icon" href="./assets/favicon.png">
+    <link rel="apple-touch-icon" href="./assets/favicon.png">
  
   </head>
   <body>

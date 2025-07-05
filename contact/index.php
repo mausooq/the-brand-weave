@@ -70,6 +70,13 @@ $formSent = isset($_GET['sent']) && $_GET['sent'] == 1;
   <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../navbar.css" />
   <link rel="stylesheet" href="../style.css" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon.png">
+  <link rel="shortcut icon" href="../assets/favicon.png">
+  <link rel="apple-touch-icon" href="../assets/favicon.png">
+  
   <style>
     body {
       font-family: 'Figtree', 'Roboto', Arial, sans-serif;
@@ -257,7 +264,7 @@ $formSent = isset($_GET['sent']) && $_GET['sent'] == 1;
               <span class="info-icon"><i class="bi bi-telephone-fill"></i></span>
               <div>
                 <div class="fw-semibold">Phone</div>
-                <a href="tel:+919826000000" class="text-decoration-none text-dark">+91 9826 000000</a>
+                <a href="tel:+919826000000" class="text-decoration-none text-dark">+91 9901845606</a>
               </div>
             </div>
             <div class="info-item">
@@ -271,8 +278,12 @@ $formSent = isset($_GET['sent']) && $_GET['sent'] == 1;
               <span class="info-icon"><i class="bi bi-geo-alt-fill"></i></span>
               <div>
                 <div class="fw-semibold">Address</div>
-                <span>Indore, Madhya Pradesh, India</span>
+                <span>Kankanady gate, Kankanady Bypass Rd, Kankanady, Mangaluru, Karnataka 575002</span>
               </div>
+            </div>
+            <!-- Google Map Embed -->
+            <div class="mb-3" style="border-radius: 1rem; overflow: hidden; box-shadow: 0 2px 12px rgba(72,58,160,0.07);">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.587421250474!2d74.85801117507474!3d12.869903287436193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35a3245f37f65%3A0x66a8be45c5d10bc9!2sKankanady%20gate!5e0!3m2!1sen!2sin!4v1751608522826!5m2!1sen!2sin" width="100%" height="220" style="border:0; min-width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Kankanady gate Location Map"></iframe>
             </div>
             <div class="social-links">
               <a href="#" title="Instagram"><i class="bi bi-instagram"></i></a>
