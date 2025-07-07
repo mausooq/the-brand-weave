@@ -860,7 +860,13 @@
             });
         });
       });
+
+      document.getElementById('ai-agent-call-btn').addEventListener('click', function() {
+        window.location.href = 'https://react-ai-agent-tbw.vercel.app';
+      });
     </script>
+    <!-- Floating AI Agent Call Button -->
+    <?php include 'ai-call.php'; ?>
   </body>
 </html>
 

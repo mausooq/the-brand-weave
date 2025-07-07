@@ -586,5 +586,6 @@
     });
   });
   </script>
+  <?php include '../ai-call.php'; ?>
 </body>
 </html>
