@@ -862,7 +862,7 @@
       });
 
       document.getElementById('ai-agent-call-btn').addEventListener('click', function() {
-        window.location.href = 'https://react-ai-agent-tbw.vercel.app';
+        window.location.href = 'https://thebrandweave.com';
       });
     </script>
     <!-- Floating AI Agent Call Button -->

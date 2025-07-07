@@ -9,7 +9,7 @@
     var aiBtn = document.getElementById('ai-agent-call-btn');
     if (aiBtn) {
       aiBtn.addEventListener('click', function() {
-        window.location.href = 'https://react-ai-agent-tbw.vercel.app';
+        window.location.href = 'https://thebrandweave.com';
       });
     }
   });
