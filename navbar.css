@@ -1,7 +1,7 @@
 /* Navbar Styles for The Brand Weave */
 
 .tbw-navbar {
-  background: #000;
+  background: #622b7c;
   box-shadow: 0 4px 24px rgba(98, 54, 255, 0.1);
   transition: background 0.3s, box-shadow 0.3s, border-radius 0.3s;
   font-family: "Outfit", sans-serif;
@@ -11,7 +11,7 @@
   font-size: 1.15rem;
   font-weight: 400;
   letter-spacing: 0.5px;
-  color: #181c24 !important;
+  color: #fff !important;
   position: relative;
   display: inline-block;
   padding-bottom: 4px;
@@ -91,17 +91,20 @@
 }
 
 .tbw-navbar.scrolled {
-  background: #000;
+  background: rgba(98, 43, 124, 0.65); /* semi-transparent for glass effect */
   box-shadow: 0 8px 32px rgba(98, 54, 255, 0.18);
-  border-radius: 10em;
+  border-radius: 2em;
   width: 80%;
-  margin: 0 auto;
+  margin: 1.5em auto 0 auto;
   padding: 0.5em 1em;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1.5px solid rgba(255, 255, 255, 0.18);
 }
 .tbw-navbar.scrolled .nav-link,
 .tbw-navbar.scrolled .navbar-brand,
 .tbw-navbar.scrolled .tbw-search-icon {
-  color: #000000 !important;
+  color: #fff !important;
 }
 
 /* Overlay for mobile menu */
@@ -175,5 +178,5 @@
   margin-left: 0.5em;
 }
 .tbw-mobile-nav li:hover {
-  color: #483aa0;
+  color: #D4214C;
 }

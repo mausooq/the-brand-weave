@@ -32,7 +32,7 @@
   <body>
     <!-- TBW Modern Navbar Start -->
    
-<nav class="navbar navbar-expand-lg sticky-top tbw-navbar py-3 shadow">
+<nav class="navbar navbar-expand-lg sticky-top tbw-navbar shadow">
   <div class="container">
     <!-- Left: Logo and Brand -->
     <a
@@ -78,7 +78,7 @@
       <div class="d-flex align-items-center ms-lg-3 mt-3 mt-lg-0 gap-2">
         <a
           href="#"
-          class="text-dark fs-5 me-2 tbw-search-icon d-inline-flex align-items-center justify-content-center"
+          class=" fs-5 me-2 tbw-search-icon d-inline-flex align-items-center justify-content-center"
         >
           <!-- <i class="bi bi-search"></i> -->
         </a>
@@ -441,7 +441,7 @@
           <!-- Case study cards will be loaded here dynamically -->
         </div>
         <div class="text-center mt-4">
-          <a href="#" class="btn btn-primary btn-lg px-5 py-3 all-case-study-btn" style="font-size: 1.15rem; border-radius: 2em; font-weight: 600; letter-spacing: 1px; background: #fff; color: #483aa0; border: none; box-shadow: 0 2px 8px rgba(72,58,160,0.10); transition: background 0.2s, color 0.2s;">
+          <a href="#" class="btn btn-primary btn-lg px-5 py-3 all-case-study-btn" style="font-size: 1.15rem; border-radius: 2em; font-weight: 600; letter-spacing: 1px; background: #fff; color: #D4214C; border: none; box-shadow: 0 2px 8px rgba(72,58,160,0.10); transition: background 0.2s, color 0.2s;">
             ALL CASE STUDY
           </a>
         </div>
