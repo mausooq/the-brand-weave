@@ -1,43 +1,24 @@
 [
   {
-    "slug": "seo-marketing",
-    "title": "SEO MARKETING",
-    "icon": "bi-search",
-    "excerpt": "Identifying and targeting the right keywords that are relevant to your business.",
-    "image": "../assets/SEO_marketing.jpg",
-    "details": {
-      "hero_description": "We help you rank higher in search results, drive organic traffic, and convert visitors into loyal customers with our data-driven SEO strategies.",
-      "main_image": "../assets/meeting.png",
-      "statistics": [
-        { "value": "50+", "label": "Regular Clients" },
-        { "value": "6.2%", "label": "Yearly Growth Rate" },
-        { "value": "4.5★", "label": "Rated By Clients" }
-      ],
-      "content_blocks": [
-        {
-          "title": "Social Media Marketing",
-          "text": "Each social platform, from Instagram and Facebook to TikTok and LinkedIn, caters to different demographics. Effective media marketing tailors content to the strengths of each platform and its audience. Social media marketing is about building relationships through consistent engagement, replying to comments, and creating interactive content like polls, stories, and live sessions."
-        },
-        {
-          "title": "Content Marketing",
-          "text": "Content Creation and Distribution: Blogs, videos, infographics, and podcasts are crafted to inform, entertain, and inspire the audience. The content is distributed through various media channels to establish authority and engage users. SEO and Keywords: Optimizing content for search engines ensures it ranks higher on Google and other platforms, driving organic traffic to your brand's website or social profiles."
-        },
-        {
-          "title": "Influencer Marketing",
-          "text": "Leveraging Influencers: Media marketing often includes collaborating with influencers who can authentically promote your brand to their audience. Their endorsement adds credibility and expands reach to new audiences. Micro and Macro Influencers: Depending on your goals, you may partner with micro-influencers (smaller, niche followings) or macro-influencers (large, broad audiences)."
-        }
-      ],
-      "benefits_section": {
-        "title": "Benefits",
-        "image": "../assets/hero4.jpg",
-        "items": [
-          { "title": "Broader Reach", "text": "By leveraging multiple channels, brands can reach a wider and more diverse audience." },
-          { "title": "Cost-Effective", "text": "Compared to traditional media, digital marketing offers a higher ROI and can be tailored." },
-          { "title": "On-Time Feedback", "text": "Digital media platforms allow for immediate audience interaction and feedback." },
-          { "title": "Advertising", "text": "With advanced targeting options, media marketing ensures." }
-        ]
-      }
-    }
+    "slug": "seo",
+    "title": "Search Engine Optimization (SEO)",
+    "description": "Boost your website’s visibility and rank higher on Google.",
+    "what_is": "SEO is a strategic process to improve your website’s ranking on search engines...",
+    "benefits": [
+      "High website ranking",
+      "Organic traffic increased",
+      "Better User Experience (UX)",
+      "Better reliability and trust improved",
+      "Cost effective marketing",
+      "Local SEO for nearby customers"
+    ],
+    "how_it_helps": [
+      "Consider a qualified lead",
+      "Runs long-term results",
+      "Defeated the competition",
+      "The content maximizes the value",
+      "The overall marketing supports strategy"
+    ]
   },
   {
     "slug": "media-marketing",
@@ -145,7 +126,7 @@
         {
           "title": "Influencer Marketing",
           "text": "Leveraging Influencers: Media marketing often includes collaborating with influencers who can authentically promote your brand to their audience. Their endorsement adds credibility and expands reach to new audiences. Micro and Macro Influencers: Depending on your goals, you may partner with micro-influencers (smaller, niche followings) or macro-influencers (large, broad audiences)."
-        }
+        } 
       ],
       "benefits_section": {
         "title": "Benefits",

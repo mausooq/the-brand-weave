@@ -1,7 +1,7 @@
 /* Navbar Styles for The Brand Weave */
 
 .tbw-navbar {
-  background: #fff;
+  background: #000;
   box-shadow: 0 4px 24px rgba(98, 54, 255, 0.1);
   transition: background 0.3s, box-shadow 0.3s, border-radius 0.3s;
   font-family: "Outfit", sans-serif;
@@ -91,7 +91,7 @@
 }
 
 .tbw-navbar.scrolled {
-  background: #fff;
+  background: #000;
   box-shadow: 0 8px 32px rgba(98, 54, 255, 0.18);
   border-radius: 10em;
   width: 80%;
@@ -111,7 +111,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #fff;
+  background: #000;
   z-index: 9999;
   display: none;
   flex-direction: column;

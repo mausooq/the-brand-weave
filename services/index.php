@@ -63,7 +63,7 @@ if (file_exists($json_path)) {
               </div>
               <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
                 <img src="../assets/SEO_marketing.jpg" alt="Service" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
-                <span class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></span>
+                <a href="seo.php" class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></a>
               </div>
             </div>
           </div>
@@ -78,7 +78,7 @@ if (file_exists($json_path)) {
               </div>
               <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
                 <img src="../assets/media_marketing.png" alt="Service" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
-                <span class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></span>
+                <a href="smm.php" class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></a>
               </div>
             </div>
           </div>
@@ -93,7 +93,7 @@ if (file_exists($json_path)) {
               </div>
               <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
                 <img src="../assets/content_marketing.jpg" alt="Service" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
-                <span class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></span>
+                <a href="content-marketing.php" class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></a>
               </div>
             </div>
           </div>
@@ -108,7 +108,7 @@ if (file_exists($json_path)) {
               </div>
               <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
                 <img src="../assets/Brand_desgining.png" alt="Service" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
-                <span class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></span>
+                <a href="branding.php" class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></a>
               </div>
             </div>
           </div>

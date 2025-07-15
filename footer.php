@@ -43,7 +43,7 @@ foreach ($footer_links as $link) {
       <!-- Brand and Description -->
       <div class="col-md-4">
         <div class="mb-4">
-          <img src="<?= $base ?>assets/logo.png" alt="The Brand Weave Logo" style="max-height: 60px; width: auto;">
+          <img src="<?= $base ?>assets/brand_logo.png" alt="The Brand Weave Logo" style="max-height: 60px; width: auto;">
         </div>
         <p class="text-muted mb-4">We offer a complete range of digital marketing <br> services to help your brand grow online.</p>
       </div>

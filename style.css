@@ -677,14 +677,16 @@ body {
 }
 
 .tbw-navbar {
-  background: #fff;
+  background: #212529 !important;
   box-shadow: 0 4px 24px rgba(98, 54, 255, 0.1);
-  transition: background 0.3s, box-shadow 0.3s, border-radius 0.3s;
+  transition: background 0.3s, box-shadow 0.3s, border-radius 0.3s,
+    margin-top 0.3s;
+  font-family: "Bebas Neue", sans-serif !important;
 }
 
 /* When scrolled: change background, shadow, and maybe border-radius */
 .tbw-navbar.scrolled {
-  background: #fff; /* Example: purple, or use your brand color */
+  background: #212529 !important;
   box-shadow: 0 8px 32px rgba(98, 54, 255, 0.18);
   border-radius: 10em;
   width: 80%;
@@ -954,6 +956,7 @@ body {
   font-family: "Bebas Neue", sans-serif !important;
   font-size: 1.3rem;
   letter-spacing: 1px;
+  color: #fff !important;
 }
 .hero-section h1.display-1 {
   font-family: "Bebas Neue", sans-serif !important;

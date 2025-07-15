@@ -39,7 +39,7 @@
       class="navbar-brand d-flex align-items-center text-dark fw-bold"
       href="#"
     >
-      <img src="./assets/logo.png" alt="TBW Logo" width="60" class="me-2" />
+      <img src="./assets/brand_logo.png" alt="TBW Logo" width="60" class="me-2" />
     </a>
 
     <!-- Hamburger for mobile -->
@@ -334,7 +334,7 @@
               </div>
               <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
                 <img src="./assets/SEO_marketing.jpg" alt="Service" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
-                <span class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></span>
+                <a href="services/seo.php" class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></a>
               </div>
             </div>
           </div>
@@ -349,7 +349,7 @@
               </div>
               <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
                 <img src="./assets/media_marketing.png" alt="Service" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
-                <span class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></span>
+                <a href="services/smm.php" class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></a>
               </div>
             </div>
           </div>
@@ -364,7 +364,7 @@
               </div>
               <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
                 <img src="./assets/content_marketing.jpg" alt="Service" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
-                <span class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></span>
+                <a href="services/content-marketing.php" class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></a>
               </div>
             </div>
           </div>
@@ -379,7 +379,7 @@
               </div>
               <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
                 <img src="./assets/Brand_desgining.png" alt="Service" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
-                <span class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></span>
+                <a href="services/branding.php" class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></a>
               </div>
             </div>
           </div>
@@ -629,7 +629,7 @@
       <!-- Brand and Description -->
       <div class="col-md-4">
         <div class="mb-4">
-          <img src="./assets/logo.png" alt="The Brand Weave Logo" style="max-height: 60px; width: auto;">
+          <img src="./assets/brand_logo.png" alt="The Brand Weave Logo" style="max-height: 60px; width: auto;">
         </div>
         <p class="text-muted mb-4">We offer a complete range of digital marketing <br> services to help your brand grow online.</p>
       </div>
