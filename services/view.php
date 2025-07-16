@@ -251,11 +251,11 @@ if (!$service) {
       </div>
       <!-- MORE Service Expertise -->
       <div style="margin-top: 100px;">
-        <div class="row align-items-center mb-5" style="margin-left:0;margin-right:0;">
-          <div class="col-lg-6" style="padding-left:0;">
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-6">
             <h2 class="text-uppercase fw-bold mb-0" style="letter-spacing: 2px; font-size: 60px; line-height: 1; color: #122c24;">MORE<br>SERVICE EXPERTISE</h2>
           </div>
-          <div class="col-lg-6 d-flex justify-content-lg-end align-items-center mt-3 mt-lg-0" style="padding-right:0;">
+          <div class="col-lg-6 d-flex justify-content-lg-end align-items-center mt-3 mt-lg-0">
             <p class="text-muted mb-0" style="font-size: 1.2rem; max-width: 450px;">We offer a comprehensive range of digital marketing services to meet all of your needs.</p>
           </div>
         </div>
