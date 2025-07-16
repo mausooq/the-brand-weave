@@ -180,3 +180,14 @@
 .tbw-mobile-nav li:hover {
   color: #D4214C;
 }
+
+@media (max-width: 767.98px) {
+  .container {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}

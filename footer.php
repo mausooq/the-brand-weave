@@ -85,7 +85,17 @@ foreach ($footer_links as $link) {
 
     <!-- Copyright -->
     <div class=" text-muted small py-3">
-      © 2025 – All rights reserved, Developed by <strong>Abdul Mausooq</strong> – Powered by <a href="#" class="text-decoration-none text-muted fw-semibold">THE BRAND WEAVE</a>
+      © 2025 – All rights reserved, Developed by 
+      <strong>
+        <a href="https://github.com/mausooq" target="_blank" style="color:rgb(0, 0, 0); font-weight: bold; text-decoration: none;">
+          Abdul Mausooq
+        </a>
+      </strong> & 
+      <strong>
+        <a href="https://github.com/Shaheer-20" target="_blank" style="color:rgb(0, 0, 0); font-weight: bold; text-decoration: none;">
+          Mahammad Shaheer
+        </a>
+      </strong> – Powered by <a href="#" class="text-decoration-none text-muted fw-semibold">THE BRAND WEAVE</a>
     </div>
   </div>
 </footer>
