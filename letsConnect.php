@@ -15,7 +15,7 @@
                         Creating a cohesive and memorable identity. Ipsum dolor sit consectetur.<br/>
                         Ut suspendisse nulla fringilla.
                     </p>
-                    <a href="#" class="btn btn-light text-dark d-inline-flex align-items-center px-4 py-2 rounded-pill">
+                    <a href="./contact/" class="btn btn-light text-dark d-inline-flex align-items-center px-4 py-2 rounded-pill">
                         <i class="bi bi-telephone-fill me-2"></i> BOOK A CALL
                     </a>
                 </div>

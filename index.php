@@ -317,7 +317,9 @@
               <h2 class="text-uppercase fw-bold mb-0" style="letter-spacing: 2px; font-size: 60px; line-height: 1; color: #122c24;">Service<br>Expertise</h2>
             </div>
             <div class="col-lg-6 d-flex justify-content-lg-end align-items-center mt-3 mt-lg-0">
-              <p class="text-muted mb-0" style="font-size: 1.2rem; max-width: 450px;">We offer a complete suite of digital marketing services to grow your brand online.</p>
+              <p class="text-muted mb-0" style="font-size: 1.2rem; max-width: 450px;">We offer a complete suite of digital marketing services to grow your brand online.
+              <br><a href="./services/" class="btn btn-outline-dark">More +</a>
+              </p>
             </div>
           </div>
         </div>
@@ -633,6 +635,7 @@
         </div>
         <p class="text-muted mb-4">We offer a complete range of digital marketing <br> services to help your brand grow online.</p>
       </div>
+
 
       <!-- Company Links -->
       <div class="col-md-2">
