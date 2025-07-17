@@ -1,0 +1,22 @@
+[
+  {
+    "icon": "bi bi-briefcase",
+    "title": "Research",
+    "description": "We research your market before acting."
+  },
+  {
+    "icon": "bi bi-lightbulb",
+    "title": "Planning",
+    "description": "We structure creative strategies that work."
+  },
+  {
+    "icon": "bi bi-globe2",
+    "title": "Execution",
+    "description": "We deliver campaigns at scale with precision."
+  },
+  {
+    "icon": "bi bi-bar-chart-line",
+    "title": "Results",
+    "description": "You see growth. We celebrate together."
+  }
+] 
