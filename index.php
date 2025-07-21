@@ -189,7 +189,7 @@
             <!-- Static Buttons at Bottom (hidden on large screens) -->
             <div class="mt-auto pt-4">
               <a
-                href="#contact"
+                href="./contact/"
                 class="btn btn-primary btn-lg me-3 px-5 py-3"
                 style="font-size: 1.2rem"
               >
@@ -206,7 +206,7 @@
             <!-- Fixed Buttons for large screens -->
             <div class="hero-fixed-buttons d-none d-lg-flex">
               <a
-                href="#contact"
+                href="./contact/"
                 class="btn btn-primary btn-lg px-5 py-3"
                 style="font-size: 1.2rem"
               >
@@ -317,8 +317,11 @@
               <h2 class="text-uppercase fw-bold mb-0" style="letter-spacing: 2px; font-size: 60px; line-height: 1; color: #122c24;">Service<br>Expertise</h2>
             </div>
             <div class="col-lg-6 d-flex justify-content-lg-end align-items-center mt-3 mt-lg-0">
-              <p class="text-muted mb-0" style="font-size: 1.2rem; max-width: 450px;">We offer a complete suite of digital marketing services to grow your brand online.
-              <br><a href="./services/" class="btn btn-outline-dark">More +</a>
+              <p class="text-muted mb-0 d-flex align-items-center justify-content-between" style="font-size: 1.2rem; max-width: 450px;">
+                We offer a complete suite of digital marketing services to grow your brand online.
+                <a href="./services/" class="btn  btn-circle ms-3" style="border-color: #122c24; color: #122c24;">
+                  <span style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;"><i class="bi bi-arrow-right"></i></span>
+                </a>
               </p>
             </div>
           </div>
