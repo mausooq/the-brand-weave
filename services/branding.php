@@ -238,7 +238,84 @@
       </div>
       <!-- Benefits Image -->
       <div class="fade-in-section" style="display: flex; justify-content: center; margin-top: 40px;">
-        <img src="../assets/INVERTED.png" alt="Branding Benefits Visual" style="width: 1008px; height: 460px; border-radius: 15px; object-fit: cover; box-shadow: 0 4px 24px rgba(0,0,0,0.08);">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1008&q=80" alt="Branding Benefits Visual" style="width: 1008px; height: 460px; border-radius: 15px; object-fit: cover; box-shadow: 0 4px 24px rgba(0,0,0,0.08);">
+      </div>
+    </div>
+  </section>
+  <!-- Service Expertise Section (copied from seo.php) -->
+  <section id="services" class="py-5 bg-light">
+    <div class="container">
+      <div class="mb-5">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h2 class="text-uppercase fw-bold mb-0" style="letter-spacing: 2px; font-size: 60px; line-height: 1; color: #122c24;">Service<br>Expertise</h2>
+          </div>
+          <div class="col-lg-6 d-flex justify-content-lg-end align-items-center mt-3 mt-lg-0">
+            <p class="text-muted mb-0" style="font-size: 1.2rem; max-width: 450px;">We offer a complete suite of digital marketing services to grow your brand online.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row-2 ">
+        <div class="col-12">
+          <div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;">
+            <div class="service-card-content flex-grow-1 position-relative z-2">
+              <div class="service-icon-circle mb-3">
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <h3 class="fw-bold mb-2 service-title">SEO MARKETING</h3>
+              <p class="text-muted mb-0 service-subtitle">Identifying and targeting the right keywords<br>that are relevant to your business.</p>
+            </div>
+            <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
+              <img src="../assets/SEO_marketing.jpg" alt="Service" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
+              <a href="seo.php" class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;">
+            <div class="service-card-content flex-grow-1 position-relative z-2">
+              <div class="service-icon-circle mb-3">
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <h3 class="fw-bold mb-2 service-title">MEDIA MARKETING</h3>
+              <p class="text-muted mb-0 service-subtitle">Social media marketing is about building<br>relationships through engagement.</p>
+            </div>
+            <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
+              <img src="../assets/media_marketing.png" alt="Service" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
+              <a href="smm.php" class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;">
+            <div class="service-card-content flex-grow-1 position-relative z-2">
+              <div class="service-icon-circle mb-3">
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <h3 class="fw-bold mb-2 service-title">CONTENT MARKETING</h3>
+              <p class="text-muted mb-0 service-subtitle">Engage your audience and drive conversions<br>with high-quality, targeted content campaigns.</p>
+            </div>
+            <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
+              <img src="../assets/content_marketing.jpg" alt="Service" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
+              <a href="content-marketing.php" class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;">
+            <div class="service-card-content flex-grow-1 position-relative z-2">
+              <div class="service-icon-circle mb-3">
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <h3 class="fw-bold mb-2 service-title">BRANDING & DESIGN</h3>
+              <p class="text-muted mb-0 service-subtitle">Build a memorable brand identity<br>with our creative design and branding solutions.</p>
+            </div>
+            <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
+              <img src="../assets/Brand_desgining.png" alt="Service" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
+              <a href="branding.php" class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
