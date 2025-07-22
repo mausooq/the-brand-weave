@@ -21,7 +21,8 @@
     />
     <link rel="stylesheet" href="navbar.css" />
     <link rel="stylesheet" href="style.css" />
-    
+    <!-- AOS Animation CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon.png">
@@ -329,7 +330,7 @@
         
         <div class="row-2 ">
           <div class="col-12">
-            <div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;">
+            <div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;" data-aos="fade-up">
               <div class="service-card-content flex-grow-1 position-relative z-2">
                 <div class="service-icon-circle mb-3">
                   <i class="bi bi-star-fill"></i>
@@ -344,7 +345,7 @@
             </div>
           </div>
           <div class="col-12">
-            <div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;">
+            <div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;" data-aos="fade-up" data-aos-delay="100">
               <div class="service-card-content flex-grow-1 position-relative z-2">
                 <div class="service-icon-circle mb-3">
                   <i class="bi bi-star-fill"></i>
@@ -359,7 +360,7 @@
             </div>
           </div>
           <div class="col-12">
-            <div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;">
+            <div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;" data-aos="fade-up" data-aos-delay="200">
               <div class="service-card-content flex-grow-1 position-relative z-2">
                 <div class="service-icon-circle mb-3">
                   <i class="bi bi-star-fill"></i>
@@ -374,7 +375,7 @@
             </div>
           </div>
           <div class="col-12">
-            <div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;">
+            <div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;" data-aos="fade-up" data-aos-delay="300">
               <div class="service-card-content flex-grow-1 position-relative z-2">
                 <div class="service-icon-circle mb-3">
                   <i class="bi bi-star-fill"></i>
@@ -531,7 +532,7 @@
     <div class="row g-4">
       <!-- Blog Card 1 -->
       <div class="col-md-6">
-        <div class="blog-modern-card d-flex align-items-stretch h-100" style="background: #fff; box-shadow: 0 4px 24px rgba(18,44,36,0.07); border-radius: 1.5rem; overflow: hidden; min-height: 250px; transition: box-shadow 0.2s, transform 0.2s;">
+        <div class="blog-modern-card d-flex align-items-stretch h-100" style="background: #fff; box-shadow: 0 4px 24px rgba(18,44,36,0.07); border-radius: 1.5rem; overflow: hidden; min-height: 250px; transition: box-shadow 0.2s, transform 0.2s;" data-aos="fade-up">
           <div style="flex: 0 0 60%; max-width: 60%;" class="p-4 d-flex flex-column justify-content-between">
             <div>
               <span class="badge bg-light text-dark mb-2" style="font-size: 0.95rem; font-weight: 600; letter-spacing: 0.05em;">SEO</span>
@@ -553,7 +554,7 @@
               </div>
       <!-- Blog Card 2 -->
       <div class="col-md-6">
-        <div class="blog-modern-card d-flex align-items-stretch h-100" style="background: #fff; box-shadow: 0 4px 24px rgba(18,44,36,0.07); border-radius: 1.5rem; overflow: hidden; min-height: 250px; transition: box-shadow 0.2s, transform 0.2s;">
+        <div class="blog-modern-card d-flex align-items-stretch h-100" style="background: #fff; box-shadow: 0 4px 24px rgba(18,44,36,0.07); border-radius: 1.5rem; overflow: hidden; min-height: 250px; transition: box-shadow 0.2s, transform 0.2s;" data-aos="fade-up" data-aos-delay="100">
           <div style="flex: 0 0 60%; max-width: 60%;" class="p-4 d-flex flex-column justify-content-between">
             <div>
               <span class="badge bg-light text-dark mb-2" style="font-size: 0.95rem; font-weight: 600; letter-spacing: 0.05em;">BUSINESS</span>
@@ -575,7 +576,7 @@
       </div>
       <!-- Blog Card 3 -->
       <div class="col-md-6">
-        <div class="blog-modern-card d-flex align-items-stretch h-100" style="background: #fff; box-shadow: 0 4px 24px rgba(18,44,36,0.07); border-radius: 1.5rem; overflow: hidden; min-height: 250px; transition: box-shadow 0.2s, transform 0.2s;">
+        <div class="blog-modern-card d-flex align-items-stretch h-100" style="background: #fff; box-shadow: 0 4px 24px rgba(18,44,36,0.07); border-radius: 1.5rem; overflow: hidden; min-height: 250px; transition: box-shadow 0.2s, transform 0.2s;" data-aos="fade-up" data-aos-delay="200">
           <div style="flex: 0 0 60%; max-width: 60%;" class="p-4 d-flex flex-column justify-content-between">
             <div>
               <span class="badge bg-light text-dark mb-2" style="font-size: 0.95rem; font-weight: 600; letter-spacing: 0.05em;">CONTENT</span>
@@ -597,7 +598,7 @@
       </div>
       <!-- Blog Card 4 -->
       <div class="col-md-6">
-        <div class="blog-modern-card d-flex align-items-stretch h-100" style="background: #fff; box-shadow: 0 4px 24px rgba(18,44,36,0.07); border-radius: 1.5rem; overflow: hidden; min-height: 250px; transition: box-shadow 0.2s, transform 0.2s;">
+        <div class="blog-modern-card d-flex align-items-stretch h-100" style="background: #fff; box-shadow: 0 4px 24px rgba(18,44,36,0.07); border-radius: 1.5rem; overflow: hidden; min-height: 250px; transition: box-shadow 0.2s, transform 0.2s;" data-aos="fade-up" data-aos-delay="300">
           <div style="flex: 0 0 60%; max-width: 60%;" class="p-4 d-flex flex-column justify-content-between">
             <div>
               <span class="badge bg-light text-dark mb-2" style="font-size: 0.95rem; font-weight: 600; letter-spacing: 0.05em;">MEDIA</span>
@@ -637,6 +638,14 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
+    <!-- AOS Animation JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 900,
+        once: true
+      });
+    </script>
     <script>
       window.addEventListener("scroll", function () {
         const navbar = document.querySelector(".tbw-navbar");
@@ -794,7 +803,7 @@
               const col = document.createElement('div');
               col.className = 'col';
               col.innerHTML = `
-                <div class="case-study-card">
+                <div class="case-study-card" data-aos="fade-up">
                   <img src="${cs.image}" alt="${cs.title}" class="case-study-image" />
                   <div class="case-study-content">
                     <div class="case-study-title">${cs.title}</div>
