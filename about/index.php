@@ -4,14 +4,34 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Us | The Brand Weave</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../navbar.css" />
-  <link rel="stylesheet" href="../style.css" />
+  <!-- Bootstrap 5 CSS -->
+  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts: Figtree -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts: Bebas Neue & Roboto -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    
+    <!-- AOS Animation CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon.png">
+    <link rel="shortcut icon" href="../assets/favicon.png">
+    <link rel="apple-touch-icon" href="../assets/favicon.png">
+    <link rel="stylesheet" href="../navbar.css" />
+    <link rel="stylesheet" href="../style.css" />
   <style>
     body {
       background: #fff;
-      font-family: 'Inter', 'Poppins', Arial, sans-serif;
       color: #222;
       margin: 0;
       padding: 0;
@@ -26,7 +46,7 @@
       transform: none;
     }
     .about-hero-modern {
-      min-height: 60vh;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -36,18 +56,26 @@
       background: #fff;
       position: relative;
       overflow: hidden;
+      background-image: url('../assets/bg-1.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
     }
     .about-hero-modern h1 {
-      font-size: 3.2rem;
+      font-size: 5.5rem;
       font-weight: 800;
       letter-spacing: -1px;
-      color: #222;
+      color:rgb(255, 255, 255);
       margin-bottom: 1.2rem;
-      font-family: 'Poppins', 'Inter', Arial, sans-serif;
+      font-family: 'figtree ', 'Inter', Arial, sans-serif;
+      
+    }
+    .about-hero-modern h1 span{
+      color: #D4214C;
     }
     .about-hero-modern p {
       font-size: 1.35rem;
-      color: #555;
+      color:rgba(255, 225, 0, 0.78);
       max-width: 600px;
       margin: 0 auto;
       font-weight: 500;
@@ -253,42 +281,76 @@
 
 <!-- Hero Section -->
 <section class="about-hero-modern fade-in">
-  <h1>About The Brand Weave</h1>
-  <p>We're a passionate team of digital marketers, designers, and strategists dedicated to helping businesses grow online.</p>
+  <h1>WEAVING  DIGITAL <br> SUCCESS <span>TOGETHER</span>
+  </h1>
+  <p>At Brand Weave, we bring together branding, content, and marketing to help your business thrive online.</p>
 </section>
 
 <!-- About Us Section (2-column) -->
-<section class="about-2col-section fade-in">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-6 about-2col-content">
-        <h2>Who We Are</h2>
-        <p>The Brand Weave is a modern digital marketplace agency focused on empowering businesses to grow. Our mission is to deliver creative, data-driven solutions that help brands stand out and succeed in a competitive world.</p>
-        <ul>
-          <li><strong>Vision:</strong> To be the go-to digital partner for ambitious brands worldwide.</li>
-          <li><strong>Mission:</strong> To blend creativity, technology, and strategy for measurable business growth.</li>
-        </ul>
+<section class="py-5 bg-white">
+      <div class="container">
+        <div class="row align-items-start" style="min-height: 600px;">
+          <!-- Left: Text Content -->
+          <div class="col-lg-6 mt-5">
+            <h2 class="fw-bold" style="color: #122c24; font-size: 66px; line-height: 1.1; margin-bottom: 2rem;">
+              WHY WE ARE<br>YOUR BEST CHOICE
+            </h2>
+            <p class="text-muted mb-5" style="font-size: 1.15rem;">
+              We work in such a way that the dashboards provide easy-to-read charts, graphs, and summaries for executives or stakeholders. Through storytelling and value propositions, marketing can sway consumer choices.
+            </p>
+            <div class="mb-4 d-flex align-items-start">
+              <span class="me-3" style="font-size: 2rem; color: #122c24;">
+                <i class="bi bi-globe2"></i>
+              </span>
+              <div>
+                <div class="fw-bold" style="color: #122c24; font-size: 1.25rem;">RESEARCH</div>
+                <div class="text-muted mt-3" style="font-size: 1.1rem;">Up-to-date performance data so decisions <br> can be made quickly.</div>
+              </div>
+            </div>
+            <div class="mb-4 d-flex align-items-start">
+              <span class="me-3" style="font-size: 2rem; color: #122c24;">
+                <i class="bi bi-lightbulb"></i>
+              </span>
+              <div>
+                <div class="fw-bold" style="color: #122c24; font-size: 1.25rem;">GENERATE IDEA</div>
+                <div class="text-muted mt-3" style="font-size: 1.1rem;">A strong brand can differentiate a company <br> from its competitors and build loyalty.</div>
+              </div>
+            </div>
+            <div class="mb-4 d-flex align-items-start">
+              <span class="me-3" style="font-size: 2rem; color: #122c24;">
+                <i class="bi bi-stars"></i>
+              </span>
+              <div>
+                <div class="fw-bold" style="color: #122c24; font-size: 1.25rem;">ENGAGEMENT</div>
+                <div class="text-muted mt-3" style="font-size: 1.1rem;">Communication with consumers, building <br> trust and relationships through engagement.</div>
+              </div>
+          </div>
+          </div>
+          <!-- Right: Image -->
+          <div class="col-lg-6">
+            <img src="../assets/aboutus.jpg"
+                 alt="Team Collaboration"
+                 class="img-fluid rounded-4 shadow team-image"
+                 style="width: 100%; object-fit: cover;">
+          </div>
+        </div>
       </div>
-      <div class="col-lg-6">
-        <img src="../assets/about_us.jpg" alt="About Us" class="about-2col-img" />
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
+
 
 <!-- Statistics Section -->
 <section class="about-stats-section fade-in">
   <div class="about-stats-grid">
     <div class="about-stat-card">
-      <div class="about-stat-number" data-target="500">0</div>
+      <div class="about-stat-number" data-target="60" data-suffix="+">0</div>
       <div class="about-stat-label">Happy Clients</div>
     </div>
     <div class="about-stat-card">
-      <div class="about-stat-number" data-target="1000">0</div>
+      <div class="about-stat-number" data-target="200" data-suffix="+">0</div>
       <div class="about-stat-label">Projects Delivered</div>
     </div>
     <div class="about-stat-card">
-      <div class="about-stat-number" data-target="15">0</div>
+      <div class="about-stat-number" data-target="25" data-suffix="+">0</div>
       <div class="about-stat-label">Team Members</div>
     </div>
     <div class="about-stat-card">
@@ -298,43 +360,101 @@
   </div>
 </section>
 
-<!-- Team/Values Section -->
-<section class="about-team-section fade-in">
-  <div class="about-team-title">Meet Our Team</div>
-  <div class="about-team-grid">
-    <div class="about-team-card">
-      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Abdul Mausooq" class="about-team-img" />
-      <div class="about-team-name">Abdul Mausooq</div>
-      <div class="about-team-role">Founder & CEO</div>
-      <div class="about-team-desc">Visionary leader with 8+ years of experience in digital marketing and brand strategy.</div>
+
+
+<!-- Testimonials Section (Copied from index.php) -->
+<section id="testimonials" class="py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold display-1" style="text-transform: uppercase; letter-spacing: 2px; color: #22332e; font-size: 4rem;">WORDS OF OUR CLIENTS</h2>
+      <p class="lead text-muted mt-3" style="max-width: 800px; margin: 0 auto; font-size: 1rem;">
+        Effective marketing strategies attract and nurture potential customers,
+        moving them <br> through the sales funnel and converting them into buyers.
+      </p>
     </div>
-    <div class="about-team-card">
-      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson" class="about-team-img" />
-      <div class="about-team-name">Sarah Johnson</div>
-      <div class="about-team-role">Creative Director</div>
-      <div class="about-team-desc">Award-winning designer passionate about creating memorable brand experiences.</div>
-    </div>
-    <div class="about-team-card">
-      <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="Michael Chen" class="about-team-img" />
-      <div class="about-team-name">Michael Chen</div>
-      <div class="about-team-role">SEO Specialist</div>
-      <div class="about-team-desc">Data-driven expert helping businesses achieve top search engine rankings.</div>
-    </div>
-    <div class="about-team-card">
-      <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emily Rodriguez" class="about-team-img" />
-      <div class="about-team-name">Emily Rodriguez</div>
-      <div class="about-team-role">Content Strategist</div>
-      <div class="about-team-desc">Storytelling expert crafting compelling content that engages and converts.</div>
+    <div class="testimonials-container">
+      <div class="testimonials-track" id="testimonialsTrack">
+        <!-- Testimonials will be loaded here dynamically -->
+      </div>
     </div>
   </div>
 </section>
 
-<!-- Call to Action Section -->
-<section class="about-cta-section fade-in">
-  <div class="about-cta-title">Ready to grow your business with us?</div>
-  <a href="../contact/" class="about-cta-btn">Contact Us</a>
-</section>
-
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Load testimonials from JSON
+  fetch('../testimonials.json')
+    .then(response => response.json())
+    .then(data => {
+      const track = document.getElementById('testimonialsTrack');
+      const testimonials = data.testimonials;
+      // Create duplicate testimonials for seamless loop
+      const allTestimonials = [...testimonials, ...testimonials];
+      // Group testimonials into rows of 3
+      const rows = [];
+      for (let i = 0; i < allTestimonials.length; i += 3) {
+        const row = allTestimonials.slice(i, i + 3);
+        rows.push(row);
+      }
+      // Create rows of testimonials
+      rows.forEach(row => {
+        const rowDiv = document.createElement('div');
+        rowDiv.className = 'testimonials-row';
+        row.forEach(testimonial => {
+          const card = document.createElement('div');
+          card.className = 'testimonial-card';
+          card.innerHTML = `
+            <img src="${testimonial.avatar}" alt="${testimonial.name}" class="rounded-circle" />
+            <p>"${testimonial.quote}"</p>
+            <div>
+              <strong>${testimonial.name}</strong>
+              <span class="text-muted small">${testimonial.role}</span>
+            </div>
+          `;
+          rowDiv.appendChild(card);
+        });
+        track.appendChild(rowDiv);
+      });
+      // Adjust animation duration based on number of rows
+      const totalRows = rows.length;
+      const animationDuration = totalRows * 4; // 4 seconds per row
+      track.style.animationDuration = `${animationDuration}s`;
+    })
+    .catch(error => {
+      console.error('Error loading testimonials:', error);
+      // Fallback to static testimonials if JSON fails
+      const track = document.getElementById('testimonialsTrack');
+      track.innerHTML = `
+        <div class="testimonials-row">
+          <div class="testimonial-card">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client 1" class="rounded-circle" />
+            <p>"The Brand Weave helped us double our website traffic in just 3 months. Highly recommended!"</p>
+            <div>
+              <strong>John D.</strong>
+              <span class="text-muted small">E-commerce Owner</span>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client 2" class="rounded-circle" />
+            <p>"Professional, creative, and results-driven. Our go-to agency for all things digital."</p>
+            <div>
+              <strong>Sarah K.</strong>
+              <span class="text-muted small">Startup Founder</span>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="Client 3" class="rounded-circle" />
+            <p>"Their team is responsive, innovative, and always delivers on time. We love working with The Brand Weave!"</p>
+            <div>
+              <strong>Michael B.</strong>
+              <span class="text-muted small">Marketing Director</span>
+            </div>
+          </div>
+        </div>
+      `;
+    });
+});
+</script>
 <?php include '../letsConnect.php'; ?>
 <?php include '../footer.php'; ?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

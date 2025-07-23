@@ -119,12 +119,14 @@
                     <h1
                       class="display-1 fw-bold mb-4"
                       style="font-size: 4rem; line-height: 1.1"
+                      data-aos="fade-right"
                     >
                       Experience the Future of Collaboration
                     </h1>
                     <p
                       class="lead mb-4"
                       style="font-size: 1.5rem; line-height: 1.6"
+                      data-aos="fade-left"
                     >
                       Empower your team with immersive digital solutions. Step
                       into tomorrow, today.
@@ -137,12 +139,14 @@
                     <h1
                       class="display-1 fw-bold mb-4"
                       style="font-size: 4rem; line-height: 1.1"
+                      data-aos="fade-right"
                     >
                       Transform Your Digital Presence
                     </h1>
                     <p
                       class="lead mb-4"
                       style="font-size: 1.5rem; line-height: 1.6"
+                      data-aos="fade-left"
                     >
                       Strategic marketing solutions that drive growth and
                       deliver measurable results for your business.
@@ -155,12 +159,14 @@
                     <h1
                       class="display-1 fw-bold mb-4"
                       style="font-size: 4rem; line-height: 1.1"
+                      data-aos="fade-right"
                     >
                       Build Your Brand's Success Story
                     </h1>
                     <p
                       class="lead mb-4"
                       style="font-size: 1.5rem; line-height: 1.6"
+                      data-aos="fade-left"
                     >
                       From concept to execution, we craft compelling narratives
                       that connect with your audience and drive conversions.
@@ -173,12 +179,14 @@
                     <h1
                       class="display-1 fw-bold mb-4"
                       style="font-size: 4rem; line-height: 1.1"
+                      data-aos="fade-right"
                     >
                       Empower Your Team's Creativity
                     </h1>
                     <p
                       class="lead mb-4"
                       style="font-size: 1.5rem; line-height: 1.6"
+                      data-aos="fade-left"
                     >
                       Unlock new possibilities with our innovative solutions
                       tailored for your business.
@@ -330,64 +338,72 @@
         
         <div class="row-2 ">
           <div class="col-12">
-            <div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;" data-aos="fade-up">
-              <div class="service-card-content flex-grow-1 position-relative z-2">
-                <div class="service-icon-circle mb-3">
-                  <i class="bi bi-star-fill"></i>
+            <a href="services/seo.php" class="text-decoration-none">
+              <div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;" data-aos="fade-up">
+                <div class="service-card-content flex-grow-1 position-relative z-2">
+                  <div class="service-icon-circle mb-3">
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <h3 class="fw-bold mb-2 service-title">SEO MARKETING</h3>
+                  <p class="text-muted mb-0 service-subtitle">Identifying and targeting the right keywords<br>that are relevant to your business.</p>
                 </div>
-                <h3 class="fw-bold mb-2 service-title">SEO MARKETING</h3>
-                <p class="text-muted mb-0 service-subtitle">Identifying and targeting the right keywords<br>that are relevant to your business.</p>
+                <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
+                  <img src="./assets/SEO_marketing.jpg" alt="Service" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
+                  <span class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></span>
+                </div>
               </div>
-              <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
-                <img src="./assets/SEO_marketing.jpg" alt="Service" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
-                <a href="services/seo.php" class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></a>
-              </div>
-            </div>
+            </a>
           </div>
           <div class="col-12">
-            <div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;" data-aos="fade-up" data-aos-delay="100">
-              <div class="service-card-content flex-grow-1 position-relative z-2">
-                <div class="service-icon-circle mb-3">
-                  <i class="bi bi-star-fill"></i>
+            <a href="services/smm.php" class="text-decoration-none">
+              <div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card-content flex-grow-1 position-relative z-2">
+                  <div class="service-icon-circle mb-3">
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <h3 class="fw-bold mb-2 service-title">MEDIA MARKETING</h3>
+                  <p class="text-muted mb-0 service-subtitle">Social media marketing is about building<br>relationships through engagement.</p>
                 </div>
-                <h3 class="fw-bold mb-2 service-title">MEDIA MARKETING</h3>
-                <p class="text-muted mb-0 service-subtitle">Social media marketing is about building<br>relationships through engagement.</p>
+                <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
+                  <img src="./assets/media_marketing.png" alt="Service" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
+                  <span class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></span>
+                </div>
               </div>
-              <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
-                <img src="./assets/media_marketing.png" alt="Service" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
-                <a href="services/smm.php" class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></a>
-              </div>
-            </div>
+            </a>
           </div>
           <div class="col-12">
-            <div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;" data-aos="fade-up" data-aos-delay="200">
-              <div class="service-card-content flex-grow-1 position-relative z-2">
-                <div class="service-icon-circle mb-3">
-                  <i class="bi bi-star-fill"></i>
+            <a href="services/content-marketing.php" class="text-decoration-none">
+              <div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card-content flex-grow-1 position-relative z-2">
+                  <div class="service-icon-circle mb-3">
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <h3 class="fw-bold mb-2 service-title">CONTENT MARKETING</h3>
+                  <p class="text-muted mb-0 service-subtitle">Engage your audience and drive conversions<br>with high-quality, targeted content campaigns.</p>
                 </div>
-                <h3 class="fw-bold mb-2 service-title">CONTENT MARKETING</h3>
-                <p class="text-muted mb-0 service-subtitle">Engage your audience and drive conversions<br>with high-quality, targeted content campaigns.</p>
+                <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
+                  <img src="./assets/content_marketing.jpg" alt="Service" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
+                  <span class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></span>
+                </div>
               </div>
-              <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
-                <img src="./assets/content_marketing.jpg" alt="Service" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
-                <a href="services/content-marketing.php" class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></a>
-              </div>
-            </div>
+            </a>
           </div>
           <div class="col-12">
-            <div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;" data-aos="fade-up" data-aos-delay="300">
-              <div class="service-card-content flex-grow-1 position-relative z-2">
-                <div class="service-icon-circle mb-3">
-                  <i class="bi bi-star-fill"></i>
+            <a href="services/branding.php" class="text-decoration-none">
+              <div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-card-content flex-grow-1 position-relative z-2">
+                  <div class="service-icon-circle mb-3">
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <h3 class="fw-bold mb-2 service-title">BRANDING & DESIGN</h3>
+                  <p class="text-muted mb-0 service-subtitle">Build a memorable brand identity<br>with our creative design and branding solutions.</p>
                 </div>
-                <h3 class="fw-bold mb-2 service-title">BRANDING & DESIGN</h3>
-                <p class="text-muted mb-0 service-subtitle">Build a memorable brand identity<br>with our creative design and branding solutions.</p>
+                <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
+                  <img src="./assets/Brand_desgining.png" alt="Service" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
+                  <span class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></span>
+                </div>
               </div>
-              <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
-                <img src="./assets/Brand_desgining.png" alt="Service" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
-                <a href="services/branding.php" class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></a>
-              </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
