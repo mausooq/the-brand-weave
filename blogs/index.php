@@ -276,7 +276,6 @@ $categories = array_unique(array_map(function($b) { return $b['category']; }, $b
 </script>
 <?php include '../letsConnect.php'; ?>
 <?php include '../footer.php'; ?>
-<?php include '../ai-call.php'; ?>
 </body>
 </html>
 

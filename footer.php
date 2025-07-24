@@ -45,6 +45,13 @@ foreach ($footer_links as $link) {
         <div class="mb-4">
           <img src="<?= $base ?>assets/RED-BG.jpg" alt="The Brand Weave Logo" style="max-height: 60px; width: auto; border-radius: 8px;">
           <div style="font-weight: bold; font-size: 1.3rem; color: #D4214C; margin-top: 0.5rem; letter-spacing: 2px;">THE BRAND WEAVE</div>
+          <div style="margin-top: 0.5rem;">
+            <a href="https://instagram.com/" target="_blank" style="color:#D4214C; margin: 0 8px; font-size: 1.5rem;"><i class="bi bi-instagram"></i></a>
+            <a href="https://facebook.com/" target="_blank" style="color:#1877f3; margin: 0 8px; font-size: 1.5rem;"><i class="bi bi-facebook"></i></a>
+            <a href="https://x.com/" target="_blank" style="color:#222; margin: 0 8px; font-size: 1.5rem;"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://linkedin.com/" target="_blank" style="color:#0a66c2; margin: 0 8px; font-size: 1.5rem;"><i class="bi bi-linkedin"></i></a>
+            <a href="https://youtube.com/" target="_blank" style="color:#ff0000; margin: 0 8px; font-size: 1.5rem;"><i class="bi bi-youtube"></i></a>
+          </div>
         </div>
         <p class="text-muted mb-4">We offer a complete range of digital marketing <br> services to help your brand grow online.</p>
       </div>

@@ -441,9 +441,9 @@
                   <span>A Proven Track Record of Success</span>
                 </li>
             </ul>
-              <!-- <a href="#portfolio" class="btn btn-tbw-green-modern">
+              <a href="#portfolio" class="btn btn-tbw-green-modern">
                 View Portfolio
-              </a>  -->
+              </a>
             </div>
           </div>
         </div>
@@ -838,7 +838,6 @@
       });
     </script>
     <!-- Floating AI Agent Call Button -->
-    
   </body>
 </html>
 
