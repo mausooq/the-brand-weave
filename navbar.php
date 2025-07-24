@@ -10,7 +10,7 @@ $base = (strpos($_SERVER['REQUEST_URI'], '/about/') !== false || strpos($_SERVER
       class="navbar-brand d-flex align-items-center text-dark fw-bold"
       href="<?= $base ?>index.php"
     >
-      <img src="<?= $base ?>assets/brand_logo.png" alt="TBW Logo" width="60" class="me-2" />
+      <img src="<?= $base ?>assets/WHITE-BG-W-RED.png" alt="TBW Logo" width="60" class="me-2" />
     </a>
 
     <!-- Hamburger for mobile -->

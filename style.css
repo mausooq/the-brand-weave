@@ -1576,7 +1576,7 @@ body {
     position: absolute;
     top: -40px;
     left: 24px;
-    width: 80px !important;
+    width: 100px !important;
     height: 80px !important;
     border-radius: 50% !important;
     object-fit: cover;
@@ -1781,5 +1781,3 @@ body {
   font-size: 1.35rem;
   border-width: 2px;
 }
-
-

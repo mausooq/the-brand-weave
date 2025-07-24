@@ -43,7 +43,8 @@ foreach ($footer_links as $link) {
       <!-- Brand and Description -->
       <div class="col-md-4">
         <div class="mb-4">
-          <img src="<?= $base ?>assets/brand_logo.png" alt="The Brand Weave Logo" style="max-height: 60px; width: auto;">
+          <img src="<?= $base ?>assets/RED-BG.jpg" alt="The Brand Weave Logo" style="max-height: 60px; width: auto; border-radius: 8px;">
+          <div style="font-weight: bold; font-size: 1.3rem; color: #D4214C; margin-top: 0.5rem; letter-spacing: 2px;">THE BRAND WEAVE</div>
         </div>
         <p class="text-muted mb-4">We offer a complete range of digital marketing <br> services to help your brand grow online.</p>
       </div>
@@ -85,17 +86,7 @@ foreach ($footer_links as $link) {
 
     <!-- Copyright -->
     <div class=" text-muted small py-3">
-      © 2025 – All rights reserved, Developed by 
-      <strong>
-        <a href="https://github.com/mausooq" target="_blank" style="color:rgb(0, 0, 0); font-weight: bold; text-decoration: none;">
-          Abdul Mausooq
-        </a>
-      </strong> & 
-      <strong>
-        <a href="https://github.com/Shaheer-20" target="_blank" style="color:rgb(0, 0, 0); font-weight: bold; text-decoration: none;">
-          Mahammad Shaheer
-        </a>
-      </strong> – Powered by <a href="#" class="text-decoration-none text-muted fw-semibold">THE BRAND WEAVE</a>
+    &copy; 2025<a href="#" class="text-decoration-none text-muted fw-semibold"> The Brand Weave. </a>All rights reserved.
     </div>
   </div>
 </footer>

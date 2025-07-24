@@ -29,6 +29,7 @@
     <link rel="apple-touch-icon" href="../assets/favicon.png">
     <link rel="stylesheet" href="../navbar.css" />
     <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
   <style>
     body {
       background: #fff;
@@ -56,7 +57,12 @@
       background: #fff;
       position: relative;
       overflow: hidden;
-      background-image: url('../assets/bg-1.jpg');
+      background: linear-gradient(
+      90deg,
+      rgba(24, 24, 24, 0.85) 60%,
+      rgba(24, 24, 24, 0.3) 100%
+    ),
+       url('../assets/bg-2.jpg');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -505,6 +511,5 @@ document.querySelectorAll('.about-stat-number').forEach(el => {
   observer.observe(el);
 });
 </script>
-<?php include '../ai-call.php'; ?>
 </body>
 </html>

@@ -40,7 +40,7 @@
       class="navbar-brand d-flex align-items-center text-dark fw-bold"
       href="#"
     >
-      <img src="./assets/brand_logo.png" alt="TBW Logo" width="60" class="me-2" />
+      <img src="./assets/WHITE-BG-W-RED.png" alt="TBW Logo" width="60" class="me-2" />
     </a>
 
     <!-- Hamburger for mobile -->
@@ -441,9 +441,9 @@
                   <span>A Proven Track Record of Success</span>
                 </li>
             </ul>
-              <a href="#portfolio" class="btn btn-tbw-green-modern">
+              <!-- <a href="#portfolio" class="btn btn-tbw-green-modern">
                 View Portfolio
-              </a>
+              </a>  -->
             </div>
           </div>
         </div>
@@ -838,7 +838,7 @@
       });
     </script>
     <!-- Floating AI Agent Call Button -->
-    <?php include 'ai-call.php'; ?>
+    
   </body>
 </html>
 
