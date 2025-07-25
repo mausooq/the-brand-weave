@@ -28,7 +28,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon.png">
     <link rel="shortcut icon" href="./assets/favicon.png">
     <link rel="apple-touch-icon" href="./assets/favicon.png">
- 
+  
   </head>
   <body>
     <!-- TBW Modern Navbar Start -->
@@ -400,6 +400,75 @@
                 </div>
                 <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
                   <img src="./assets/Brand_desgining.png" alt="Service" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
+                  <span class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- New Service Cards -->
+          <div class="col-12">
+            <a href="services/analytics.php" class="text-decoration-none">
+              <div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;" data-aos="fade-up" data-aos-delay="400">
+                <div class="service-card-content flex-grow-1 position-relative z-2">
+                  <div class="service-icon-circle mb-3">
+                    <i class="bi bi-bar-chart"></i>
+                  </div>
+                  <h3 class="fw-bold mb-2 service-title">ANALYTICS & REPORTING</h3>
+                  <p class="text-muted mb-0 service-subtitle">Data-driven insights to measure performance<br>and optimize marketing efforts.</p>
+                </div>
+                <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
+                  <img src="./assets/SEO_marketing.jpg" alt="Analytics & Reporting" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
+                  <span class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12">
+            <a href="services/google-ads.php" class="text-decoration-none">
+              <div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;" data-aos="fade-up" data-aos-delay="500">
+                <div class="service-card-content flex-grow-1 position-relative z-2">
+                  <div class="service-icon-circle mb-3">
+                    <i class="bi bi-bullseye"></i>
+                  </div>
+                  <h3 class="fw-bold mb-2 service-title">GOOGLE ADS & PPC</h3>
+                  <p class="text-muted mb-0 service-subtitle">Maximize ROI with targeted Google Ads<br>and pay-per-click campaigns.</p>
+                </div>
+                <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
+                  <img src="./assets/RED-BG.jpg" alt="Google Ads & PPC" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
+                  <span class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12">
+            <a href="services/web-design.php" class="text-decoration-none">
+              <div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;" data-aos="fade-up" data-aos-delay="600">
+                <div class="service-card-content flex-grow-1 position-relative z-2">
+                  <div class="service-icon-circle mb-3">
+                    <i class="bi bi-palette"></i>
+                  </div>
+                  <h3 class="fw-bold mb-2 service-title">WEBSITE DESIGN</h3>
+                  <p class="text-muted mb-0 service-subtitle">Modern, responsive websites<br>that drive results and engagement.</p>
+                </div>
+                <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
+                  <img src="./assets/hero1.jpg" alt="Website Design" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
+                  <span class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12">
+            <a href="services/email-marketing.php" class="text-decoration-none">
+              <div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;" data-aos="fade-up" data-aos-delay="700">
+                <div class="service-card-content flex-grow-1 position-relative z-2">
+                  <div class="service-icon-circle mb-3">
+                    <i class="bi bi-envelope"></i>
+                  </div>
+                  <h3 class="fw-bold mb-2 service-title">EMAIL MARKETING</h3>
+                  <p class="text-muted mb-0 service-subtitle">Run personalized email campaigns<br>to nurture leads and drive conversions.</p>
+                </div>
+                <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
+                  <img src="./assets/Brand_desgining.png" alt="Email Marketing" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
                   <span class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></span>
                 </div>
               </div>

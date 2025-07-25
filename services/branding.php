@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Branding & Creative Design | The Brand Weave</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../navbar.css" />
   <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  
+  <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon.png">
   <link rel="shortcut icon" href="../assets/favicon.png">
   <link rel="apple-touch-icon" href="../assets/favicon.png">
+  
   <style>
     :root {
       --primary-text: #1e293b;
@@ -103,40 +107,67 @@
       color: #64748b;
       margin-top: 10px;
     }
-    .content-block {
-      margin-bottom: 3rem;
+    .seo-card {
+      background: #f7f9fc;
+      border-radius: 24px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+      padding: 48px 32px;
+      margin: 48px 0;
+      max-width: 1100px;
+      margin-left: auto;
+      margin-right: auto;
     }
-    .content-block h3 {
-      font-size: 1.5rem;
-      font-weight: 600;
-      margin-bottom: 0.75rem;
+    .seo-card h2, .seo-card h3 {
+      color: #1a3c34;
+      font-family: 'Poppins', 'Figtree', sans-serif;
+      font-weight: 700;
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
     }
-    .content-block p {
-      color: var(--secondary-text);
-      line-height: 1.6;
+    .seo-card p, .seo-card li {
+      color: #6a707c;
+      font-family: 'Roboto', 'Inter', sans-serif;
+      font-size: 1.1rem;
     }
-    .benefits-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    .seo-card .seo-divider {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 2.5rem 0;
+    }
+    .seo-card .seo-columns {
+      display: flex;
       gap: 2rem;
-      margin-bottom: 4rem;
+      flex-wrap: wrap;
+      justify-content: center;
     }
-    .benefit-item h4 {
-      font-size: 1.2rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
+    .seo-card .seo-col {
+      flex: 1 1 300px;
+      min-width: 260px;
     }
-    .benefit-item p {
-      color: var(--secondary-text);
+    .seo-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
     }
-    .laptop-image {
-      width: 100%;
-      height: 478.98px;
-      max-width: 1049.6px;
-      margin: 0px 0 40px;
-      border-radius: 15px;
-      object-fit: cover;
-      box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    .seo-card li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      transition: color 0.2s;
+      cursor: pointer;
+    }
+    .seo-card li .seo-icon {
+      color: #6a707c;
+      margin-right: 0.75rem;
+      font-size: 1.2em;
+      transition: color 0.2s;
+    }
+    .seo-card li:hover .seo-icon {
+      color: #1a3c34;
+    }
+    .seo-card li:hover span {
+      text-decoration: underline;
     }
     @media (max-width: 900px) {
       .statistics-grid {
@@ -148,6 +179,74 @@
       }
       .container[style*='max-width: 1049.6px'] .row {
         grid-template-columns: 1fr !important;
+      }
+      .seo-card {
+        padding: 24px 8px;
+      }
+      .seo-card .seo-columns {
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+      .seo-card h2, .seo-card h3 {
+        font-size: 1.5rem;
+      }
+    }
+    @media (max-width: 991.98px) {
+      .service-card {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+      }
+      .service-card-content {
+        align-items: center !important;
+        text-align: center !important;
+      }
+      .service-card-image {
+        position: static !important;
+        width: 100% !important;
+        min-width: 0 !important;
+        height: auto !important;
+        margin-top: 1rem;
+        display: flex !important;
+        justify-content: center !important;
+      }
+      .service-card-image img {
+        width: 100% !important;
+        height: auto !important;
+        border-radius: 0.75rem !important;
+      }
+      .container {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        max-width: 100% !important;
+      }
+      .content-block {
+        text-align: center !important;
+      }
+      .content-block ul {
+        display: inline-block;
+        text-align: left;
+      }
+    }
+    .benefits-responsive-container {
+      margin-left: 12px;
+      margin-right: 12px;
+    }
+    @media (max-width: 575.98px) {
+      .benefits-responsive-container {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+        margin-left: 16px;
+        margin-right: 16px;
+      }
+      .benefits-heading {
+        text-align: center !important;
+      }
+      .benefits-image-center {
+        display: flex !important;
+        justify-content: center !important;
       }
     }
   </style>
@@ -187,138 +286,178 @@
   <!-- Content Section -->
   <section class="section section-bg">
     <div class="container" style="max-width: 1049.6px; margin: 0 auto;">
-      <div class="content-block fade-in-section">
-        <h3>What is Branding & Creative Design?</h3>
-        <p>Branding & Creative Design is the art and science of shaping a unique identity for your business. It includes logo design, brand guidelines, visual storytelling, and creative assets that make your business memorable and trusted.</p>
-      </div>
-      <div class="content-block fade-in-section">
-        <h3>Benefits of Branding</h3>
-        <ul>
-          <li>Distinctive brand identity</li>
-          <li>Increased brand recognition</li>
-          <li>Emotional connection with customers</li>
-          <li>Consistency across all channels</li>
-          <li>Builds trust and credibility</li>
-          <li>Supports premium pricing</li>
-        </ul>
-      </div>
-      <div class="content-block fade-in-section">
-        <h3>How Branding Helps Your Business Grow</h3>
-        <ul>
-          <li>Attracts ideal customers</li>
-          <li>Drives customer loyalty</li>
-          <li>Sets you apart from competitors</li>
-          <li>Enhances marketing effectiveness</li>
-          <li>Boosts perceived value</li>
-        </ul>
+      <div class="seo-card">
+        <h2>What is Branding & Creative Design?</h2>
+        <p style="text-align:center; margin-bottom:2rem;">
+          Branding & Creative Design is the art and science of shaping a unique identity for your business. It includes logo design, brand guidelines, visual storytelling, and creative assets that make your business memorable and trusted.
+        </p>
+        <hr class="seo-divider">
+        <div class="seo-columns">
+          <div class="seo-col">
+            <h3>Benefits of Branding</h3>
+            <ul>
+              <li><span class="seo-icon"><i class="bi bi-palette"></i></span><span>Distinctive brand identity</span></li>
+              <li><span class="seo-icon"><i class="bi bi-eye"></i></span><span>Increased brand recognition</span></li>
+              <li><span class="seo-icon"><i class="bi bi-heart"></i></span><span>Emotional connection with customers</span></li>
+              <li><span class="seo-icon"><i class="bi bi-grid"></i></span><span>Consistency across all channels</span></li>
+              <li><span class="seo-icon"><i class="bi bi-shield-check"></i></span><span>Builds trust and credibility</span></li>
+              <li><span class="seo-icon"><i class="bi bi-cash-stack"></i></span><span>Supports premium pricing</span></li>
+            </ul>
+          </div>
+          <div class="seo-col">
+            <h3>How Branding Helps Your Business Grow</h3>
+            <ul>
+              <li><span class="seo-icon"><i class="bi bi-person-plus"></i></span><span>Attracts ideal customers</span></li>
+              <li><span class="seo-icon"><i class="bi bi-people"></i></span><span>Drives customer loyalty</span></li>
+              <li><span class="seo-icon"><i class="bi bi-bar-chart"></i></span><span>Sets you apart from competitors</span></li>
+              <li><span class="seo-icon"><i class="bi bi-bullseye"></i></span><span>Enhances marketing effectiveness</span></li>
+              <li><span class="seo-icon"><i class="bi bi-graph-up"></i></span><span>Boosts perceived value</span></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </section>
   <!-- Benefits Section -->
   <section class="section" style="background: #fff;">
-    <div class="container">
-      <h2 class="mb-5 fade-in-section" style="font-size: 3.5rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #18362b; text-align: left;">Benefits</h2>
-      <div class="row" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem;">
-        <div class="fade-in-section" style="text-align: left;">
+    <div class="container px-3 benefits-responsive-container" style="max-width: 1200px; margin: 0 auto;">
+      <h2 class="mb-5 fade-in-section benefits-heading" style="font-size: 3.5rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #18362b; text-align: left;">Benefits of Branding</h2>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3 fade-in-section" style="text-align: left;">
           <div style="font-size: 1.25rem; font-weight: 700; text-transform: uppercase; color: #18362b; margin-bottom: 0.5rem; letter-spacing: 0.5px;">Memorable Identity</div>
           <div style="color: #64748b; font-size: 1.08rem; line-height: 1.5; font-weight: 400;">A strong brand ensures your business is instantly recognizable and memorable.</div>
         </div>
-        <div class="fade-in-section" style="text-align: left;">
+        <div class="col-12 col-md-6 col-lg-3 fade-in-section" style="text-align: left;">
           <div style="font-size: 1.25rem; font-weight: 700; text-transform: uppercase; color: #18362b; margin-bottom: 0.5rem; letter-spacing: 0.5px;">Trust & Credibility</div>
           <div style="color: #64748b; font-size: 1.08rem; line-height: 1.5; font-weight: 400;">Consistent branding builds trust and credibility with your audience.</div>
         </div>
-        <div class="fade-in-section" style="text-align: left;">
+        <div class="col-12 col-md-6 col-lg-3 fade-in-section" style="text-align: left;">
           <div style="font-size: 1.25rem; font-weight: 700; text-transform: uppercase; color: #18362b; margin-bottom: 0.5rem; letter-spacing: 0.5px;">Emotional Connection</div>
           <div style="color: #64748b; font-size: 1.08rem; line-height: 1.5; font-weight: 400;">Great design creates an emotional bond between your brand and your customers.</div>
         </div>
-        <div class="fade-in-section" style="text-align: left;">
+        <div class="col-12 col-md-6 col-lg-3 fade-in-section" style="text-align: left;">
           <div style="font-size: 1.25rem; font-weight: 700; text-transform: uppercase; color: #18362b; margin-bottom: 0.5rem; letter-spacing: 0.5px;">Competitive Edge</div>
           <div style="color: #64748b; font-size: 1.08rem; line-height: 1.5; font-weight: 400;">Stand out in your industry with a unique and professional brand presence.</div>
         </div>
       </div>
       <!-- Benefits Image -->
-      <div class="fade-in-section" style="display: flex; justify-content: center; margin-top: 40px;">
-        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1008&q=80" alt="Branding Benefits Visual" style="width: 1008px; height: 460px; border-radius: 15px; object-fit: cover; box-shadow: 0 4px 24px rgba(0,0,0,0.08);">
+      <div class="fade-in-section benefits-image-center" style="display: flex; justify-content: center; margin-top: 40px;">
+        <img src="../assets/Brand_desgining.png" alt="Benefits Visual" style="width: 1008px; height: 460px; border-radius: 15px; object-fit: cover; box-shadow: 0 4px 24px rgba(0,0,0,0.08);">
       </div>
-    </div>
+    </div> <!-- End of benefits section container -->
   </section>
-  <!-- Service Expertise Section (copied from seo.php) -->
+  <!-- More Services Expertise Section -->
   <section id="services" class="py-5 bg-light">
     <div class="container">
       <div class="mb-5">
         <div class="row align-items-center">
           <div class="col-lg-6">
-            <h2 class="text-uppercase fw-bold mb-0" style="letter-spacing: 2px; font-size: 60px; line-height: 1; color: #122c24;">Service<br>Expertise</h2>
+            <h2 class="text-uppercase fw-bold mb-0" style="letter-spacing: 2px; font-size: 60px; line-height: 1; color: #122c24;">More<br>Services Expertise</h2>
           </div>
           <div class="col-lg-6 d-flex justify-content-lg-end align-items-center mt-3 mt-lg-0">
-            <p class="text-muted mb-0" style="font-size: 1.2rem; max-width: 450px;">We offer a complete suite of digital marketing services to grow your brand online.</p>
+            <p class="text-muted mb-0 d-flex align-items-center justify-content-between" style="font-size: 1.2rem; max-width: 450px;">
+              We offer a complete suite of digital marketing services to grow your brand online.
+              <a href="../services/" class="btn  btn-circle ms-3" style="border-color: #122c24; color: #122c24;">
+                <span style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;"><i class="bi bi-arrow-right"></i></span>
+              </a>
+            </p>
           </div>
         </div>
       </div>
       <div class="row-2 ">
-        <div class="col-12">
-          <div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;">
-            <div class="service-card-content flex-grow-1 position-relative z-2">
-              <div class="service-icon-circle mb-3">
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <h3 class="fw-bold mb-2 service-title">SEO MARKETING</h3>
-              <p class="text-muted mb-0 service-subtitle">Identifying and targeting the right keywords<br>that are relevant to your business.</p>
-            </div>
-            <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
-              <img src="../assets/SEO_marketing.jpg" alt="Service" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
-              <a href="seo.php" class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;">
-            <div class="service-card-content flex-grow-1 position-relative z-2">
-              <div class="service-icon-circle mb-3">
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <h3 class="fw-bold mb-2 service-title">MEDIA MARKETING</h3>
-              <p class="text-muted mb-0 service-subtitle">Social media marketing is about building<br>relationships through engagement.</p>
-            </div>
-            <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
-              <img src="../assets/media_marketing.png" alt="Service" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
-              <a href="smm.php" class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;">
-            <div class="service-card-content flex-grow-1 position-relative z-2">
-              <div class="service-icon-circle mb-3">
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <h3 class="fw-bold mb-2 service-title">CONTENT MARKETING</h3>
-              <p class="text-muted mb-0 service-subtitle">Engage your audience and drive conversions<br>with high-quality, targeted content campaigns.</p>
-            </div>
-            <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
-              <img src="../assets/content_marketing.jpg" alt="Service" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
-              <a href="content-marketing.php" class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;">
-            <div class="service-card-content flex-grow-1 position-relative z-2">
-              <div class="service-icon-circle mb-3">
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <h3 class="fw-bold mb-2 service-title">BRANDING & DESIGN</h3>
-              <p class="text-muted mb-0 service-subtitle">Build a memorable brand identity<br>with our creative design and branding solutions.</p>
-            </div>
-            <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
-              <img src="../assets/Brand_desgining.png" alt="Service" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
-              <a href="branding.php" class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></a>
-            </div>
-          </div>
-        </div>
+        <?php
+        $services = [
+          [
+            'file' => 'seo.php',
+            'icon' => 'bi-star-fill',
+            'title' => 'SEO MARKETING',
+            'subtitle' => 'Identifying and targeting the right keywords<br>that are relevant to your business.',
+            'img' => '../assets/SEO_marketing.jpg',
+            'delay' => 0
+          ],
+          [
+            'file' => 'smm.php',
+            'icon' => 'bi-star-fill',
+            'title' => 'MEDIA MARKETING',
+            'subtitle' => 'Social media marketing is about building<br>relationships through engagement.',
+            'img' => '../assets/media_marketing.png',
+            'delay' => 100
+          ],
+          [
+            'file' => 'content-marketing.php',
+            'icon' => 'bi-star-fill',
+            'title' => 'CONTENT MARKETING',
+            'subtitle' => 'Engage your audience and drive conversions<br>with high-quality, targeted content campaigns.',
+            'img' => '../assets/content_marketing.jpg',
+            'delay' => 200
+          ],
+          [
+            'file' => 'branding.php',
+            'icon' => 'bi-star-fill',
+            'title' => 'BRANDING & DESIGN',
+            'subtitle' => 'Build a memorable brand identity<br>with our creative design and branding solutions.',
+            'img' => '../assets/Brand_desgining.png',
+            'delay' => 300
+          ],
+          [
+            'file' => 'analytics.php',
+            'icon' => 'bi-bar-chart',
+            'title' => 'ANALYTICS & REPORTING',
+            'subtitle' => 'Data-driven insights to measure performance<br>and optimize marketing efforts.',
+            'img' => '../assets/SEO_marketing.jpg',
+            'delay' => 400
+          ],
+          [
+            'file' => 'google-ads.php',
+            'icon' => 'bi-bullseye',
+            'title' => 'GOOGLE ADS & PPC',
+            'subtitle' => 'Maximize ROI with targeted Google Ads<br>and pay-per-click campaigns.',
+            'img' => '../assets/RED-BG.jpg',
+            'delay' => 500
+          ],
+          [
+            'file' => 'web-design.php',
+            'icon' => 'bi-palette',
+            'title' => 'WEBSITE DESIGN',
+            'subtitle' => 'Modern, responsive websites<br>that drive results and engagement.',
+            'img' => '../assets/hero1.jpg',
+            'delay' => 600
+          ],
+          [
+            'file' => 'email-marketing.php',
+            'icon' => 'bi-envelope',
+            'title' => 'EMAIL MARKETING',
+            'subtitle' => 'Run personalized email campaigns<br>to nurture leads and drive conversions.',
+            'img' => '../assets/Brand_desgining.png',
+            'delay' => 700
+          ],
+        ];
+        $current = basename($_SERVER['PHP_SELF']);
+        foreach ($services as $service) {
+          if ($service['file'] === $current) continue;
+          echo '<div class="col-12">';
+          echo '<a href="' . htmlspecialchars($service['file']) . '" class="text-decoration-none">';
+          echo '<div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;" data-aos="fade-up" data-aos-delay="' . $service['delay'] . '">';
+          echo '<div class="service-card-content flex-grow-1 position-relative z-2">';
+          echo '<div class="service-icon-circle mb-3">';
+          echo '<i class="bi ' . htmlspecialchars($service['icon']) . '"></i>';
+          echo '</div>';
+          echo '<h3 class="fw-bold mb-2 service-title">' . $service['title'] . '</h3>';
+          echo '<p class="text-muted mb-0 service-subtitle">' . $service['subtitle'] . '</p>';
+          echo '</div>';
+          echo '<div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">';
+          echo '<img src="' . $service['img'] . '" alt="' . $service['title'] . '" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />';
+          echo '<span class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></span>';
+          echo '</div>';
+          echo '</div>';
+          echo '</a>';
+          echo '</div>';
+        }
+        ?>
       </div>
     </div>
   </section>
+
   <?php include '../letsConnect.php'; ?>
   <?php include '../footer.php'; ?>
   <script>

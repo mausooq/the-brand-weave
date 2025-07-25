@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Website Design & Development | The Brand Weave</title>
+  <title>Analytics & Reporting | The Brand Weave</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -258,27 +258,28 @@
     <div class="service-label mb-3 fade-in-section">
       <span class="badge rounded-pill px-3 py-2">SERVICES</span>
     </div>
-    <h1 class="service-title fade-in-section">Search Engine Optimization (SEO)</h1>
+    <h1 class="service-title fade-in-section">Analytics & Reporting</h1>
+    <p class="fade-in-section">Data-driven insights to measure performance and optimize marketing efforts.</p>
   </section>
   <!-- Main Image Section (after title) -->
   <div class="fade-in-section" style="display: flex; justify-content: center;">
-    <img src="../assets/SEO_marketing.jpg" alt="SEO Visual" style="width: 100%; max-width: 1049.6px; height: 478.98px; margin: 0px 0 40px; border-radius: 15px; object-fit: cover; box-shadow: 0 4px 24px rgba(0,0,0,0.08);">
+    <img src="../assets/SEO_marketing.jpg" alt="Analytics & Reporting Visual" style="width: 100%; max-width: 1049.6px; height: 478.98px; margin: 0px 0 40px; border-radius: 15px; object-fit: cover; box-shadow: 0 4px 24px rgba(0,0,0,0.08);">
   </div>
   <!-- Statistics Section -->
   <section class="section" style="background: #fff;">
     <div class="container" style="background: #fff; max-width: 1049.6px; margin: 0 auto;">
       <div class="statistics-grid">
         <div class="stat-card fade-in-section">
-          <div class="stat-number" data-target="50+">0</div>
-          <div class="stat-label">Regular Clients</div>
+          <div class="stat-number" data-target="30+">0</div>
+          <div class="stat-label">Dashboards Built</div>
         </div>
         <div class="stat-card fade-in-section">
-          <div class="stat-number" data-target="6.2%">0</div>
-          <div class="stat-label">Yearly Growth Rate</div>
+          <div class="stat-number" data-target="99.9%">0</div>
+          <div class="stat-label">Data Accuracy</div>
         </div>
         <div class="stat-card fade-in-section">
-          <div class="stat-number" data-target="4.5★">0</div>
-          <div class="stat-label">Rated By Clients</div>
+          <div class="stat-number" data-target="4.9★">0</div>
+          <div class="stat-label">Client Rating</div>
         </div>
       </div>
     </div>
@@ -287,31 +288,30 @@
   <section class="section section-bg">
     <div class="container" style="max-width: 1049.6px; margin: 0 auto;">
       <div class="seo-card">
-        <h2>What is Search Engine Optimization (SEO)?</h2>
+        <h2>What is Analytics & Reporting?</h2>
         <p style="text-align:center; margin-bottom:2rem;">
-          SEO is a strategic process to improve your website’s ranking on search engines. It includes technical improvements, content optimization, and building authority to drive organic traffic and conversions.
+          The process of collecting, measuring, analyzing and presenting data from its digital marketing efforts to understand and make data-operated decisions to understand analytics and reporting performance. This includes tracking matrix in websites, social media, advertising, emails and other campaigns using tools such as Google Analytics, Meta Insights and Custom Dashboard.
         </p>
         <hr class="seo-divider">
         <div class="seo-columns">
           <div class="seo-col">
-            <h3>Benefits of SEO</h3>
+            <h3>Benefits of Analytics & Reporting</h3>
             <ul>
-              <li><span class="seo-icon"><i class="bi bi-check-circle"></i></span><span>High website ranking</span></li>
-              <li><span class="seo-icon"><i class="bi bi-graph-up"></i></span><span>Organic traffic increased</span></li>
-              <li><span class="seo-icon"><i class="bi bi-emoji-smile"></i></span><span>Better User Experience (UX)</span></li>
-              <li><span class="seo-icon"><i class="bi bi-shield-check"></i></span><span>Better reliability and trust improved</span></li>
-              <li><span class="seo-icon"><i class="bi bi-cash-stack"></i></span><span>Cost effective marketing</span></li>
-              <li><span class="seo-icon"><i class="bi bi-geo-alt"></i></span><span>Local SEO for nearby customers</span></li>
+              <li><span class="seo-icon"><i class="bi bi-bar-chart"></i></span><span>Data-driven decision</span></li>
+              <li><span class="seo-icon"><i class="bi bi-graph-up"></i></span><span>Track campaign demonstration</span></li>
+              <li><span class="seo-icon"><i class="bi bi-people"></i></span><span>Understand the behavior of the customer</span></li>
+              <li><span class="seo-icon"><i class="bi bi-cash-stack"></i></span><span>Optimize marketing expenses</span></li>
+              <li><span class="seo-icon"><i class="bi bi-kanban"></i></span><span>Adaptable dashboard</span></li>
+              <li><span class="seo-icon"><i class="bi bi-lightning"></i></span><span>Active strategy adjustment</span></li>
             </ul>
           </div>
           <div class="seo-col">
-            <h3>How SEO Helps Your Business Grow</h3>
+            <h3>How Analytics & Reporting Helps Your Business</h3>
             <ul>
-              <li><span class="seo-icon"><i class="bi bi-check-circle"></i></span><span>Consider a qualified lead</span></li>
-              <li><span class="seo-icon"><i class="bi bi-graph-up"></i></span><span>Runs long-term results</span></li>
-              <li><span class="seo-icon"><i class="bi bi-emoji-smile"></i></span><span>Defeated the competition</span></li>
-              <li><span class="seo-icon"><i class="bi bi-shield-check"></i></span><span>The content maximizes the value</span></li>
-              <li><span class="seo-icon"><i class="bi bi-cash-stack"></i></span><span>The overall marketing supports strategy</span></li>
+              <li><span class="seo-icon"><i class="bi bi-graph-up-arrow"></i></span><span>Maximizes ROI</span></li>
+              <li><span class="seo-icon"><i class="bi bi-bullseye"></i></span><span>Campaign improves effectiveness</span></li>
+              <li><span class="seo-icon"><i class="bi bi-eye"></i></span><span>Increases transparency</span></li>
+              <li><span class="seo-icon"><i class="bi bi-bar-chart-line"></i></span><span>Supports long-term development</span></li>
             </ul>
           </div>
         </div>
@@ -321,28 +321,28 @@
   <!-- Benefits Section -->
   <section class="section" style="background: #fff;">
     <div class="container px-3 benefits-responsive-container" style="max-width: 1200px; margin: 0 auto;">
-      <h2 class="mb-5 fade-in-section benefits-heading" style="font-size: 3.5rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #18362b; text-align: left;">Benefits</h2>
+      <h2 class="mb-5 fade-in-section benefits-heading" style="font-size: 3.5rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #18362b; text-align: left;">Benefits of Analytics & Reporting</h2>
       <div class="row">
         <div class="col-12 col-md-6 col-lg-3 fade-in-section" style="text-align: left;">
-          <div style="font-size: 1.25rem; font-weight: 700; text-transform: uppercase; color: #18362b; margin-bottom: 0.5rem; letter-spacing: 0.5px;">Broader Reach</div>
-          <div style="color: #64748b; font-size: 1.08rem; line-height: 1.5; font-weight: 400;">By leveraging multiple channels, brands can reach a wider and more diverse audience.</div>
+          <div style="font-size: 1.25rem; font-weight: 700; text-transform: uppercase; color: #18362b; margin-bottom: 0.5rem; letter-spacing: 0.5px;">Data-Driven Decisions</div>
+          <div style="color: #64748b; font-size: 1.08rem; line-height: 1.5; font-weight: 400;">Create smarter marketing options supported by real-time data, not guessing.</div>
         </div>
         <div class="col-12 col-md-6 col-lg-3 fade-in-section" style="text-align: left;">
-          <div style="font-size: 1.25rem; font-weight: 700; text-transform: uppercase; color: #18362b; margin-bottom: 0.5rem; letter-spacing: 0.5px;">Cost-Effective</div>
-          <div style="color: #64748b; font-size: 1.08rem; line-height: 1.5; font-weight: 400;">Compared to traditional media, digital marketing offers a higher ROI and can be tailored.</div>
+          <div style="font-size: 1.25rem; font-weight: 700; text-transform: uppercase; color: #18362b; margin-bottom: 0.5rem; letter-spacing: 0.5px;">Track Campaign Performance</div>
+          <div style="color: #64748b; font-size: 1.08rem; line-height: 1.5; font-weight: 400;">Measure KPIs such as traffic, conversion, bounce rate, ROI, and more.</div>
         </div>
         <div class="col-12 col-md-6 col-lg-3 fade-in-section" style="text-align: left;">
-          <div style="font-size: 1.25rem; font-weight: 700; text-transform: uppercase; color: #18362b; margin-bottom: 0.5rem; letter-spacing: 0.5px;">On-Time Feedback</div>
-          <div style="color: #64748b; font-size: 1.08rem; line-height: 1.5; font-weight: 400;">Digital media platforms allow for immediate audience interaction and feedback.</div>
+          <div style="font-size: 1.25rem; font-weight: 700; text-transform: uppercase; color: #18362b; margin-bottom: 0.5rem; letter-spacing: 0.5px;">Customer Behavior</div>
+          <div style="color: #64748b; font-size: 1.08rem; line-height: 1.5; font-weight: 400;">Learn how users interact to improve the journey with your website, content and advertisements.</div>
         </div>
         <div class="col-12 col-md-6 col-lg-3 fade-in-section" style="text-align: left;">
-          <div style="font-size: 1.25rem; font-weight: 700; text-transform: uppercase; color: #18362b; margin-bottom: 0.5rem; letter-spacing: 0.5px;">Advertising</div>
-          <div style="color: #64748b; font-size: 1.08rem; line-height: 1.5; font-weight: 400;">With advanced targeting options, media marketing ensures.</div>
+          <div style="font-size: 1.25rem; font-weight: 700; text-transform: uppercase; color: #18362b; margin-bottom: 0.5rem; letter-spacing: 0.5px;">Optimize Marketing Spend</div>
+          <div style="color: #64748b; font-size: 1.08rem; line-height: 1.5; font-weight: 400;">See which channels and campaigns are running the most results, so you can invest wisely.</div>
         </div>
       </div>
       <!-- Benefits Image -->
       <div class="fade-in-section benefits-image-center" style="display: flex; justify-content: center; margin-top: 40px;">
-        <img src="../assets/hero4.jpg" alt="Benefits Visual" style="width: 1008px; height: 460px; border-radius: 15px; object-fit: cover; box-shadow: 0 4px 24px rgba(0,0,0,0.08);">
+        <img src="../assets/SEO_marketing.jpg" alt="Benefits Visual" style="width: 1008px; height: 460px; border-radius: 15px; object-fit: cover; box-shadow: 0 4px 24px rgba(0,0,0,0.08);">
       </div>
     </div> <!-- End of benefits section container -->
   </section>
@@ -517,4 +517,4 @@
     });
   </script>
 </body>
-</html> 
+</html>

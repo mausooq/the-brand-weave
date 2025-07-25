@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Social Media Marketing (SMM) | The Brand Weave</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../navbar.css" />
   <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  
+  <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon.png">
   <link rel="shortcut icon" href="../assets/favicon.png">
   <link rel="apple-touch-icon" href="../assets/favicon.png">
+  
   <style>
     :root {
       --primary-text: #1e293b;
@@ -138,6 +142,68 @@
       object-fit: cover;
       box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     }
+    .seo-card {
+      background: #f7f9fc;
+      border-radius: 24px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+      padding: 48px 32px;
+      margin: 48px 0;
+      max-width: 1100px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .seo-card h2, .seo-card h3 {
+      color: #1a3c34;
+      font-family: 'Poppins', 'Figtree', sans-serif;
+      font-weight: 700;
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    .seo-card p, .seo-card li {
+      color: #6a707c;
+      font-family: 'Roboto', 'Inter', sans-serif;
+      font-size: 1.1rem;
+    }
+    .seo-card .seo-divider {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 2.5rem 0;
+    }
+    .seo-card .seo-columns {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .seo-card .seo-col {
+      flex: 1 1 300px;
+      min-width: 260px;
+    }
+    .seo-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .seo-card li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      transition: color 0.2s;
+      cursor: pointer;
+    }
+    .seo-card li .seo-icon {
+      color: #6a707c;
+      margin-right: 0.75rem;
+      font-size: 1.2em;
+      transition: color 0.2s;
+    }
+    .seo-card li:hover .seo-icon {
+      color: #1a3c34;
+    }
+    .seo-card li:hover span {
+      text-decoration: underline;
+    }
     @media (max-width: 900px) {
       .statistics-grid {
         grid-template-columns: 1fr;
@@ -148,6 +214,74 @@
       }
       .container[style*='max-width: 1049.6px'] .row {
         grid-template-columns: 1fr !important;
+      }
+      .seo-card {
+        padding: 24px 8px;
+      }
+      .seo-card .seo-columns {
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+      .seo-card h2, .seo-card h3 {
+        font-size: 1.5rem;
+      }
+    }
+    @media (max-width: 991.98px) {
+      .service-card {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+      }
+      .service-card-content {
+        align-items: center !important;
+        text-align: center !important;
+      }
+      .service-card-image {
+        position: static !important;
+        width: 100% !important;
+        min-width: 0 !important;
+        height: auto !important;
+        margin-top: 1rem;
+        display: flex !important;
+        justify-content: center !important;
+      }
+      .service-card-image img {
+        width: 100% !important;
+        height: auto !important;
+        border-radius: 0.75rem !important;
+      }
+      .container {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        max-width: 100% !important;
+      }
+      .content-block {
+        text-align: center !important;
+      }
+      .content-block ul {
+        display: inline-block;
+        text-align: left;
+      }
+    }
+    .benefits-responsive-container {
+      margin-left: 12px;
+      margin-right: 12px;
+    }
+    @media (max-width: 575.98px) {
+      .benefits-responsive-container {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+        margin-left: 16px;
+        margin-right: 16px;
+      }
+      .benefits-heading {
+        text-align: center !important;
+      }
+      .benefits-image-center {
+        display: flex !important;
+        justify-content: center !important;
       }
     }
   </style>
@@ -187,110 +321,179 @@
   <!-- Content Section -->
   <section class="section section-bg">
     <div class="container" style="max-width: 1049.6px; margin: 0 auto;">
-      <div class="content-block fade-in-section">
-        <h3>What is Social Media Marketing (SMM)?</h3>
-        <p>Social media marketing (SMM) is a strategic use of social media platforms like Instagram, Facebook, LinkedIn, Twitter and YouTube to promote a brand, connect with audiences and run business development. This includes making and sharing materials, running targeted advertisements, creating communities and analyzing performance to be engaged and adapt to conversions.</p>
-      </div>
-      <div class="content-block fade-in-section">
-        <h3>Benefits of Social Media Marketing</h3>
+      <div class="seo-card">
+        <h2>What is Social Media Marketing (SMM)?</h2>
+        <p style="text-align:center; margin-bottom:2rem;">
+          Social media marketing (SMM) is a strategic use of platforms like Instagram, Facebook, LinkedIn, Twitter, and YouTube to promote a brand, connect with audiences, and drive business growth. It includes content creation, targeted ads, community building, and performance analysis to boost engagement and conversions.
+        </p>
+        <hr class="seo-divider">
+        <div class="seo-columns">
+          <div class="seo-col">
+            <h3>Benefits of SMM</h3>
         <ul>
-          <li>Brand awareness increased: Get your brand daily in front of thousands or millions of potential customers daily through visually attractive and relevant materials.</li>
-          <li>Better customer engagement: Talk directly with your audience, answer their questions, and build a loyal community around your brand.</li>
-          <li>Increased website traffic and conversions: Strategic posts and social advertisements can run quality traffic on your website and increase lead generations and sales.</li>
-          <li>Cost effective advertising: Compared to traditional media, social media advertisements provide more affordable, highly targeted and average results.</li>
-          <li>Better market insight: Monitor audience behavior, preferences and reactions in real time to refine your marketing strategies.</li>
-          <li>Increased brand loyalty: Constant, authentic content creates confidence and long-term customer relationships.</li>
+              <li><span class="seo-icon"><i class="bi bi-check-circle"></i></span><span>Brand awareness increased</span></li>
+              <li><span class="seo-icon"><i class="bi bi-graph-up"></i></span><span>Better customer engagement</span></li>
+              <li><span class="seo-icon"><i class="bi bi-emoji-smile"></i></span><span>Increased website traffic and conversions</span></li>
+              <li><span class="seo-icon"><i class="bi bi-cash-stack"></i></span><span>Cost effective advertising</span></li>
+              <li><span class="seo-icon"><i class="bi bi-bar-chart"></i></span><span>Better market insight</span></li>
+              <li><span class="seo-icon"><i class="bi bi-heart"></i></span><span>Increased brand loyalty</span></li>
         </ul>
       </div>
-      <div class="content-block fade-in-section">
-        <h3>How Social Media Marketing Helps Your Business</h3>
+          <div class="seo-col">
+            <h3>How SMM Helps Your Business</h3>
         <ul>
-          <li>Builds Trust & Credibility: Active social presence shows you're a modern, transparent, and approachable brand.</li>
-          <li>Generates Leads & Sales: Targeted campaigns convert social followers into paying customers.</li>
-          <li>Supports SEO Efforts: Social signals and traffic can improve your site’s authority and rankings.</li>
-          <li>Gives You a Competitive Edge: Stay ahead with trend-driven content and platform-specific strategies.</li>
-          <li>Offers Real-Time Analytics: Track performance and ROI for every campaign and optimize accordingly.</li>
+              <li><span class="seo-icon"><i class="bi bi-shield-check"></i></span><span>Builds Trust & Credibility</span></li>
+              <li><span class="seo-icon"><i class="bi bi-person-plus"></i></span><span>Generates Leads & Sales</span></li>
+              <li><span class="seo-icon"><i class="bi bi-search"></i></span><span>Supports SEO Efforts</span></li>
+              <li><span class="seo-icon"><i class="bi bi-lightning"></i></span><span>Gives You a Competitive Edge</span></li>
+              <li><span class="seo-icon"><i class="bi bi-graph-up-arrow"></i></span><span>Offers Real-Time Analytics</span></li>
         </ul>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-  <!-- Service Expertise Section (copied from seo.php) -->
+  <!-- Benefits Section -->
+  <section class="section" style="background: #fff;">
+    <div class="container px-3 benefits-responsive-container" style="max-width: 1200px; margin: 0 auto;">
+      <h2 class="mb-5 fade-in-section benefits-heading" style="font-size: 3.5rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #18362b; text-align: left;">Benefits of Social Media Marketing</h2>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3 fade-in-section" style="text-align: left;">
+          <div style="font-size: 1.25rem; font-weight: 700; text-transform: uppercase; color: #18362b; margin-bottom: 0.5rem; letter-spacing: 0.5px;">Brand Awareness Increased</div>
+          <div style="color: #64748b; font-size: 1.08rem; line-height: 1.5; font-weight: 400;">Get your brand daily in front of thousands or millions of potential customers daily through visually attractive and relevant materials.</div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 fade-in-section" style="text-align: left;">
+          <div style="font-size: 1.25rem; font-weight: 700; text-transform: uppercase; color: #18362b; margin-bottom: 0.5rem; letter-spacing: 0.5px;">Better Customer Engagement</div>
+          <div style="color: #64748b; font-size: 1.08rem; line-height: 1.5; font-weight: 400;">Talk directly with your audience, answer their questions, and build a loyal community around your brand.</div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 fade-in-section" style="text-align: left;">
+          <div style="font-size: 1.25rem; font-weight: 700; text-transform: uppercase; color: #18362b; margin-bottom: 0.5rem; letter-spacing: 0.5px;">Increased Website Traffic & Conversions</div>
+          <div style="color: #64748b; font-size: 1.08rem; line-height: 1.5; font-weight: 400;">Strategic posts and social advertisements can run quality traffic on your website and increase lead generations and sales.</div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 fade-in-section" style="text-align: left;">
+          <div style="font-size: 1.25rem; font-weight: 700; text-transform: uppercase; color: #18362b; margin-bottom: 0.5rem; letter-spacing: 0.5px;">Cost Effective Advertising</div>
+          <div style="color: #64748b; font-size: 1.08rem; line-height: 1.5; font-weight: 400;">Compared to traditional media, social media advertisements provide more affordable, highly targeted and average results.</div>
+        </div>
+      </div>
+      <!-- Benefits Image -->
+      <div class="fade-in-section benefits-image-center" style="display: flex; justify-content: center; margin-top: 40px;">
+        <img src="../assets/media_marketing.png" alt="Benefits Visual" style="width: 1008px; height: 460px; border-radius: 15px; object-fit: cover; box-shadow: 0 4px 24px rgba(0,0,0,0.08);">
+      </div>
+    </div> <!-- End of benefits section container -->
+  </section>
+  
+  <!-- More Services Expertise Section -->
   <section id="services" class="py-5 bg-light">
     <div class="container">
       <div class="mb-5">
         <div class="row align-items-center">
           <div class="col-lg-6">
-            <h2 class="text-uppercase fw-bold mb-0" style="letter-spacing: 2px; font-size: 60px; line-height: 1; color: #122c24;">Service<br>Expertise</h2>
+            <h2 class="text-uppercase fw-bold mb-0" style="letter-spacing: 2px; font-size: 60px; line-height: 1; color: #122c24;">More<br>Services Expertise</h2>
           </div>
           <div class="col-lg-6 d-flex justify-content-lg-end align-items-center mt-3 mt-lg-0">
-            <p class="text-muted mb-0" style="font-size: 1.2rem; max-width: 450px;">We offer a complete suite of digital marketing services to grow your brand online.</p>
+            <p class="text-muted mb-0 d-flex align-items-center justify-content-between" style="font-size: 1.2rem; max-width: 450px;">
+              We offer a complete suite of digital marketing services to grow your brand online.
+              <a href="../services/" class="btn  btn-circle ms-3" style="border-color: #122c24; color: #122c24;">
+                <span style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;"><i class="bi bi-arrow-right"></i></span>
+              </a>
+            </p>
           </div>
         </div>
       </div>
       <div class="row-2 ">
-        <div class="col-12">
-          <div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;">
-            <div class="service-card-content flex-grow-1 position-relative z-2">
-              <div class="service-icon-circle mb-3">
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <h3 class="fw-bold mb-2 service-title">SEO MARKETING</h3>
-              <p class="text-muted mb-0 service-subtitle">Identifying and targeting the right keywords<br>that are relevant to your business.</p>
-            </div>
-            <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
-              <img src="../assets/SEO_marketing.jpg" alt="Service" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
-              <a href="seo.php" class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;">
-            <div class="service-card-content flex-grow-1 position-relative z-2">
-              <div class="service-icon-circle mb-3">
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <h3 class="fw-bold mb-2 service-title">MEDIA MARKETING</h3>
-              <p class="text-muted mb-0 service-subtitle">Social media marketing is about building<br>relationships through engagement.</p>
-            </div>
-            <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
-              <img src="../assets/media_marketing.png" alt="Service" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
-              <a href="smm.php" class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;">
-            <div class="service-card-content flex-grow-1 position-relative z-2">
-              <div class="service-icon-circle mb-3">
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <h3 class="fw-bold mb-2 service-title">CONTENT MARKETING</h3>
-              <p class="text-muted mb-0 service-subtitle">Engage your audience and drive conversions<br>with high-quality, targeted content campaigns.</p>
-            </div>
-            <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
-              <img src="../assets/content_marketing.jpg" alt="Service" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
-              <a href="content-marketing.php" class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;">
-            <div class="service-card-content flex-grow-1 position-relative z-2">
-              <div class="service-icon-circle mb-3">
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <h3 class="fw-bold mb-2 service-title">BRANDING & DESIGN</h3>
-              <p class="text-muted mb-0 service-subtitle">Build a memorable brand identity<br>with our creative design and branding solutions.</p>
-            </div>
-            <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
-              <img src="../assets/Brand_desgining.png" alt="Service" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
-              <a href="branding.php" class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></a>
-            </div>
-          </div>
-        </div>
+        <?php
+        $services = [
+          [
+            'file' => 'seo.php',
+            'icon' => 'bi-star-fill',
+            'title' => 'SEO MARKETING',
+            'subtitle' => 'Identifying and targeting the right keywords<br>that are relevant to your business.',
+            'img' => '../assets/SEO_marketing.jpg',
+            'delay' => 0
+          ],
+          [
+            'file' => 'smm.php',
+            'icon' => 'bi-star-fill',
+            'title' => 'MEDIA MARKETING',
+            'subtitle' => 'Social media marketing is about building<br>relationships through engagement.',
+            'img' => '../assets/media_marketing.png',
+            'delay' => 100
+          ],
+          [
+            'file' => 'content-marketing.php',
+            'icon' => 'bi-star-fill',
+            'title' => 'CONTENT MARKETING',
+            'subtitle' => 'Engage your audience and drive conversions<br>with high-quality, targeted content campaigns.',
+            'img' => '../assets/content_marketing.jpg',
+            'delay' => 200
+          ],
+          [
+            'file' => 'branding.php',
+            'icon' => 'bi-star-fill',
+            'title' => 'BRANDING & DESIGN',
+            'subtitle' => 'Build a memorable brand identity<br>with our creative design and branding solutions.',
+            'img' => '../assets/Brand_desgining.png',
+            'delay' => 300
+          ],
+          [
+            'file' => 'analytics.php',
+            'icon' => 'bi-bar-chart',
+            'title' => 'ANALYTICS & REPORTING',
+            'subtitle' => 'Data-driven insights to measure performance<br>and optimize marketing efforts.',
+            'img' => '../assets/SEO_marketing.jpg',
+            'delay' => 400
+          ],
+          [
+            'file' => 'google-ads.php',
+            'icon' => 'bi-bullseye',
+            'title' => 'GOOGLE ADS & PPC',
+            'subtitle' => 'Maximize ROI with targeted Google Ads<br>and pay-per-click campaigns.',
+            'img' => '../assets/RED-BG.jpg',
+            'delay' => 500
+          ],
+          [
+            'file' => 'web-design.php',
+            'icon' => 'bi-palette',
+            'title' => 'WEBSITE DESIGN',
+            'subtitle' => 'Modern, responsive websites<br>that drive results and engagement.',
+            'img' => '../assets/hero1.jpg',
+            'delay' => 600
+          ],
+          [
+            'file' => 'email-marketing.php',
+            'icon' => 'bi-envelope',
+            'title' => 'EMAIL MARKETING',
+            'subtitle' => 'Run personalized email campaigns<br>to nurture leads and drive conversions.',
+            'img' => '../assets/Brand_desgining.png',
+            'delay' => 700
+          ],
+        ];
+        $current = basename($_SERVER['PHP_SELF']);
+        foreach ($services as $service) {
+          if ($service['file'] === $current) continue;
+          echo '<div class="col-12">';
+          echo '<a href="' . htmlspecialchars($service['file']) . '" class="text-decoration-none">';
+          echo '<div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;" data-aos="fade-up" data-aos-delay="' . $service['delay'] . '">';
+          echo '<div class="service-card-content flex-grow-1 position-relative z-2">';
+          echo '<div class="service-icon-circle mb-3">';
+          echo '<i class="bi ' . htmlspecialchars($service['icon']) . '"></i>';
+          echo '</div>';
+          echo '<h3 class="fw-bold mb-2 service-title">' . $service['title'] . '</h3>';
+          echo '<p class="text-muted mb-0 service-subtitle">' . $service['subtitle'] . '</p>';
+          echo '</div>';
+          echo '<div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">';
+          echo '<img src="' . $service['img'] . '" alt="' . $service['title'] . '" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />';
+          echo '<span class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></span>';
+          echo '</div>';
+          echo '</div>';
+          echo '</a>';
+          echo '</div>';
+        }
+        ?>
       </div>
     </div>
   </section>
+
   <?php include '../letsConnect.php'; ?>
   <?php include '../footer.php'; ?>
   <script>
