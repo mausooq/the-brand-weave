@@ -12,11 +12,12 @@ if (file_exists($json_path)) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Services | The Brand Weave</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
   <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../navbar.css" />
   <link rel="stylesheet" href="../style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
   
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon.png">
@@ -32,10 +33,81 @@ if (file_exists($json_path)) {
       margin: 0;
       padding: 0;
     }
+    
+    .fade-in {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s cubic-bezier(.4,0,.2,1), transform 0.8s cubic-bezier(.4,0,.2,1);
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: none;
+    }
+    
+    .services-hero-modern {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 6rem 1rem 4rem 1rem;
+      background: #fff;
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(
+      90deg,
+      rgba(24, 24, 24, 0.85) 60%,
+      rgba(24, 24, 24, 0.3) 100%
+    ),
+       url('../assets/bg-1.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .services-hero-modern h1 {
+      font-size: 5.5rem;
+      font-weight: 800;
+      letter-spacing: -1px;
+      color:rgb(255, 255, 255);
+      margin-bottom: 1.2rem;
+      font-family: 'figtree ', 'Inter', Arial, sans-serif;
+      
+    }
+    .services-hero-modern h1 span{
+      color: #D4214C;
+    }
+    .services-hero-modern p {
+      font-size: 1.35rem;
+      color:rgba(255, 225, 0, 0.78);
+      max-width: 600px;
+      margin: 0 auto;
+      font-weight: 500;
+    }
+    
+    /* Responsive */
+    @media (max-width: 767.98px) {
+      .services-hero-modern {
+        padding: 3.5rem 0.5rem 2.5rem 0.5rem;
+      }
+      .services-hero-modern h1 {
+        font-size: 2.1rem;
+      }
+      .services-hero-modern p {
+        font-size: 1.05rem;
+      }
+    }
   </style>
 </head>
 <body>
 <?php include '../navbar.php'; ?>
+
+<!-- Hero Section -->
+<section class="services-hero-modern fade-in">
+  <h1>OUR DIGITAL <br> SERVICES <span>SOLUTIONS</span>
+  </h1>
+  <p>Comprehensive digital marketing services to elevate your brand and drive measurable results.</p>
+</section>
 
     <!-- Services Section -->
     <section id="services" class="py-5 bg-light">
@@ -126,13 +198,13 @@ if (file_exists($json_path)) {
               <div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;" data-aos="fade-up" data-aos-delay="400">
                 <div class="service-card-content flex-grow-1 position-relative z-2">
                   <div class="service-icon-circle mb-3">
-                    <i class="bi bi-bar-chart"></i>
+                  <i class="bi bi-star-fill"></i>
                   </div>
                   <h3 class="fw-bold mb-2 service-title">ANALYTICS & REPORTING</h3>
                   <p class="text-muted mb-0 service-subtitle">Data-driven insights to measure performance<br>and optimize marketing efforts.</p>
                 </div>
                 <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
-                  <img src="../assets/SEO_marketing.jpg" alt="Analytics & Reporting" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
+                  <img src="../assets/ANALYTICS.jpg" alt="Analytics & Reporting" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
                   <span class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></span>
                 </div>
               </div>
@@ -143,13 +215,13 @@ if (file_exists($json_path)) {
               <div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;" data-aos="fade-up" data-aos-delay="500">
                 <div class="service-card-content flex-grow-1 position-relative z-2">
                   <div class="service-icon-circle mb-3">
-                    <i class="bi bi-bullseye"></i>
+                  <i class="bi bi-star-fill"></i>
                   </div>
                   <h3 class="fw-bold mb-2 service-title">GOOGLE ADS & PPC</h3>
                   <p class="text-muted mb-0 service-subtitle">Maximize ROI with targeted Google Ads<br>and pay-per-click campaigns.</p>
                 </div>
                 <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
-                  <img src="../assets/RED-BG.jpg" alt="Google Ads & PPC" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
+                  <img src="../assets/google_ads.jpg" alt="Google Ads & PPC" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
                   <span class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></span>
                 </div>
               </div>
@@ -160,13 +232,13 @@ if (file_exists($json_path)) {
               <div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;" data-aos="fade-up" data-aos-delay="600">
                 <div class="service-card-content flex-grow-1 position-relative z-2">
                   <div class="service-icon-circle mb-3">
-                    <i class="bi bi-palette"></i>
+                  <i class="bi bi-star-fill"></i>
                   </div>
                   <h3 class="fw-bold mb-2 service-title">WEBSITE DESIGN</h3>
                   <p class="text-muted mb-0 service-subtitle">Modern, responsive websites<br>that drive results and engagement.</p>
                 </div>
                 <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
-                  <img src="../assets/hero1.jpg" alt="Website Design" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
+                  <img src="../assets/web_design.jpg" alt="Website Design" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
                   <span class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></span>
                 </div>
               </div>
@@ -177,13 +249,13 @@ if (file_exists($json_path)) {
               <div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;" data-aos="fade-up" data-aos-delay="700">
                 <div class="service-card-content flex-grow-1 position-relative z-2">
                   <div class="service-icon-circle mb-3">
-                    <i class="bi bi-envelope"></i>
+                  <i class="bi bi-star-fill"></i>
                   </div>
                   <h3 class="fw-bold mb-2 service-title">EMAIL MARKETING</h3>
                   <p class="text-muted mb-0 service-subtitle">Run personalized email campaigns<br>to nurture leads and drive conversions.</p>
                 </div>
                 <div class="service-card-image position-absolute top-0 end-0 h-100 d-flex align-items-center justify-content-center" style="width:38%;min-width:260px;">
-                  <img src="../assets/Brand_desgining.png" alt="Email Marketing" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
+                  <img src="../assets/email_marketing.jpg" alt="Email Marketing" style="width:100%;height:100%;object-fit:cover;border-radius:0.75rem;" />
                   <span class="service-card-arrow-overlay"><i class="bi bi-arrow-up-right"></i></span>
                 </div>
               </div>
@@ -247,5 +319,18 @@ if (file_exists($json_path)) {
 <?php include '../letsConnect.php'; ?>
 <?php include '../footer.php'; ?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// Fade-in on scroll
+function revealOnScroll() {
+  document.querySelectorAll('.fade-in').forEach(function(el) {
+    var rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 60) {
+      el.classList.add('visible');
+    }
+  });
+}
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('DOMContentLoaded', revealOnScroll);
+</script>
 </body>
 </html>

@@ -14,7 +14,7 @@ $categories = array_unique(array_map(function($b) { return $b['category']; }, $b
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../navbar.css" />
   <link rel="stylesheet" href="../style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
   
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon.png">
@@ -26,6 +26,58 @@ $categories = array_unique(array_map(function($b) { return $b['category']; }, $b
 
   <style>
     /* Only blog-specific styles retained. Removed duplicate styles for navbar, .tbw-navbar, and general layout that are already in style.css or navbar.css. */
+    
+    .fade-in {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s cubic-bezier(.4,0,.2,1), transform 0.8s cubic-bezier(.4,0,.2,1);
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: none;
+    }
+    
+    .blogs-hero-modern {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 6rem 1rem 4rem 1rem;
+      background: #fff;
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(
+      90deg,
+      rgba(24, 24, 24, 0.85) 60%,
+      rgba(24, 24, 24, 0.3) 100%
+    ),
+       url('../assets/bg-2.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .blogs-hero-modern h1 {
+      font-size: 5.5rem;
+      font-weight: 800;
+      letter-spacing: -1px;
+      color:rgb(255, 255, 255);
+      margin-bottom: 1.2rem;
+      font-family: 'figtree ', 'Inter', Arial, sans-serif;
+      
+    }
+    .blogs-hero-modern h1 span{
+      color: #D4214C;
+    }
+    .blogs-hero-modern p {
+      font-size: 1.35rem;
+      color:rgba(255, 225, 0, 0.78);
+      max-width: 600px;
+      margin: 0 auto;
+      font-weight: 500;
+    }
+    
     .page-wrapper {
       max-width: 1320px;
       margin: 0 auto;
@@ -201,6 +253,20 @@ $categories = array_unique(array_map(function($b) { return $b['category']; }, $b
       color: #e8e8e8;
       text-decoration: none;
     }
+    
+    /* Responsive */
+    @media (max-width: 767.98px) {
+      .blogs-hero-modern {
+        padding: 3.5rem 0.5rem 2.5rem 0.5rem;
+      }
+      .blogs-hero-modern h1 {
+        font-size: 2.1rem;
+      }
+      .blogs-hero-modern p {
+        font-size: 1.05rem;
+      }
+    }
+    
     @media (max-width: 900px) {
       .blog-grid { grid-template-columns: 1fr; }
       .nav-menu { display: none; }
@@ -209,6 +275,13 @@ $categories = array_unique(array_map(function($b) { return $b['category']; }, $b
 </head>
 <body>
     <?php include '../navbar.php'; ?>
+
+<!-- Hero Section -->
+<section class="blogs-hero-modern fade-in">
+  <h1>INSIGHTS & <br> KNOWLEDGE <span>BLOG</span>
+  </h1>
+  <p>Stay updated with the latest digital marketing trends, tips, and industry insights.</p>
+</section>
 
 <div class="page-wrapper">
   <main>
@@ -273,6 +346,18 @@ $categories = array_unique(array_map(function($b) { return $b['category']; }, $b
       });
     });
   });
+  
+  // Fade-in on scroll
+  function revealOnScroll() {
+    document.querySelectorAll('.fade-in').forEach(function(el) {
+      var rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 60) {
+        el.classList.add('visible');
+      }
+    });
+  }
+  window.addEventListener('scroll', revealOnScroll);
+  window.addEventListener('DOMContentLoaded', revealOnScroll);
 </script>
 <?php include '../letsConnect.php'; ?>
 <?php include '../footer.php'; ?>

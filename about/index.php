@@ -292,6 +292,132 @@
   <p>At Brand Weave, we bring together branding, content, and marketing to help your business thrive online.</p>
 </section>
 
+<!-- Modern About Us Content Section (Dynamic, Digital Marketing Style) -->
+<section class="about-modern-content-section py-5 position-relative" style="background: linear-gradient(120deg, #fff 60%, #f8f9fa 100%); overflow:visible;">
+  <!-- Animated SVG Background Blobs -->
+  <svg class="position-absolute top-0 start-0 d-none d-md-block" width="320" height="320" style="z-index:0; opacity:0.18; left:-80px; top:-80px;" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <ellipse cx="160" cy="160" rx="160" ry="120" fill="#D4214C"/>
+  </svg>
+  <svg class="position-absolute bottom-0 end-0 d-none d-md-block" width="260" height="260" style="z-index:0; opacity:0.13; right:-60px; bottom:-60px;" viewBox="0 0 260 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <ellipse cx="130" cy="130" rx="130" ry="100" fill="#FBDF06"/>
+  </svg>
+  <div class="container position-relative" style="z-index:1;">
+    <!-- Hero/Intro Card with Parallax CTA -->
+    <div class="row align-items-center mb-5 flex-md-row flex-column-reverse">
+      <div class="col-md-7">
+        <div class="about-modern-hero-card p-4 p-md-5 rounded-4 shadow-lg position-relative mb-4 mb-md-0 glass-bg animate-fadein">
+          <h2 class="fw-bold mb-3 display-4" style="color:#D4214C; letter-spacing:1px;">Who We Are</h2>
+          <p class="lead mb-3" style="color:#22332e; font-size:1.25rem;">In the brand weaving, we believe that great brands are not only manufactured - they are designed with purpose, passion and accuracy.</p>
+          <p class="mb-4" style="font-size:1.1rem; color:#555;">As a complete-service digital marketing and branding agency, we are dedicated to helping businesses grow by weaving the correct mixture of creativity, strategy and technology together.</p>
+          <a href="../letsConnect.php" class="btn btn-lg btn-danger rounded-pill px-4 fw-bold shadow about-cta-btn animate-bounce">Let’s Connect <i class="bi bi-arrow-up-right"></i></a>
+        </div>
+      </div>
+      <div class="col-md-5 d-flex justify-content-center align-items-center mb-4 mb-md-0 position-relative">
+        <img src="../assets/WHITE-BG.png" alt="Brand Weave Logo" class="img-fluid rounded-4 shadow-lg about-modern-hero-img animate-float" style="max-width:320px; background:rgba(255,255,255,0.7);">
+      </div>
+    </div>
+    <!-- Journey & What We Do Cards with Animated Icons -->
+    <div class="row g-4 mb-5">
+      <div class="col-md-6">
+        <div class="about-modern-feature-card h-100 p-4 rounded-4 shadow position-relative bg-white overflow-hidden animate-slidein-left">
+          <span class="about-feature-icon d-inline-flex align-items-center justify-content-center mb-3" style="width:56px; height:56px; background:rgba(251,223,6,0.13); border-radius:50%;"><i class="bi bi-rocket-takeoff-fill" style="font-size:2rem; color:#D4214C;"></i></span>
+          <h5 class="fw-bold mb-2" style="color:#122c24;">Our Journey</h5>
+          <p class="mb-3">Our journey began with a simple idea: a crowded, fast book to empower brands with a strong digital voice in the online world. Today, we have developed as a reliable development partner for customers in industries - from startups to the businesses ready to be ready to disrupt.</p>
+          <a href="../case-studies/" class="btn btn-link px-0 fw-bold" style="color:#D4214C;">See Our Work <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="about-modern-feature-card h-100 p-4 rounded-4 shadow position-relative bg-white overflow-hidden animate-slidein-right">
+          <span class="about-feature-icon d-inline-flex align-items-center justify-content-center mb-3" style="width:56px; height:56px; background:rgba(212,33,76,0.13); border-radius:50%;"><i class="bi bi-lightbulb-fill" style="font-size:2rem; color:#FBDF06;"></i></span>
+          <h5 class="fw-bold mb-2" style="color:#122c24;">What We Do</h5>
+          <p class="mb-3">Whether you are looking to create your brand identity, improve your website, raise the lead, or run a high performance campaign, we bring the expertise and insight required to take your brand to the next level.</p>
+          <a href="../services/" class="btn btn-link px-0 fw-bold" style="color:#D4214C;">Explore Services <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- Services Grid with Animated Cards -->
+    <div class="about-modern-services-grid mb-5">
+      <h5 class="fw-bold mb-4 text-center" style="color:#D4214C; font-size:1.5rem;">Our Services</h5>
+      <div class="row g-3 justify-content-center">
+        <div class="col-6 col-md-4 col-lg-3">
+          <a href="../services/seo.php" class="about-modern-service-card d-block text-decoration-none h-100 p-3 rounded-4 shadow-sm bg-white text-center animate-pop" style="transition:transform .2s,box-shadow .2s;">
+            <img src="../assets/SEO_marketing.jpg" alt="SEO" class="rounded-3 mb-2" style="width:60px; height:60px; object-fit:cover;">
+            <div class="fw-bold mb-1" style="color:#122c24;">SEO</div>
+            <span class="text-muted small">Boost your visibility</span>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <a href="../services/smm.php" class="about-modern-service-card d-block text-decoration-none h-100 p-3 rounded-4 shadow-sm bg-white text-center animate-pop" style="transition:transform .2s,box-shadow .2s;">
+            <img src="../assets/media_marketing.png" alt="Social Media Marketing" class="rounded-3 mb-2" style="width:60px; height:60px; object-fit:cover;">
+            <div class="fw-bold mb-1" style="color:#122c24;">Social Media</div>
+            <span class="text-muted small">Grow your audience</span>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <a href="../services/google-ads.php" class="about-modern-service-card d-block text-decoration-none h-100 p-3 rounded-4 shadow-sm bg-white text-center animate-pop" style="transition:transform .2s,box-shadow .2s;">
+            <img src="../assets/google_ads.jpg" alt="Google Ads" class="rounded-3 mb-2" style="width:60px; height:60px; object-fit:cover;">
+            <div class="fw-bold mb-1" style="color:#122c24;">Google Ads & PPC</div>
+            <span class="text-muted small">Maximize ROI</span>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <a href="../services/web-design.php" class="about-modern-service-card d-block text-decoration-none h-100 p-3 rounded-4 shadow-sm bg-white text-center animate-pop" style="transition:transform .2s,box-shadow .2s;">
+            <img src="../assets/web_design.jpg" alt="Web Design" class="rounded-3 mb-2" style="width:60px; height:60px; object-fit:cover;">
+            <div class="fw-bold mb-1" style="color:#122c24;">Web Design</div>
+            <span class="text-muted small">Stunning & responsive</span>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <a href="../services/content-marketing.php" class="about-modern-service-card d-block text-decoration-none h-100 p-3 rounded-4 shadow-sm bg-white text-center animate-pop" style="transition:transform .2s,box-shadow .2s;">
+            <img src="../assets/content_marketing.jpg" alt="Content Marketing" class="rounded-3 mb-2" style="width:60px; height:60px; object-fit:cover;">
+            <div class="fw-bold mb-1" style="color:#122c24;">Content Marketing</div>
+            <span class="text-muted small">Engage & convert</span>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <a href="../services/branding.php" class="about-modern-service-card d-block text-decoration-none h-100 p-3 rounded-4 shadow-sm bg-white text-center animate-pop" style="transition:transform .2s,box-shadow .2s;">
+            <img src="../assets/Brand_desgining.png" alt="Branding" class="rounded-3 mb-2" style="width:60px; height:60px; object-fit:cover;">
+            <div class="fw-bold mb-1" style="color:#122c24;">Branding & Creative</div>
+            <span class="text-muted small">Stand out visually</span>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <a href="../services/analytics.php" class="about-modern-service-card d-block text-decoration-none h-100 p-3 rounded-4 shadow-sm bg-white text-center animate-pop" style="transition:transform .2s,box-shadow .2s;">
+            <img src="../assets/ANALYTICS.jpg" alt="Analytics" class="rounded-3 mb-2" style="width:60px; height:60px; object-fit:cover;">
+            <div class="fw-bold mb-1" style="color:#122c24;">Analytics & Reporting</div>
+            <span class="text-muted small">Data-driven growth</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- People-First/Partnership Card with Glassmorphism -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-10">
+        <div class="about-modern-people-card p-4 p-md-5 rounded-4 shadow-lg position-relative glass-bg overflow-hidden d-flex flex-column flex-md-row align-items-center animate-fadein">
+          <img src="../assets/meeting-bw.png" alt="People First" class="rounded-4 shadow d-none d-md-block me-md-4 animate-float" style="width:160px; min-width:120px; background:rgba(255,255,255,0.7);">
+          <div style="z-index:1;">
+            <h5 class="fw-bold mb-2" style="color:#122c24;">Our People-First Attitude</h5>
+            <p style="font-size:1.05rem; color:#555;">The thing that makes us different is our people-first attitude. We closely collaborate with our customers, becoming the expansion of their team. We listen, we learn, and we make with sympathy - because we know that marketing is not only about numbers, it is about connection. Our team thrives on curiosity, innovation, and bordering boundaries - makes your brand relevant and competitive in the continuous digital landscape.</p>
+            <a href="../letsConnect.php" class="btn btn-warning rounded-pill px-4 fw-bold mt-2 animate-bounce">Let's Connect <i class="bi bi-chat-dots"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Partnership/Final Card with Animation -->
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="about-modern-partnership-card p-4 p-md-5 rounded-4 shadow-lg position-relative glass-bg overflow-hidden text-center animate-fadein">
+          <h5 class="fw-bold mb-2" style="color:#D4214C;">More Than a Service</h5>
+          <p style="font-size:1.05rem; color:#555;">In brand weaving, we are not here to distribute services only - we are here to manufacture partnership, spark ideas and drive changes. With us, you will get a reliable digital collaborator who understands your vision and brings it to life with creativity, stability and clarity.</p>
+          <a href="../contact/" class="btn btn-outline-danger rounded-pill px-4 fw-bold mt-2 animate-bounce">Contact Us <i class="bi bi-envelope-paper"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Modern About Us Content Section (Intrinsic, Creative UI) -->
+
+
 <!-- About Us Section (2-column) -->
 <section class="py-5 bg-white">
       <div class="container">
@@ -330,13 +456,31 @@
                 <div class="fw-bold" style="color: #122c24; font-size: 1.25rem;">ENGAGEMENT</div>
                 <div class="text-muted mt-3" style="font-size: 1.1rem;">Communication with consumers, building <br> trust and relationships through engagement.</div>
               </div>
-          </div>
+            </div>
+            <div class="mb-4 d-flex align-items-start">
+              <span class="me-3" style="font-size: 2rem; color: #122c24;">
+                <i class="bi bi-bar-chart-line"></i>
+              </span>
+              <div>
+                <div class="fw-bold" style="color: #122c24; font-size: 1.25rem;">RESULTS DRIVEN</div>
+                <div class="text-muted mt-3" style="font-size: 1.1rem;">We focus on measurable outcomes and <br> continuous improvement for your business.</div>
+              </div>
+            </div>
+            <div class="mb-4 d-flex align-items-start">
+              <span class="me-3" style="font-size: 2rem; color: #122c24;">
+                <i class="bi bi-people"></i>
+              </span>
+              <div>
+                <div class="fw-bold" style="color: #122c24; font-size: 1.25rem;">COLLABORATION</div>
+                <div class="text-muted mt-3" style="font-size: 1.1rem;">We work closely with our clients, <br> ensuring transparency and shared success.</div>
+              </div>
+            </div>
           </div>
           <!-- Right: Image -->
           <div class="col-lg-6">
             <img src="../assets/aboutus.jpg"
                  alt="Team Collaboration"
-                 class="img-fluid rounded-4 shadow team-image"
+                 class="img-fluid rounded-4 shadow "
                  style="width: 100%; object-fit: cover;">
           </div>
         </div>
