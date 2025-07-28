@@ -388,6 +388,13 @@
             <span class="text-muted small">Data-driven growth</span>
           </a>
         </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <a href="../services/email-marketing.php" class="about-modern-service-card d-block text-decoration-none h-100 p-3 rounded-4 shadow-sm bg-white text-center animate-pop" style="transition:transform .2s,box-shadow .2s;">
+            <img src="../assets/email_marketing.jpg" alt="Analytics" class="rounded-3 mb-2" style="width:60px; height:60px; object-fit:cover;">
+            <div class="fw-bold mb-1" style="color:#122c24;">Email Marketing</div>
+            <span class="text-muted small">Data-driven growth</span>
+          </a>
+        </div>
       </div>
     </div>
     <!-- People-First/Partnership Card with Glassmorphism -->
