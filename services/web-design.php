@@ -252,7 +252,7 @@
   </style>
 </head>
 <body>
-  <?php include '../navbar.php'; ?>
+<?php include '../navbar.php'; ?>
   <!-- Hero Section -->
   <section class="section service-hero">
     <div class="service-label mb-3 fade-in-section">
@@ -342,7 +342,7 @@
       </div>
       <!-- Benefits Image -->
       <div class="fade-in-section benefits-image-center" style="display: flex; justify-content: center; margin-top: 40px;">
-        <img src="../assets/hero4.jpg" alt="Benefits Visual" style="width: 1008px; height: 460px; border-radius: 15px; object-fit: cover; box-shadow: 0 4px 24px rgba(0,0,0,0.08);">
+        <img src="../assets/web_design.jpg" alt="Benefits Visual" style="width: 1008px; height: 460px; border-radius: 15px; object-fit: cover; box-shadow: 0 4px 24px rgba(0,0,0,0.08);">
       </div>
     </div> <!-- End of benefits section container -->
   </section>
@@ -402,7 +402,7 @@
           ],
           [
             'file' => 'analytics.php',
-            'icon' => 'bi-bar-chart',
+            'icon' => 'bi-star-fill',
             'title' => 'ANALYTICS & REPORTING',
             'subtitle' => 'Data-driven insights to measure performance<br>and optimize marketing efforts.',
             'img' => '../assets/SEO_marketing.jpg',
@@ -410,7 +410,7 @@
           ],
           [
             'file' => 'google-ads.php',
-            'icon' => 'bi-bullseye',
+            'icon' => 'bi-star-fill',
             'title' => 'GOOGLE ADS & PPC',
             'subtitle' => 'Maximize ROI with targeted Google Ads<br>and pay-per-click campaigns.',
             'img' => '../assets/RED-BG.jpg',
@@ -418,7 +418,7 @@
           ],
           [
             'file' => 'web-design.php',
-            'icon' => 'bi-palette',
+            'icon' => 'bi-star-fill',
             'title' => 'WEBSITE DESIGN',
             'subtitle' => 'Modern, responsive websites<br>that drive results and engagement.',
             'img' => '../assets/hero1.jpg',
@@ -426,19 +426,27 @@
           ],
           [
             'file' => 'email-marketing.php',
-            'icon' => 'bi-envelope',
+            'icon' => 'bi-star-fill',
             'title' => 'EMAIL MARKETING',
             'subtitle' => 'Run personalized email campaigns<br>to nurture leads and drive conversions.',
             'img' => '../assets/Brand_desgining.png',
             'delay' => 700
           ],
         ];
+        
         $current = basename($_SERVER['PHP_SELF']);
-        foreach ($services as $service) {
-          if ($service['file'] === $current) continue;
+        $filtered_services = array_filter($services, function($service) use ($current) {
+          return $service['file'] !== $current;
+        });
+        
+        // Shuffle and pick 4 random services
+        shuffle($filtered_services);
+        $random_services = array_slice($filtered_services, 0, 4);
+        
+        foreach ($random_services as $index => $service) {
           echo '<div class="col-12">';
           echo '<a href="' . htmlspecialchars($service['file']) . '" class="text-decoration-none">';
-          echo '<div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;" data-aos="fade-up" data-aos-delay="' . $service['delay'] . '">';
+          echo '<div class="card h-100 border-0 shadow-sm service-card d-flex flex-row align-items-center p-4 position-relative overflow-hidden" style="border-radius: 0.7rem;" data-aos="fade-up" data-aos-delay="' . ($index * 100) . '">';
           echo '<div class="service-card-content flex-grow-1 position-relative z-2">';
           echo '<div class="service-icon-circle mb-3">';
           echo '<i class="bi ' . htmlspecialchars($service['icon']) . '"></i>';
