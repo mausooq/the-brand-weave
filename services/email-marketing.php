@@ -406,7 +406,7 @@
             'icon' => 'bi-star-fill',
             'title' => 'ANALYTICS & REPORTING',
             'subtitle' => 'Data-driven insights to measure performance<br>and optimize marketing efforts.',
-            'img' => '../assets/SEO_marketing.jpg',
+            'img' => '../assets/ANALYTICS.jpg',
             'delay' => 400
           ],
           [
@@ -414,7 +414,7 @@
             'icon' => 'bi-star-fill',
             'title' => 'GOOGLE ADS & PPC',
             'subtitle' => 'Maximize ROI with targeted Google Ads<br>and pay-per-click campaigns.',
-            'img' => '../assets/RED-BG.jpg',
+            'img' => '../assets/google_ads.jpg',
             'delay' => 500
           ],
           [
@@ -422,7 +422,7 @@
             'icon' => 'bi-star-fill',
             'title' => 'WEBSITE DESIGN',
             'subtitle' => 'Modern, responsive websites<br>that drive results and engagement.',
-            'img' => '../assets/hero1.jpg',
+            'img' => '../assets/web_design.jpg',
             'delay' => 600
           ],
           [
@@ -430,7 +430,7 @@
             'icon' => 'bi-star-fill',
             'title' => 'EMAIL MARKETING',
             'subtitle' => 'Run personalized email campaigns<br>to nurture leads and drive conversions.',
-            'img' => '../assets/Brand_desgining.png',
+            'img' => '../assets/email_marketing.jpg',
             'delay' => 700
           ],
         ];

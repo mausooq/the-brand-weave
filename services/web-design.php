@@ -107,6 +107,41 @@
       color: #64748b;
       margin-top: 10px;
     }
+    .content-block {
+      margin-bottom: 3rem;
+    }
+    .content-block h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+    .content-block p {
+      color: var(--secondary-text);
+      line-height: 1.6;
+    }
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin-bottom: 4rem;
+    }
+    .benefit-item h4 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .benefit-item p {
+      color: var(--secondary-text);
+    }
+    .laptop-image {
+      width: 100%;
+      height: 478.98px;
+      max-width: 1049.6px;
+      margin: 0px 0 40px;
+      border-radius: 15px;
+      object-fit: cover;
+      box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    }
     .seo-card {
       background: #f7f9fc;
       border-radius: 24px;
@@ -252,17 +287,17 @@
   </style>
 </head>
 <body>
-<?php include '../navbar.php'; ?>
+  <?php include '../navbar.php'; ?>
   <!-- Hero Section -->
   <section class="section service-hero">
     <div class="service-label mb-3 fade-in-section">
       <span class="badge rounded-pill px-3 py-2">SERVICES</span>
     </div>
-    <h1 class="service-title fade-in-section">Search Engine Optimization (SEO)</h1>
+    <h1 class="service-title fade-in-section">Website Design & Development</h1>
   </section>
   <!-- Main Image Section (after title) -->
   <div class="fade-in-section" style="display: flex; justify-content: center;">
-    <img src="../assets/SEO_marketing.jpg" alt="SEO Visual" style="width: 100%; max-width: 1049.6px; height: 478.98px; margin: 0px 0 40px; border-radius: 15px; object-fit: cover; box-shadow: 0 4px 24px rgba(0,0,0,0.08);">
+    <img src="../assets/web_design.jpg" alt="Website Design Visual" style="width: 100%; max-width: 1049.6px; height: 478.98px; margin: 0px 0 40px; border-radius: 15px; object-fit: cover; box-shadow: 0 4px 24px rgba(0,0,0,0.08);">
   </div>
   <!-- Statistics Section -->
   <section class="section" style="background: #fff;">
@@ -287,31 +322,31 @@
   <section class="section section-bg">
     <div class="container" style="max-width: 1049.6px; margin: 0 auto;">
       <div class="seo-card">
-        <h2>What is Search Engine Optimization (SEO)?</h2>
+        <h2>What is Website Design & Development?</h2>
         <p style="text-align:center; margin-bottom:2rem;">
-          SEO is a strategic process to improve your website’s ranking on search engines. It includes technical improvements, content optimization, and building authority to drive organic traffic and conversions.
+          Website design and development is a visually attractive, user-friendly and high-performing website process that represents your brand online. This includes layout design and coding, functionality, speed adaptation and mobile accountability ranging from UI/UX. A well-designed website is not just a digital brochure-this is your 24/7 sales machine.
         </p>
         <hr class="seo-divider">
         <div class="seo-columns">
           <div class="seo-col">
-            <h3>Benefits of SEO</h3>
+            <h3>Benefits of Website Design & Development</h3>
             <ul>
-              <li><span class="seo-icon"><i class="bi bi-check-circle"></i></span><span>High website ranking</span></li>
-              <li><span class="seo-icon"><i class="bi bi-graph-up"></i></span><span>Organic traffic increased</span></li>
-              <li><span class="seo-icon"><i class="bi bi-emoji-smile"></i></span><span>Better User Experience (UX)</span></li>
-              <li><span class="seo-icon"><i class="bi bi-shield-check"></i></span><span>Better reliability and trust improved</span></li>
-              <li><span class="seo-icon"><i class="bi bi-cash-stack"></i></span><span>Cost effective marketing</span></li>
-              <li><span class="seo-icon"><i class="bi bi-geo-alt"></i></span><span>Local SEO for nearby customers</span></li>
+              <li><span class="seo-icon"><i class="bi bi-check-circle"></i></span><span>Strong first impression</span></li>
+              <li><span class="seo-icon"><i class="bi bi-graph-up"></i></span><span>Better User Experience (UX)</span></li>
+              <li><span class="seo-icon"><i class="bi bi-emoji-smile"></i></span><span>Customized for all devices</span></li>
+              <li><span class="seo-icon"><i class="bi bi-shield-check"></i></span><span>High conversion rates</span></li>
+              <li><span class="seo-icon"><i class="bi bi-cash-stack"></i></span><span>Search engine friendly</span></li>
+              <li><span class="seo-icon"><i class="bi bi-geo-alt"></i></span><span>Easy management and update</span></li>
             </ul>
           </div>
           <div class="seo-col">
-            <h3>How SEO Helps Your Business Grow</h3>
+            <h3>How Website Design & Development Helps Your Business</h3>
             <ul>
-              <li><span class="seo-icon"><i class="bi bi-check-circle"></i></span><span>Consider a qualified lead</span></li>
-              <li><span class="seo-icon"><i class="bi bi-graph-up"></i></span><span>Runs long-term results</span></li>
-              <li><span class="seo-icon"><i class="bi bi-emoji-smile"></i></span><span>Defeated the competition</span></li>
-              <li><span class="seo-icon"><i class="bi bi-shield-check"></i></span><span>The content maximizes the value</span></li>
-              <li><span class="seo-icon"><i class="bi bi-cash-stack"></i></span><span>The overall marketing supports strategy</span></li>
+              <li><span class="seo-icon"><i class="bi bi-check-circle"></i></span><span>Builds an online appearance</span></li>
+              <li><span class="seo-icon"><i class="bi bi-graph-up"></i></span><span>Establishes brand identity</span></li>
+              <li><span class="seo-icon"><i class="bi bi-emoji-smile"></i></span><span>Drives more leads and sales</span></li>
+              <li><span class="seo-icon"><i class="bi bi-shield-check"></i></span><span>Supports digital marketing campaigns</span></li>
+              <li><span class="seo-icon"><i class="bi bi-cash-stack"></i></span><span>Sets you apart from competitors</span></li>
             </ul>
           </div>
         </div>
@@ -324,20 +359,20 @@
       <h2 class="mb-5 fade-in-section benefits-heading" style="font-size: 3.5rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #18362b; text-align: left;">Benefits</h2>
       <div class="row">
         <div class="col-12 col-md-6 col-lg-3 fade-in-section" style="text-align: left;">
-          <div style="font-size: 1.25rem; font-weight: 700; text-transform: uppercase; color: #18362b; margin-bottom: 0.5rem; letter-spacing: 0.5px;">Broader Reach</div>
-          <div style="color: #64748b; font-size: 1.08rem; line-height: 1.5; font-weight: 400;">By leveraging multiple channels, brands can reach a wider and more diverse audience.</div>
+          <div style="font-size: 1.25rem; font-weight: 700; text-transform: uppercase; color: #18362b; margin-bottom: 0.5rem; letter-spacing: 0.5px;">Strong First Impression</div>
+          <div style="color: #64748b; font-size: 1.08rem; line-height: 1.5; font-weight: 400;">Your website is often the first touchpoint with potential customers. A modern, clean design immediately creates confidence and reliability.</div>
         </div>
         <div class="col-12 col-md-6 col-lg-3 fade-in-section" style="text-align: left;">
-          <div style="font-size: 1.25rem; font-weight: 700; text-transform: uppercase; color: #18362b; margin-bottom: 0.5rem; letter-spacing: 0.5px;">Cost-Effective</div>
-          <div style="color: #64748b; font-size: 1.08rem; line-height: 1.5; font-weight: 400;">Compared to traditional media, digital marketing offers a higher ROI and can be tailored.</div>
+          <div style="font-size: 1.25rem; font-weight: 700; text-transform: uppercase; color: #18362b; margin-bottom: 0.5rem; letter-spacing: 0.5px;">Better User Experience</div>
+          <div style="color: #64748b; font-size: 1.08rem; line-height: 1.5; font-weight: 400;">Easy navigation, fast load time, and responsive design keep users engaged and reduce bounce rates.</div>
         </div>
         <div class="col-12 col-md-6 col-lg-3 fade-in-section" style="text-align: left;">
-          <div style="font-size: 1.25rem; font-weight: 700; text-transform: uppercase; color: #18362b; margin-bottom: 0.5rem; letter-spacing: 0.5px;">On-Time Feedback</div>
-          <div style="color: #64748b; font-size: 1.08rem; line-height: 1.5; font-weight: 400;">Digital media platforms allow for immediate audience interaction and feedback.</div>
+          <div style="font-size: 1.25rem; font-weight: 700; text-transform: uppercase; color: #18362b; margin-bottom: 0.5rem; letter-spacing: 0.5px;">Mobile Responsive</div>
+          <div style="color: #64748b; font-size: 1.08rem; line-height: 1.5; font-weight: 400;">Mobile-friendly websites ensure an easy experience on smartphones, tablets and desktops.</div>
         </div>
         <div class="col-12 col-md-6 col-lg-3 fade-in-section" style="text-align: left;">
-          <div style="font-size: 1.25rem; font-weight: 700; text-transform: uppercase; color: #18362b; margin-bottom: 0.5rem; letter-spacing: 0.5px;">Advertising</div>
-          <div style="color: #64748b; font-size: 1.08rem; line-height: 1.5; font-weight: 400;">With advanced targeting options, media marketing ensures.</div>
+          <div style="font-size: 1.25rem; font-weight: 700; text-transform: uppercase; color: #18362b; margin-bottom: 0.5rem; letter-spacing: 0.5px;">High Conversion Rates</div>
+          <div style="color: #64748b; font-size: 1.08rem; line-height: 1.5; font-weight: 400;">Strategic design elements guide visitors to actions such as shopping or filling the contact form.</div>
         </div>
       </div>
       <!-- Benefits Image -->
@@ -405,7 +440,7 @@
             'icon' => 'bi-star-fill',
             'title' => 'ANALYTICS & REPORTING',
             'subtitle' => 'Data-driven insights to measure performance<br>and optimize marketing efforts.',
-            'img' => '../assets/SEO_marketing.jpg',
+            'img' => '../assets/ANALYTICS.jpg',
             'delay' => 400
           ],
           [
@@ -413,7 +448,7 @@
             'icon' => 'bi-star-fill',
             'title' => 'GOOGLE ADS & PPC',
             'subtitle' => 'Maximize ROI with targeted Google Ads<br>and pay-per-click campaigns.',
-            'img' => '../assets/RED-BG.jpg',
+            'img' => '../assets/google_ads.jpg',
             'delay' => 500
           ],
           [
@@ -421,7 +456,7 @@
             'icon' => 'bi-star-fill',
             'title' => 'WEBSITE DESIGN',
             'subtitle' => 'Modern, responsive websites<br>that drive results and engagement.',
-            'img' => '../assets/hero1.jpg',
+            'img' => '../assets/web_design.jpg',
             'delay' => 600
           ],
           [
@@ -429,7 +464,7 @@
             'icon' => 'bi-star-fill',
             'title' => 'EMAIL MARKETING',
             'subtitle' => 'Run personalized email campaigns<br>to nurture leads and drive conversions.',
-            'img' => '../assets/Brand_desgining.png',
+            'img' => '../assets/email_marketing.jpg',
             'delay' => 700
           ],
         ];
@@ -525,4 +560,4 @@
     });
   </script>
 </body>
-</html> 
+</html>
