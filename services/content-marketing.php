@@ -342,7 +342,7 @@
       </div>
       <!-- Benefits Image -->
       <div class="fade-in-section benefits-image-center" style="display: flex; justify-content: center; margin-top: 40px;">
-        <img src="../assets/content_marketing.jpg" alt="Benefits Visual" style="width: 1008px; height: 460px; border-radius: 15px; object-fit: cover; box-shadow: 0 4px 24px rgba(0,0,0,0.08);">
+        <img src="../assets/content_sub.jpg" alt="Benefits Visual" style="width: 1008px; height: 460px; border-radius: 15px; object-fit: cover; box-shadow: 0 4px 24px rgba(0,0,0,0.08);">
       </div>
     </div> <!-- End of benefits section container -->
   </section>
