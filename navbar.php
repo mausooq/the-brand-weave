@@ -1,6 +1,6 @@
 <?php
 // Dynamic base path for navbar links
-$base = (strpos($_SERVER['REQUEST_URI'], '/about/') !== false || strpos($_SERVER['REQUEST_URI'], '/services/') !== false || strpos($_SERVER['REQUEST_URI'], '/blogs/') !== false || strpos($_SERVER['REQUEST_URI'], '/contact/') !== false) ? '../' : './';
+$base = (strpos($_SERVER['REQUEST_URI'], '/about-us-digital-marketing-agency/') !== false || strpos($_SERVER['REQUEST_URI'], '/services/') !== false || strpos($_SERVER['REQUEST_URI'], '/blogs/') !== false || strpos($_SERVER['REQUEST_URI'], '/contact/') !== false) ? '../' : './';
 ?>
 <!-- TBW Modern Navbar Start -->
 <nav class="tbw-navbar navbar navbar-expand-lg sticky-top shadow">
@@ -33,7 +33,7 @@ $base = (strpos($_SERVER['REQUEST_URI'], '/about/') !== false || strpos($_SERVER
           <a class="nav-link text-dark" href="<?= $base ?>index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="<?= $base ?>about/">About us</a>
+          <a class="nav-link text-dark" href="<?= $base ?>about-us-digital-marketing-agency/">About us</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-dark" href="<?= $base ?>services/">Service</a>

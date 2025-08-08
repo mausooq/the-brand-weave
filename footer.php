@@ -1,6 +1,6 @@
 <?php
 // Dynamic base path for footer links (same as navbar)
-$base = (strpos($_SERVER['REQUEST_URI'], '/about/') !== false || 
+$base = (strpos($_SERVER['REQUEST_URI'], '/about-us-digital-marketing-agency/') !== false || 
          strpos($_SERVER['REQUEST_URI'], '/services/') !== false || 
          strpos($_SERVER['REQUEST_URI'], '/blogs/') !== false || 
          strpos($_SERVER['REQUEST_URI'], '/contact/') !== false) ? '../' : './';
@@ -8,7 +8,7 @@ $base = (strpos($_SERVER['REQUEST_URI'], '/about/') !== false ||
 // Footer Links
 $footer_links = [
   ['Home', $base . 'index.php'],
-  ['About', $base . 'about/'],
+  ['About', $base . 'about-us-digital-marketing-agency/'],
   ['Case Studies', $base . 'case-studies/'],
   ['Contact Us', $base . 'contact/'],
   ['Blog', $base . 'blogs/'],
