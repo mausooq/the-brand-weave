@@ -24,7 +24,14 @@ $footer_links = [
           <img src="<?= $base ?>assets/RED-BG.jpg" alt="The Brand Weave Logo" style="max-height: 60px; width: auto; border-radius: 8px;">
           <div style="font-weight: bold; font-size: 1.3rem; color: #D4214C; margin-top: 0.5rem; letter-spacing: 2px;">THE BRAND WEAVE</div>
         </div>
-        <p class="text-muted mb-4">We offer a complete range of digital marketing <br> services to help your brand grow online.</p>
+        <p class="text-muted mb-0">We offer a complete range of digital marketing <br> services to help your brand grow online.</p>
+        <div style="height: 2em;"></div>
+        <div class="text-muted small">
+          &copy; <?= date("Y") ?> <a href="#" class="text-decoration-none text-muted fw-semibold">The Brand Weave</a>. All rights reserved.
+        </div>
+        <div class="text-muted small mt-1" style="color:rgb(61, 65, 67); font-weight: 700;">
+          <a href="https://goldendream.in/landing/" class="text-decoration-none" style="color: inherit;" target="_blank" rel="noopener">PRO GEE DEE VENTURES</a>
+        </div>
       </div>
 
       <!-- Company Links -->
@@ -71,11 +78,6 @@ $footer_links = [
       </div>
     </div>
 
-    <hr class="my-5"/>
-
-    <!-- Copyright -->
-    <div class="text-muted small py-3">
-      &copy; <?= date("Y") ?> <a href="#" class="text-decoration-none text-muted fw-semibold">The Brand Weave</a>. All rights reserved.
-    </div>
+    
   </div>
 </footer>
