@@ -74,10 +74,12 @@ $footer_links = [
           <a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
           <a href="https://www.facebook.com/thebrandweave/?notif_id=1755704661385230&notif_t=follower_invite_accept&ref=notif" title="Facebook"><i class="bi bi-facebook"></i></a>
           <a href="#" title="Twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="https://www.threads.com/@thebrandweave_" title="Threads"><i class="bi bi-threads"></i></a>
         </div>
       </div>
     </div>
 
+    
     
   </div>
 </footer>
