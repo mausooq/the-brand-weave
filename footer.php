@@ -71,7 +71,7 @@ $footer_links = [
         <h6 class="mb-4 mt-5" style="color: #122c24;">OUR SOCIALS</h6>
         <div class="social-links">
           <a href="https://www.instagram.com/thebrandweave_/" title="Instagram"><i class="bi bi-instagram"></i></a>
-          <a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="https://www.linkedin.com/company/thebrandweave/" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
           <a href="https://www.facebook.com/thebrandweave/?notif_id=1755704661385230&notif_t=follower_invite_accept&ref=notif" title="Facebook"><i class="bi bi-facebook"></i></a>
           <a href="#" title="Twitter"><i class="bi bi-twitter-x"></i></a>
           <a href="https://www.threads.com/@thebrandweave_" title="Threads"><i class="bi bi-threads"></i></a>
