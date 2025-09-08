@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $mail->Port = 587;
 
             $mail->setFrom('contact@thebrandweave.com', 'The Brand Weave Contact');
-            $mail->addAddress('abdulmausooq@gmail.com'); // or any recipient
+            $mail->addAddress('info@thebrandweave.com'); // or any recipient
             $mail->addReplyTo($email, $firstName . ' ' . $lastName);
 
             $mail->Subject = 'Contact Form: ' . ($subject ?: 'New Message');
@@ -264,7 +264,7 @@ $formSent = isset($_GET['sent']) && $_GET['sent'] == 1;
               <span class="info-icon"><i class="bi bi-telephone-fill"></i></span>
               <div>
                 <div class="fw-semibold">Phone</div>
-                <a href="tel:+919826000000" class="text-decoration-none text-dark">+91 9901845606</a>
+                <a href="tel:+919826000000" class="text-decoration-none text-dark">+91 7259267480</a>
               </div>
             </div>
             <div class="info-item">
