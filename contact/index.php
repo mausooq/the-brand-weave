@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $mail->Port = 587;
 
             $mail->setFrom('contact@thebrandweave.com', 'The Brand Weave Contact');
-            $mail->addAddress('info@thebrandweave.com'); // or any recipient
+            $mail->addAddress('contact@thebrandweave.com'); // or any recipient
             $mail->addReplyTo($email, $firstName . ' ' . $lastName);
 
             $mail->Subject = 'Contact Form: ' . ($subject ?: 'New Message');
@@ -271,7 +271,7 @@ $formSent = isset($_GET['sent']) && $_GET['sent'] == 1;
               <span class="info-icon"><i class="bi bi-envelope-fill"></i></span>
               <div>
                 <div class="fw-semibold">Email</div>
-                <a href="mailto:info@thebrandweave.com" class="text-decoration-none text-dark">info@thebrandweave.com</a>
+                <a href="mailto:contact@thebrandweave.com" class="text-decoration-none text-dark">contact@thebrandweave.com</a>
               </div>
             </div>
             <div class="info-item">
