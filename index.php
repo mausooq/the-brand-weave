@@ -25,10 +25,10 @@
     <!-- AOS Animation CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon.png">
-    <link rel="shortcut icon" href="./assets/favicon.png">
-    <link rel="apple-touch-icon" href="./assets/favicon.png">
+    <link rel="icon" type="image/jpeg" sizes="32x32" href="./assets/favicon.jpg">
+    <link rel="icon" type="image/jpeg" sizes="16x16" href="./assets/favicon.jpg">
+    <link rel="shortcut icon" href="./assets/favicon.jpg">
+    <link rel="apple-touch-icon" href="./assets/favicon.jpg">
   
   </head>
   <body>

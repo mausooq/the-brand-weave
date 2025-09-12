@@ -63,10 +63,10 @@ if (file_exists($contentFile)) {
     <title><?php echo htmlspecialchars($content['page_title']); ?></title>
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon.png">
-    <link rel="shortcut icon" href="../assets/favicon.png">
-    <link rel="apple-touch-icon" href="../assets/favicon.png">
+    <link rel="icon" type="image/jpeg" sizes="32x32" href="../assets/favicon.jpg">
+    <link rel="icon" type="image/jpeg" sizes="16x16" href="../assets/favicon.jpg">
+    <link rel="shortcut icon" href="../assets/favicon.jpg">
+    <link rel="apple-touch-icon" href="../assets/favicon.jpg">
     
     <style>
         * {
