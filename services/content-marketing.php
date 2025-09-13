@@ -270,7 +270,7 @@
       <div class="statistics-grid">
         <div class="stat-card fade-in-section">
           <div class="stat-number" data-target="50+">0</div>
-          <div class="stat-label">Regular Clients</div>
+          <div class="stat-label">Regular-Clients</div>
         </div>
         <div class="stat-card fade-in-section">
           <div class="stat-number" data-target="6.2%">0</div>
