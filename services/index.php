@@ -20,10 +20,10 @@ if (file_exists($json_path)) {
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
   
   <!-- Favicon -->
-  <link rel="icon" type="image/jpeg" sizes="32x32" href="../assets/favicon.jpg">
-  <link rel="icon" type="image/jpeg" sizes="16x16" href="../assets/favicon.jpg">
-  <link rel="shortcut icon" href="../assets/favicon.jpg">
-  <link rel="apple-touch-icon" href="../assets/favicon.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../web logo png.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../web logo png.png">
+  <link rel="shortcut icon" href="../web logo png.png">
+  <link rel="apple-touch-icon" href="../web logo png.png">
   
   <style>
     body {
