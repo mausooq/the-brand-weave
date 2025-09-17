@@ -286,10 +286,10 @@ $formSent = isset($_GET['sent']) && $_GET['sent'] == 1;
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.587421250474!2d74.85801117507474!3d12.869903287436193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35a3245f37f65%3A0x66a8be45c5d10bc9!2sKankanady%20gate!5e0!3m2!1sen!2sin!4v1751608522826!5m2!1sen!2sin" width="100%" height="220" style="border:0; min-width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Kankanady gate Location Map"></iframe>
             </div>
             <div class="social-links">
-              <a href="#" title="Instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
-              <a href="#" title="Facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" title="Twitter"><i class="bi bi-twitter-x"></i></a>
+              <a href="https://www.instagram.com/thebrandweave/" title="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/thebrandweave/" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="https://www.facebook.com/thebrandweave/?notif_id=1755704661385230&notif_t=follower_invite_accept&ref=notif" title="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.threads.com/@thebrandweave_" title="Threads"><i class="bi bi-threads"></i></a>
             </div>
           </div>
         </div>
