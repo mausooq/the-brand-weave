@@ -21,8 +21,10 @@ $footer_links = [
       <!-- Brand and Description -->
       <div class="col-md-4">
         <div class="mb-4">
-          <img src="<?= $base ?>web logo png.png" alt="The Brand Weave Logo" style="max-height: 60px; width: auto; border-radius: 50%;">
-          <div style="font-weight: bold; font-size: 1.3rem; color: #D4214C; margin-top: 0.5rem; letter-spacing: 2px;">THE BRAND WEAVE</div>
+          <a href="<?= $base ?>index.php" class="text-decoration-none">
+            <img src="<?= $base ?>web logo png.png" alt="The Brand Weave Logo" style="max-height: 60px; width: auto; border-radius: 50%;">
+            <div style="font-weight: bold; font-size: 1.3rem; color: #D4214C; margin-top: 0.5rem; letter-spacing: 2px;">THE BRAND WEAVE</div>
+          </a>
         </div>
         <p class="text-muted mb-0">We offer a complete range of digital marketing <br> services to help your brand grow online.</p>
         <div style="height: 2em;"></div>
